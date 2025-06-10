@@ -89,6 +89,7 @@
 
 			});
 
+	/*
 	// Menu.
 		var $menu = $('#menu');
 
@@ -180,6 +181,84 @@
 					if (event.keyCode == 27)
 						$menu._hide();
 
-			});
+			}); */
+
+	// GreenAiriva Navbar ve Smooth Scroll Fonksiyonları
+window.addEventListener('DOMContentLoaded', event => {
+
+    // Navbar shrink function
+    var navbarShrink = function () {
+        const navbarCollapsible = document.body.querySelector('#mainNav');
+        if (!navbarCollapsible) return;
+        if (window.scrollY === 0) {
+            navbarCollapsible.classList.remove('navbar-shrink');
+        } else {
+            navbarCollapsible.classList.add('navbar-shrink');
+        }
+    };
+
+    navbarShrink();
+    document.addEventListener('scroll', navbarShrink);
+
+    // Bootstrap scrollspy (opsiyonel, ana menüde kullanıyorsan)
+    const mainNav = document.body.querySelector('#mainNav');
+    if (mainNav && window.bootstrap && window.bootstrap.ScrollSpy) {
+        new bootstrap.ScrollSpy(document.body, {
+            target: '#mainNav',
+            rootMargin: '0px 0px -40%',
+        });
+    };
+
+    // Responsive navbar'ı mobilde linke tıklayınca kapat
+    const navbarToggler = document.body.querySelector('.navbar-toggler');
+    const responsiveNavItems = [].slice.call(
+        document.querySelectorAll('#navbarResponsive .nav-link:not(.dropdown-toggle)')
+    );
+    responsiveNavItems.map(function (responsiveNavItem) {
+        responsiveNavItem.addEventListener('click', () => {
+            if (window.getComputedStyle(navbarToggler).display !== 'none') {
+                navbarToggler.click();
+            }
+        });
+    });
+
+    // Anchor smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                e.preventDefault();
+                target.scrollIntoView({ behavior: "smooth" });
+                if (history.pushState) {
+                    history.pushState(null, null, window.location.pathname);
+                }
+            }
+        });
+    });
+
+    // Hash ile açılışta otomatik smooth scroll
+    if (window.location.hash) {
+        var section = document.querySelector(window.location.hash);
+        if (section) {
+            setTimeout(function() {
+                section.scrollIntoView({ behavior: "smooth" });
+            }, 150);
+        }
+    }
+
+});
+
+// Dropdown veya nav-link tıklanınca menüyü kapat
+document.querySelectorAll('.navbar-nav .nav-link, .navbar-nav .dropdown-item').forEach(function(element) {
+  element.addEventListener('click', function(e) {
+    if (element.classList.contains('dropdown-toggle')) return;
+    var navbarCollapse = document.getElementById('navbarResponsive');
+    if (navbarCollapse && navbarCollapse.classList.contains('show')) {
+      if (window.bootstrap && window.bootstrap.Collapse) {
+        new bootstrap.Collapse(navbarCollapse, {toggle: true});
+      }
+    }
+  });
+});
 
 })(jQuery);
