@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Phantom by HTML5 UP</title>
+		<title>GreenAiriva Blog Page</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -35,18 +35,45 @@
 						</div>
 					</header>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<h2>Menu</h2>
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="generic.html">Ipsum veroeros</a></li>
-							<li><a href="generic.html">Tempus etiam</a></li>
-							<li><a href="generic.html">Consequat dolor</a></li>
-							<li><a href="elements.html">Elements</a></li>
-						</ul>
-					</nav>
-
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="/"><img src="assets/img/navbar-logo.svg" alt="GreenAiriva logo" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars ms-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="solutionsDropdown" data-bs-toggle="dropdown" aria-expanded="false">Solutions</a>
+                  <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="solutionsDropdown">
+                            <li><a class="dropdown-item custom-dropdown-item" href="/solutions/#sectionA">A</a></li>
+                            <li><a class="dropdown-item custom-dropdown-item" href="/solutions/#sectionB">B</a></li>
+                            <li><a class="dropdown-item custom-dropdown-item" href="/solutions/#sectionC">C</a></li>
+                   </ul>
+                </li>
+                    <li class="nav-item"><a class="nav-link" href="../blog/tr/">Blog</a></li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
+                    <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="aboutDropdown">
+                      <li><a class="dropdown-item custom-dropdown-item" href="/about/#about">About Us</a></li>
+                      <li><a class="dropdown-item custom-dropdown-item" href="/about/#vision">Vision</a></li>
+                      <li><a class="dropdown-item custom-dropdown-item" href="/about/#mission">Mission</a></li>
+                      <li><a class="dropdown-item custom-dropdown-item" href="/about/#whyus">Why GreenAiriva?</a></li>
+                      <li><a class="dropdown-item custom-dropdown-item" href="/about/#contribution">Social and Environmental</a></li>
+                      <li><a class="dropdown-item custom-dropdown-item" href="/about/#team">Our Team</a></li>
+                      <li><a class="dropdown-item custom-dropdown-item" href="/about/#join">Join Us</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item"><a class="nav-link" id="scrollToContact" href="#contact">Contact</a></li>
+                      <div class="lang-switch" onclick="window.location.href='/tr/'">TR</div>
+                      <div class="lang-switch" onclick="window.location.href='/'">EN</div>
+                  </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
@@ -236,6 +263,8 @@
 			</div>
 
 		<!-- Scripts -->
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+			<script src="https://kit.fontawesome.com/yourfontawesomekit.js" crossorigin="anonymous"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
