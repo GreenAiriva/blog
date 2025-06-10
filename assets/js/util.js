@@ -39,7 +39,9 @@
 	 * @param {object} userConfig User config.
 	 * @return {jQuery} jQuery object.
 	 */
-	$.fn.panel = function(userConfig) {
+	
+	/*
+ $.fn.panel = function(userConfig) {
 
 		// No elements?
 			if (this.length == 0)
@@ -294,7 +296,7 @@
 
 		return $this;
 
-	};
+	}; */
 
 	/**
 	 * Apply "placeholder" attribute polyfill to one or more forms.
