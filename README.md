@@ -1,2 +1,0 @@
-# blog
-Greenairiva blog sitesi
