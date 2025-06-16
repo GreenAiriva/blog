@@ -10986,8 +10986,9 @@ header.masthead {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
-  background-size: cover; */
-  min-height: 100vh;
+  background-size: cover;
+  min-height: 100vh; */
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;   /* Ortalar */
