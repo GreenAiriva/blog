@@ -941,13 +941,12 @@
 	margin-bottom: 0;
 }
 
-#main .tiles article.style1 > .image:before { background-color: #849966; }
-#main .tiles article.style2 > .image:before { background-color: #e4953d; }
-#main .tiles article.style3 > .image:before { background-color: #7bd0c1; }
-#main .tiles article.style4 > .image:before { background-color: #c75b9b; }
-#main .tiles article.style5 > .image:before { background-color: #ae85ca; }
-#main .tiles article.style6 > .image:before { background-color: #8499e7; }
-
+#main .tiles article.style1 > .image:before { background-color: #e4953d; }
+#main .tiles article.style2 > .image:before { background-color: #f2a248; }
+#main .tiles article.style3 > .image:before { background-color: #5b94c3; }
+#main .tiles article.style4 > .image:before { background-color:  linear-gradient(135deg, #a1b18a 60%, #4d5529 100%); }
+#main .tiles article.style5 > .image:before { background-color: linear-gradient(120deg, #f6fafa 0%, #e4953d 100%); }
+#main .tiles article.style6 > .image:before { background-color: #86abc3; }
 /* Hover effects for non-touch devices */
 body:not(.is-touch) #main .tiles article:hover > .image {
 	-moz-transform: scale(1.1);
