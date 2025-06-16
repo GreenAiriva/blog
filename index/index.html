@@ -9,7 +9,12 @@
     <link rel="icon" type="image/x-icon" href="assets/favicon.svg" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
-    <link href="css/styles.css" rel="stylesheet" />
+<!-- Bootstrap/Genel -->
+	<link href="assets../css/styles.css" rel="stylesheet" />
+<!-- Phantom için -->
+	<link rel="stylesheet" href="../css/main.css" />
+    		<noscript><link rel="stylesheet" href="../css/noscript.css" /></noscript>
+    <style>
     <style>
         .lang-switch {
             display: inline-block;
@@ -223,48 +228,55 @@
 
 			</div>
 			
-				<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-							<section>
-								<h2>Get in touch</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<input type="text" name="name" id="name" placeholder="Name" />
-										</div>
-										<div class="field half">
-											<input type="email" name="email" id="email" placeholder="Email" />
-										</div>
-										<div class="field">
-											<textarea name="message" id="message" placeholder="Message"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send" class="primary" /></li>
-									</ul>
-								</form>
-							</section>
-							<section>
-								<h2>Follow</h2>
-								<ul class="icons">
-									<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a></li>
-									<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
-									<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
-								</ul>
-							</section>
-							<ul class="copyright">
-								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</footer>
+   <!-- Contact-->
+<section class="page-section" id="contact">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="section-heading text-uppercase">Contact Us</h2>
+      <h3 class="section-subheading text-muted">Do not hesitate to give us your feedback.</h3>
+    </div>
 
-			</div>
+    <form action="https://formspree.io/f/mblyjkpa" method="POST">
+      <div class="row align-items-stretch mb-5">
+        <div class="col-md-6">
+          <div class="form-group mb-3">
+            <input class="form-control" type="text" name="name" placeholder="Your Name *" required />
+          </div>
+          <div class="form-group mb-3">
+            <input class="form-control" type="email" name="email" placeholder="Your Email *" required />
+          </div>
+          <div class="form-group mb-3">
+            <input class="form-control" type="tel" name="phone" placeholder="Your Phone *" required />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group mb-3">
+            <textarea class="form-control" name="message" placeholder="Your Message *" rows="8" required></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <button class="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
+      </div>
+    </form>
+  </div>
+</section>
+   <!-- Footer-->
+<footer class="footer py-4">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 text-lg-start">Copyright &copy; GreenAiriva 2025</div>
+            <div class="col-lg-4 my-3 my-lg-0">
+                <a class="btn btn-dark btn-social mx-2" href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+                <a class="link-dark text-decoration-none me-3" href="/privacy/">Privacy Policy</a>
+                <a class="link-dark text-decoration-none" href="/terms/">Terms of Use</a>
+            </div>
+        </div>
+    </div>
 
 		<!-- Scripts -->
 
