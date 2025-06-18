@@ -10979,16 +10979,9 @@ p {
 }
 header.masthead {
   /*padding-top: 30rem;
-  padding-bottom: 10rem;
-  text-align: center;
-  color: #fff;
-  background-image: url("../assets/img/header-bg.jpg");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  background-size: cover;
-  min-height: 100vh; */
-  height: auto;
+  padding-bottom: 10rem;*/
+  min-height: 60vh; 
+  /*height: auto; */
   display: flex;
   flex-direction: column;
   justify-content: center;   /* Ortalar */
