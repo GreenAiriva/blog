@@ -1,4 +1,4 @@
-@font-face {
+er@font-face {
   font-family: 'The Youngest Script';
   src: url('../assets/fonts/the-youngest-script.ttf') format('truetype');
   font-weight: normal;
@@ -10980,7 +10980,7 @@ p {
 header.masthead {
   /*padding-top: 30rem;
   padding-bottom: 10rem;*/
-  min-height: 60vh; 
+  min-height: 10vh; 
   /*height: auto; */
   display: flex;
   flex-direction: column;
