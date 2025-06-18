@@ -10979,9 +10979,9 @@ p {
 }
 header.masthead {
   /*padding-top: 30rem;
-  padding-bottom: 10rem;*/
-  /*min-height: 100vh; */
-  height: auto; 
+  padding-bottom: 10rem;
+  height: auto; */
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;   /* Ortalar */
@@ -11028,7 +11028,7 @@ header.masthead .container {
 }
 @media (min-width: 768px) {
   header.masthead {
-    height: auto;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
