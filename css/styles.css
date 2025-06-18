@@ -11011,7 +11011,7 @@ header.masthead .masthead-subheading-script {
   margin-bottom: 0rem;
   margin-top: 0rem;
   color: #f49a27;
-  font-family: 'The Youngest Script', cursive;
+  font-family: 'The Youngest Script', cursive !important;
 }
 header.masthead .masthead-heading {
   font-size: 3.25rem;
@@ -11056,7 +11056,7 @@ header.masthead .container {
     margin-bottom: 0rem;
     margin-top: 0rem;
     color: #f49a27;
-    font-family: 'The Youngest Script', cursive;
+    font-family: 'The Youngest Script', cursive !important;
 
 }
 #portfolio .portfolio-item {
