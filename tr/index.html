@@ -6,10 +6,14 @@
     <meta name="description" content="GreenAiriva is an innovative air purification solution that captures particulate matter and greenhouse gases, improving urban air quality and contributing to climate action." />
     <meta name="author" content="GreenAiriva" />
     <title>GreenAiriva – Innovative Air Purification Solutions</title>
-    <link rel="icon" type="image/x-icon" href="../../assets/favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.svg" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
-    <link href="/../../css/styles.css" rel="stylesheet" />
+<!-- Bootstrap/Genel -->
+	<link href="../css/styles.css" rel="stylesheet" />
+<!-- Phantom için -->
+	<link rel="stylesheet" href="../css/main.css" />
+    		<noscript><link rel="stylesheet" href="../css/noscript.css" /></noscript>
     <style>
         .lang-switch {
             display: inline-block;
@@ -29,7 +33,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand" href="/"><img src="../../assets/img/navbar-logo.svg" alt="GreenAiriva logo" /></a>
+            <a class="navbar-brand" href="/"><img src="../assets/img/navbar-logo.svg" alt="GreenAiriva logo" /></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <i class="fas fa-bars ms-1"></i>
@@ -37,29 +41,29 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="solutionsDropdown" data-bs-toggle="dropdown" aria-expanded="false">Çözümler</a>
+                  <a class="nav-link dropdown-toggle" href="#" id="solutionsDropdown" data-bs-toggle="dropdown" aria-expanded="false">Solutions</a>
                   <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="solutionsDropdown">
-                      <li><a class="dropdown-item custom-dropdown-item" href="../solutions/tr/#bolumA">A</a></li>
-                      <li><a class="dropdown-item custom-dropdown-item" href="../solutions/tr/#bolumB/">B</a></li>
-                      <li><a class="dropdown-item custom-dropdown-item" href="../solutions/tr/#bolumC/">C</a></li>
+                            <li><a class="dropdown-item custom-dropdown-item" href="/solutions/#sectionA">A</a></li>
+                            <li><a class="dropdown-item custom-dropdown-item" href="/solutions/#sectionB">B</a></li>
+                            <li><a class="dropdown-item custom-dropdown-item" href="/solutions/#sectionC">C</a></li>
                    </ul>
                 </li>
                     <li class="nav-item"><a class="nav-link" href="../blog/tr/">Blog</a></li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" data-bs-toggle="dropdown" aria-expanded="false">Hakkımızda</a>
+                    <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
                     <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="aboutDropdown">
-                      <li><a class="dropdown-item custom-dropdown-item" href="../about/tr/#hakkimizda">Hakkımızda</a></li>
-                      <li><a class="dropdown-item custom-dropdown-item" href="../about/tr/#vizyon">Vizyon</a></li>
-                      <li><a class="dropdown-item custom-dropdown-item" href="../about/tr/#misyon">Misyon</a></li>
-                      <li><a class="dropdown-item custom-dropdown-item" href="../about/tr/#neden">Neden GreenAiriva?</a></li>
-                      <li><a class="dropdown-item custom-dropdown-item" href="../about/tr/#katki">Sosyal ve Çevresel Katkı</a></li>
-                      <li><a class="dropdown-item custom-dropdown-item" href="../about/tr/#takim">Takımımız</a></li>
-                      <li><a class="dropdown-item custom-dropdown-item" href="../about/tr/#katil">Bize Katıl</a></li>
+                      <li><a class="dropdown-item custom-dropdown-item" href="/about/#about">About Us</a></li>
+                      <li><a class="dropdown-item custom-dropdown-item" href="/about/#vision">Vision</a></li>
+                      <li><a class="dropdown-item custom-dropdown-item" href="/about/#mission">Mission</a></li>
+                      <li><a class="dropdown-item custom-dropdown-item" href="/about/#whyus">Why GreenAiriva?</a></li>
+                      <li><a class="dropdown-item custom-dropdown-item" href="/about/#contribution">Social and Environmental</a></li>
+                      <li><a class="dropdown-item custom-dropdown-item" href="/about/#team">Our Team</a></li>
+                      <li><a class="dropdown-item custom-dropdown-item" href="/about/#join">Join Us</a></li>
                     </ul>
                   </li>
-                  <li class="nav-item"><a class="nav-link" id="scrollToContact" href="#contact">İletişim</a></li>
-                        <div class="lang-switch" onclick="window.location.href='../../blog/index.html'">EN</div>
-                        <div class="lang-switch" onclick="window.location.href='/'">TR</div>
+                  <li class="nav-item"><a class="nav-link" id="scrollToContact" href="#contact">Contact</a></li>
+                      <div class="lang-switch" onclick="window.location.href='/tr/'">TR</div>
+                      <div class="lang-switch" onclick="window.location.href='/'">EN</div>
                   </li>
                 </ul>
             </div>
@@ -72,111 +76,154 @@
             <div class="masthead-subheading-script">Cleaner</div>
             <div class="masthead-heading">Planet</div>
           <div class="masthead-btn-row">
-            <a class="btn btn-primary btn-xl text-uppercase" href="#blog">Discover Our Solutions</a>
+            <a class="btn btn-primary btn-xl text-uppercase" href="#solutions">Discover Our Solutions</a>
         </div>
     </header>
- 
-        <!-- blog Grid-->
-        <section class="page-section bg-light" id="blog">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">blog</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- blog item 1-->
-                        <div class="blog-item">
-                            <a class="blog-link" data-bs-toggle="modal" href="#blogModal1">
-                                <div class="blog-hover">
-                                    <div class="blog-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="../../assets/img/blog/1.jpg" alt="..." />
-                            </a>
-                            <div class="blog-caption">
-                                <div class="blog-caption-heading">Majör Sera Gazları: Şehir Havasının  Görünmez Tehlikesi</div>
-                                <div class="blog-caption-subheading text-muted">Bilimsel Analiz ve GreenAiriva'nın Çözüm Modeli</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- blog item 2-->
-                        <div class="blog-item">
-                            <a class="blog-link" data-bs-toggle="modal" href="#blogModal2">
-                                <div class="blog-hover">
-                                    <div class="blog-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="../../assets/img/blog/2.jpg" alt="..." />
-                            </a>
-                            <div class="blog-caption">
-                                <div class="blog-caption-heading">Explore</div>
-                                <div class="blog-caption-subheading text-muted">Graphic Design</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- blog item 3-->
-                        <div class="blog-item">
-                            <a class="blog-link" data-bs-toggle="modal" href="#blogModal3">
-                                <div class="blog-hover">
-                                    <div class="blog-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="../../assets/img/blog/3.jpg" alt="..." />
-                            </a>
-                            <div class="blog-caption">
-                                <div class="blog-caption-heading">Finish</div>
-                                <div class="blog-caption-subheading text-muted">Identity</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                        <!-- blog item 4-->
-                        <div class="blog-item">
-                            <a class="blog-link" data-bs-toggle="modal" href="#blogModal4">
-                                <div class="blog-hover">
-                                    <div class="blog-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="../../assets/img/blog/4.jpg" alt="..." />
-                            </a>
-                            <div class="blog-caption">
-                                <div class="blog-caption-heading">Lines</div>
-                                <div class="blog-caption-subheading text-muted">Branding</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-                        <!-- blog item 5-->
-                        <div class="blog-item">
-                            <a class="blog-link" data-bs-toggle="modal" href="#blogModal5">
-                                <div class="blog-hover">
-                                    <div class="blog-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="../../assets/img/blog/5.jpg" alt="..." />
-                            </a>
-                            <div class="blog-caption">
-                                <div class="blog-caption-heading">Southwest</div>
-                                <div class="blog-caption-subheading text-muted">Website Design</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <!-- blog item 6-->
-                        <div class="blog-item">
-                            <a class="blog-link" data-bs-toggle="modal" href="#blogModal6">
-                                <div class="blog-hover">
-                                    <div class="blog-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="../../assets/img/blog/6.jpg" alt="..." />
-                            </a>
-                            <div class="blog-caption">
-                                <div class="blog-caption-heading">Window</div>
-                                <div class="blog-caption-subheading text-muted">Photography</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+
+			<!-- Main -->
+			<!-- Wrapper -->
+			<div id="wrapper">
+					<div id="main">
+						<div class="inner">
+							
+							<section class="tiles">
+								<article class="style1">
+									<span class="image">
+										<img src="../assets/img/blog/2.jpg" alt="" />
+									</span>
+									<a href="https://www.greenairiva.com.tr/">
+										<h5>Magna</h5>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
+									</a>
+								</article>
+								<article class="style2">
+									<span class="image">
+										<img src="../assets/img/blog/2.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h5>Lorem</h5>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
+									</a>
+								</article>
+								<article class="style3">
+									<span class="image">
+										<img src="../assets/img/blog/2.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h5>Feugiat</h5>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
+									</a>
+								</article>
+								<article class="style4">
+									<span class="image">
+										<img src="../assets/img/blog/2.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h5>Tempus</h5>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
+									</a>
+								</article>
+								<article class="style5">
+									<span class="image">
+										<img src="../assets/img/blog/2.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h5>Aliquam</h5>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
+									</a>
+								</article>
+								<article class="style6">
+									<span class="image">
+										<img src="../assets/img/blog/2.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h5>Veroeros</h5>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
+									</a>
+								</article>
+								<article class="style2">
+									<span class="image">
+										<img src="../assets/img/blog/2.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h5>Ipsum</h5>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
+									</a>
+								</article>
+								<article class="style3">
+									<span class="image">
+										<img src="../assets/img/blog/2.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h5>Dolor</h5>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
+									</a>
+								</article>
+								<article class="style1">
+									<span class="image">
+										<img src="../assets/img/blog/2.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h5>Nullam</h5>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
+									</a>
+								</article>
+								<article class="style5">
+									<span class="image">
+										<img src="../assets/img/blog/2.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h5>Ultricies</h5>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
+									</a>
+								</article>
+								<article class="style6">
+									<span class="image">
+										<img src="../assets/img/blog/2.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h5>Dictum</h5>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
+									</a>
+								</article>
+								<article class="style4">
+									<span class="image">
+										<img src="../assets/img/blog/2.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h5>Pretium</h5>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
+									</a>
+								</article>
+							</section>
+						</div>
+					</div>
+				</div>
+			
    <!-- Contact-->
 <section class="page-section" id="contact">
   <div class="container">
@@ -185,7 +232,7 @@
       <h3 class="section-subheading text-muted">Do not hesitate to give us your feedback.</h3>
     </div>
 
-    <form action="https://formspree.io/f/mblyjkpa" method="POST">
+    <form action="https://formspree.io/f/mblyywgr" method="POST">
       <div class="row align-items-stretch mb-5">
         <div class="col-md-6">
           <div class="form-group mb-3">
@@ -226,149 +273,17 @@
             </div>
         </div>
     </div>
-<!-- Blog Modal 1 -->
-<div class="portfolio-modal modal fade" id="blogModal1" tabindex="-1" aria-labelledby="blogModal1" aria-hidden="true">
-    <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-            <div class="close-modal" data-bs-dismiss="modal"><img src="../../assets/img/close-icon.svg" alt="Close modal" /></div>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="modal-body">
-                            <h2 class="text-uppercase">Modül: Majör Sera Gazları: Şehir Havasının Görünmez Tehlikeleri</h2>
-                            <p class="item-intro text-muted">Bilimsel Analiz ve GreenAiriva’nın Çözüm Modeli</p>
-                            <img class="img-fluid d-block mx-auto" src="../../assets/img/blog/1.jpg" alt="..." />
-                            <p>Atmosferdeki CO₂, CH₄, N₂O ve F-gazları, şehir yaşamında en önemli görünmez tehditlerdir. GreenAiriva, çok katmanlı filtrasyon teknolojisiyle bu gazların konsantrasyonunu ölçüp azaltmaya yönelik yenilikçi çözümler sunar..</p>
-                            <a class="btn btn-primary text-uppercase" href="assays/assays_tr/assay1.html" style="margin-top:1rem;">
-                                <i class="fas fa-arrow-right me-1"></i> Daha Fazla
-                            </a>
+</footer>
+		<!-- Scripts -->
 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Blog Modal 2 -->
-<div class="portfolio-modal modal fade" id="blogModal2" tabindex="-1" aria-labelledby="blogModal2" aria-hidden="true">
-    <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-            <div class="close-modal" data-bs-dismiss="modal"><img src="../../assets/img/close-icon.svg" alt="Close modal" /></div>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="modal-body">
-                            <h2 class="text-uppercase">Explore</h2>
-                            <p class="item-intro text-muted">Graphic Design</p>
-                            <img class="img-fluid d-block mx-auto" src="../../assets/img/blog/2.jpg" alt="..." />
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                            <a class="btn btn-primary text-uppercase" href="assays/assays_tr/assay2.html" style="margin-top:1rem;">
-                                <i class="fas fa-arrow-right me-1"></i> Daha Fazla
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Blog Modal 3 -->
-<div class="portfolio-modal modal fade" id="blogModal3" tabindex="-1" aria-labelledby="blogModal3" aria-hidden="true">
-    <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-            <div class="close-modal" data-bs-dismiss="modal"><img src="../../assets/img/close-icon.svg" alt="Close modal" /></div>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="modal-body">
-                            <h2 class="text-uppercase">Finish</h2>
-                            <p class="item-intro text-muted">Identity</p>
-                            <img class="img-fluid d-block mx-auto" src="../../assets/img/blog/3.jpg" alt="..." />
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                            <a class="btn btn-primary text-uppercase" href="assays/assays_tr/assay3.html" style="margin-top:1rem;">
-                                <i class="fas fa-arrow-right me-1"></i> Daha Fazla
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Blog Modal 4 -->
-<div class="portfolio-modal modal fade" id="blogModal4" tabindex="-1" aria-labelledby="blogModal4" aria-hidden="true">
-    <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-            <div class="close-modal" data-bs-dismiss="modal"><img src="../../assets/img/close-icon.svg" alt="Close modal" /></div>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="modal-body">
-                            <h2 class="text-uppercase">Lines</h2>
-                            <p class="item-intro text-muted">Branding</p>
-                            <img class="img-fluid d-block mx-auto" src="../../assets/img/blog/4.jpg" alt="..." />
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                            <a class="btn btn-primary text-uppercase" href="assays/assays_tr/assay4.html" style="margin-top:1rem;">
-                                <i class="fas fa-arrow-right me-1"></i> Daha Fazla
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Blog Modal 5 -->
-<div class="portfolio-modal modal fade" id="blogModal5" tabindex="-1" aria-labelledby="blogModal5" aria-hidden="true">
-    <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-            <div class="close-modal" data-bs-dismiss="modal"><img src="../../assets/img/close-icon.svg" alt="Close modal" /></div>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="modal-body">
-                            <h2 class="text-uppercase">Southwest</h2>
-                            <p class="item-intro text-muted">Website Design</p>
-                            <img class="img-fluid d-block mx-auto" src="../../assets/img/blog/5.jpg" alt="..." />
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                            <a class="btn btn-primary text-uppercase" href="assays/assays_tr/assay5.html" style="margin-top:1rem;">
-                                <i class="fas fa-arrow-right me-1"></i> Daha Fazla
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Blog Modal 6 -->
-<div class="portfolio-modal modal fade" id="blogModal6" tabindex="-1" aria-labelledby="blogModal6" aria-hidden="true">
-    <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-            <div class="close-modal" data-bs-dismiss="modal"><img src="../../assets/img/close-icon.svg" alt="Close modal" /></div>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="modal-body">
-                            <h2 class="text-uppercase">Window</h2>
-                            <p class="item-intro text-muted">Photography</p>
-                            <img class="img-fluid d-block mx-auto" src="../../assets/img/blog/6.jpg" alt="..." />
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                    <a class="btn btn-primary text-uppercase" href="assays/assays_tr/assay6.html" style="margin-top:1rem;">
-                    <i class="fas fa-arrow-right me-1"></i> Daha Fazla
-                    </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+			<script src="../js/blog_js/jquery.min.js"></script>
+			<script src="../js/blog_js/browser.min.js"></script>
+			<script src="../js/blog_js/breakpoints.min.js"></script>
+			<script src="../js/blog_js/util.js"></script>
+			<script src="../js/blog_js/main.js"></script> 
 
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="../../js/scripts.js"></script>
-</body>
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+			<script src="https://kit.fontawesome.com/yourfontawesomekit.js" crossorigin="anonymous"></script>
+			<script src="../js/scripts.js"></script>	
+	</body>
 </html>
