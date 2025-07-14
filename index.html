@@ -11,9 +11,6 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
 <!-- Bootstrap/Genel -->
 	<link href="/css/styles.css" rel="stylesheet" />
-<!-- Phantom için -->
-	<link rel="stylesheet" href="/css/main.css" />
-    		<noscript><link rel="stylesheet" href="/css/noscript.css" /></noscript>
     <style>
         .lang-switch {
             display: inline-block;
@@ -78,150 +75,173 @@
         </div>
     </header>
 
-			<!-- Main -->
-			<!-- Wrapper -->
-			<div id="wrapper">
-					<div id="main">
-						<div class="inner">
-							
-							<section class="tiles">
-								<article class="style1">
-									<span class="image">
-										<img src="assets/img/blog/2.jpg" alt="" />
-									</span>
-									<a href="https://www.greenairiva.com.tr/">
-										<h5>Magna</h5>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style2">
-									<span class="image">
-										<img src="assets/img/blog/2.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h5>Lorem</h5>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style3">
-									<span class="image">
-										<img src="assets/img/blog/2.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h5>Feugiat</h5>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style4">
-									<span class="image">
-										<img src="assets/img/blog/2.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h5>Tempus</h5>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style5">
-									<span class="image">
-										<img src="assets/img/blog/2.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h5>Aliquam</h5>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style6">
-									<span class="image">
-										<img src="assets/img/blog/2.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h5>Veroeros</h5>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style2">
-									<span class="image">
-										<img src="assets/img/blog/2.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h5>Ipsum</h5>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style3">
-									<span class="image">
-										<img src="assets/img/blog/2.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h5>Dolor</h5>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style1">
-									<span class="image">
-										<img src="assets/img/blog/2.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h5>Nullam</h5>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style5">
-									<span class="image">
-										<img src="assets/img/blog/2.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h5>Ultricies</h5>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style6">
-									<span class="image">
-										<img src="assets/img/blog/2.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h5>Dictum</h5>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style4">
-									<span class="image">
-										<img src="assets/img/blog/2.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h5>Pretium</h5>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-							</section>
-						</div>
-					</div>
-				</div>
-			
+<!-- Main -->
+<div class="container mt-5">
+  <div class="row align-items-center mb-3">
+    <div class="col">
+      <h2 class="mb-0">Son Yazılar</h2>
+    </div>
+    <div class="col-auto">
+      <!-- Filtreleme Dropdown'u -->
+      <select class="form-select" id="postFilter" style="min-width: 180px;">
+        <option value="">Tümü</option>
+        <option value="kategori1">Kategori 1</option>
+        <option value="kategori2">Kategori 2</option>
+        <!-- Gerekirse kategori ekleyin -->
+      </select>
+    </div>
+  </div>
+
+  <div id="postList">
+    <!-- Post örneği, arka plan tek/çift için .bg-light/.bg-secondary -->
+    <div class="row mb-4 post-item bg-light p-3 rounded align-items-center">
+      <div class="col-md-3">
+        <a href="/blog/assays/assays_tr/assay1/index.html">
+          <img src="assets/img/blog1.jpg" class="img-fluid rounded" alt="Post 1 Görseli">
+        </a>
+      </div>
+      <div class="col-md-9">
+        <a href="/blog/assays/assays_tr/assay1/index.html" class="text-decoration-none text-dark">
+          <h4>Assay 1 Başlık</h4>
+          <p>Kısa özet veya giriş cümlesi burada olacak.</p>
+          <small>Kategori 1 - 14 Temmuz 2025</small>
+        </a>
+      </div>
+    </div>
+    <div class="row mb-4 post-item bg-secondary text-white p-3 rounded align-items-center">
+      <div class="col-md-3">
+        <a href="/blog/assays/assays_tr/assay2/index.html">
+          <img src="assets/img/blog2.jpg" class="img-fluid rounded" alt="Post 2 Görseli">
+        </a>
+      </div>
+      <div class="col-md-9">
+        <a href="/blog/assays/assays_tr/assay2/index.html" class="text-decoration-none text-white">
+          <h4>Assay 2 Başlık</h4>
+          <p>Kısa özet veya giriş cümlesi burada olacak.</p>
+          <small>Kategori 2 - 10 Temmuz 2025</small>
+        </a>
+      </div>
+    </div>    
+    <div class="row mb-4 post-item bg-light p-3 rounded align-items-center">
+      <div class="col-md-3">
+        <a href="/blog/assays/assays_tr/assay1/index.html">
+          <img src="assets/img/blog1.jpg" class="img-fluid rounded" alt="Post 1 Görseli">
+        </a>
+      </div>
+      <div class="col-md-9">
+        <a href="/blog/assays/assays_tr/assay1/index.html" class="text-decoration-none text-dark">
+          <h4>Assay 1 Başlık</h4>
+          <p>Kısa özet veya giriş cümlesi burada olacak.</p>
+          <small>Kategori 1 - 14 Temmuz 2025</small>
+        </a>
+      </div>
+    </div>
+    <div class="row mb-4 post-item bg-secondary text-white p-3 rounded align-items-center">
+      <div class="col-md-3">
+        <a href="/blog/assays/assays_tr/assay2/index.html">
+          <img src="assets/img/blog2.jpg" class="img-fluid rounded" alt="Post 2 Görseli">
+        </a>
+      </div>
+      <div class="col-md-9">
+        <a href="/blog/assays/assays_tr/assay2/index.html" class="text-decoration-none text-white">
+          <h4>Assay 2 Başlık</h4>
+          <p>Kısa özet veya giriş cümlesi burada olacak.</p>
+          <small>Kategori 2 - 10 Temmuz 2025</small>
+        </a>
+      </div>
+    </div>
+    <div class="row mb-4 post-item bg-light p-3 rounded align-items-center">
+      <div class="col-md-3">
+        <a href="/blog/assays/assays_tr/assay1/index.html">
+          <img src="assets/img/blog1.jpg" class="img-fluid rounded" alt="Post 1 Görseli">
+        </a>
+      </div>
+      <div class="col-md-9">
+        <a href="/blog/assays/assays_tr/assay1/index.html" class="text-decoration-none text-dark">
+          <h4>Assay 1 Başlık</h4>
+          <p>Kısa özet veya giriş cümlesi burada olacak.</p>
+          <small>Kategori 1 - 14 Temmuz 2025</small>
+        </a>
+      </div>
+    </div>
+    <div class="row mb-4 post-item bg-secondary text-white p-3 rounded align-items-center">
+      <div class="col-md-3">
+        <a href="/blog/assays/assays_tr/assay2/index.html">
+          <img src="assets/img/blog2.jpg" class="img-fluid rounded" alt="Post 2 Görseli">
+        </a>
+      </div>
+      <div class="col-md-9">
+        <a href="/blog/assays/assays_tr/assay2/index.html" class="text-decoration-none text-white">
+          <h4>Assay 2 Başlık</h4>
+          <p>Kısa özet veya giriş cümlesi burada olacak.</p>
+          <small>Kategori 2 - 10 Temmuz 2025</small>
+        </a>
+      </div>
+    </div>
+    <div class="row mb-4 post-item bg-light p-3 rounded align-items-center">
+      <div class="col-md-3">
+        <a href="/blog/assays/assays_tr/assay1/index.html">
+          <img src="assets/img/blog1.jpg" class="img-fluid rounded" alt="Post 1 Görseli">
+        </a>
+      </div>
+      <div class="col-md-9">
+        <a href="/blog/assays/assays_tr/assay1/index.html" class="text-decoration-none text-dark">
+          <h4>Assay 1 Başlık</h4>
+          <p>Kısa özet veya giriş cümlesi burada olacak.</p>
+          <small>Kategori 1 - 14 Temmuz 2025</small>
+        </a>
+      </div>
+    </div>
+    <div class="row mb-4 post-item bg-secondary text-white p-3 rounded align-items-center">
+      <div class="col-md-3">
+        <a href="/blog/assays/assays_tr/assay2/index.html">
+          <img src="assets/img/blog2.jpg" class="img-fluid rounded" alt="Post 2 Görseli">
+        </a>
+      </div>
+      <div class="col-md-9">
+        <a href="/blog/assays/assays_tr/assay2/index.html" class="text-decoration-none text-white">
+          <h4>Assay 2 Başlık</h4>
+          <p>Kısa özet veya giriş cümlesi burada olacak.</p>
+          <small>Kategori 2 - 10 Temmuz 2025</small>
+        </a>
+      </div>
+    </div>
+    <div class="row mb-4 post-item bg-light p-3 rounded align-items-center">
+      <div class="col-md-3">
+        <a href="/blog/assays/assays_tr/assay1/index.html">
+          <img src="assets/img/blog1.jpg" class="img-fluid rounded" alt="Post 1 Görseli">
+        </a>
+      </div>
+      <div class="col-md-9">
+        <a href="/blog/assays/assays_tr/assay1/index.html" class="text-decoration-none text-dark">
+          <h4>Assay 1 Başlık</h4>
+          <p>Kısa özet veya giriş cümlesi burada olacak.</p>
+          <small>Kategori 1 - 14 Temmuz 2025</small>
+        </a>
+      </div>
+    </div>
+    <div class="row mb-4 post-item bg-secondary text-white p-3 rounded align-items-center">
+      <div class="col-md-3">
+        <a href="/blog/assays/assays_tr/assay2/index.html">
+          <img src="assets/img/blog2.jpg" class="img-fluid rounded" alt="Post 2 Görseli">
+        </a>
+      </div>
+      <div class="col-md-9">
+        <a href="/blog/assays/assays_tr/assay2/index.html" class="text-decoration-none text-white">
+          <h4>Assay 2 Başlık</h4>
+          <p>Kısa özet veya giriş cümlesi burada olacak.</p>
+          <small>Kategori 2 - 10 Temmuz 2025</small>
+        </a>
+      </div>
+    </div>
+    <!-- 4 tane daha, arka planı tek/çift sıralayarak aynı şekilde eklenmeli -->
+  </div>
+
+  <div class="text-center my-4">
+    <button class="btn btn-outline-success" id="loadMoreBtn">Daha fazla içerik</button>
+  </div>
+</div>
+
    <!-- Contact-->
 <section class="page-section" id="contact">
   <div class="container">
@@ -273,12 +293,6 @@
     </div>
 </footer>
 		<!-- Scripts -->
-
-			<script src="/js/blog_js/jquery.min.js"></script>
-			<script src="/js/blog_js/browser.min.js"></script>
-			<script src="/js/blog_js/breakpoints.min.js"></script>
-			<script src="/js/blog_js/util.js"></script>
-			<script src="/js/blog_js/main.js"></script> 
 
 			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 			<script src="https://kit.fontawesome.com/yourfontawesomekit.js" crossorigin="anonymous"></script>
