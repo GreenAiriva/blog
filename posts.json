@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Social Cost of Greenhouse Gases: EPA SC-GHG Report",
+    "date": "2025-07-14",
+    "category": "category1",
+    "summary": "This article analyzes the EPA's 2023 SC-GHG report...",
+    "image": "assets/img/blog/1.jpg",
+    "url": "blog/assays/assays_en/assay1.html"
+  },
+  {
+    "title": "Hava Kalitesi Ölçümleri ve GreenAiriva Çözümleri",
+    "date": "2025-07-10",
+    "category": "kategori2",
+    "summary": "Bu yazıda, hava kalitesi ölçüm metodolojileri ve GreenAiriva'nın yenilikçi teknolojileri anlatılıyor.",
+    "image": "assets/img/blog/2.jpg",
+    "url": "blog/assays/assays_tr/assay2/index.html"
+  }
+]
