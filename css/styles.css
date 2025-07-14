@@ -11629,3 +11629,44 @@ section#contact form#contactForm :-ms-input-placeholder {
     background-repeat: no-repeat !important;
   }
 }
+@media (max-width: 767px) {
+  .masthead {
+    height: 50vh !important;
+    min-height: 200px !important;
+    padding-top: 40px !important;
+    padding-bottom: 30px !important;
+    display: flex !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+  .masthead .container {
+    padding: 0 12px !important;
+  }
+  .masthead-heading {
+    font-size: 2.1rem !important;
+    line-height: 1.1 !important;
+    letter-spacing: 0.5px !important;
+    font-family: "Montserrat", Arial, sans-serif !important;
+    font-weight: 700 !important;
+  }
+  .masthead-subheading-script {
+    font-size: 1.6rem !important;
+    margin-bottom: 0.6rem !important;
+    display: block !important;
+    font-family: 'The Youngest Script', cursive !important;
+  }
+  .masthead-btn-row {
+    margin-top: 1rem !important;
+    display: flex !important;
+    justify-content: center !important;
+    width: 100% !important;
+  }
+  .masthead-btn-row .btn {
+    font-size: 1rem !important;
+    padding: 0.6rem 1.2rem !important;
+    min-width: 160px !important;
+    max-width: 95vw !important;
+    white-space: normal !important;
+    box-sizing: border-box !important;
+  }
+}
