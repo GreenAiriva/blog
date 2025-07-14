@@ -111,50 +111,74 @@ document.querySelectorAll('.navbar-nav .nav-link, .navbar-nav .dropdown-item').f
     }
   });
 });
-// === Blog Listesinde "Daha Fazla İçerik" ve Filtreleme ===
-document.addEventListener('DOMContentLoaded', function () {
-  // Daha fazla içerik fonksiyonu
-  let postCount = 6;
-  const loadMoreBtn = document.getElementById('loadMoreBtn');
-  const postList = document.getElementById('postList');
-  if (loadMoreBtn && postList) {
-    loadMoreBtn.addEventListener('click', function () {
-      for (let i = 1; i <= 3; i++) {
-        postCount++;
-        const bg = (postCount % 2 === 1) ? 'bg-light' : 'bg-secondary text-white';
-        const post = document.createElement('div');
-        post.className = `row mb-4 post-item ${bg} p-3 rounded align-items-center`;
-        post.innerHTML = `
-          <div class="col-md-3">
-            <a href="/blog/assays/assays_tr/assay${postCount}/index.html">
-              <img src="assets/img/blog${postCount}.jpg" class="img-fluid rounded" alt="Post ${postCount} Görseli">
-            </a>
-          </div>
-          <div class="col-md-9">
-            <a href="/blog/assays/assays_tr/assay${postCount}/index.html" class="text-decoration-none ${bg.includes('secondary') ? 'text-white' : 'text-dark'}">
-              <h4>Assay ${postCount} Başlık</h4>
-              <p>Kısa özet veya giriş cümlesi burada olacak.</p>
-              <small>Kategori ${((postCount - 1) % 2) + 1} - 2025</small>
-            </a>
-          </div>
-        `;
-        postList.appendChild(post);
-      }
-    });
-  }
 
-  // Filtreleme fonksiyonu (kategoriye göre)
-  const postFilter = document.getElementById('postFilter');
-  if (postFilter && postList) {
-    postFilter.addEventListener('change', function () {
-      const selected = this.value;
-      document.querySelectorAll('#postList .post-item').forEach(post => {
-        if (!selected || post.innerHTML.includes(selected)) {
-          post.style.display = '';
-        } else {
-          post.style.display = 'none';
-        }
-      });
+
+// ==== DİNAMİK BLOG LİSTELEME SİSTEMİ ====
+// Not: JSON dosyanın yolunu aşağıda gerekirse değiştir (örn: '/data/posts.json' veya 'posts.json')
+const BLOG_JSON_PATH = 'posts.json';
+
+let blogPosts = [];
+let blogCategories = new Set();
+
+async function blogFetchPosts() {
+  try {
+    const res = await fetch(BLOG_JSON_PATH);
+    blogPosts = await res.json();
+
+    // Kategorileri bul
+    blogCategories = new Set(blogPosts.map(p => p.category));
+    blogRenderFilterOptions();
+    blogRenderPosts();
+  } catch (e) {
+    document.getElementById('postList').innerHTML = `<div class="alert alert-danger">Blog içerikleri yüklenemedi.</div>`;
+  }
+}
+
+function blogRenderFilterOptions() {
+  const filter = document.getElementById('postFilter');
+  // Mevcut seçenekleri sil, sadece "Tümü" kalsın
+  filter.innerHTML = `<option value="">Tümü</option>`;
+  Array.from(blogCategories).sort().forEach(cat => {
+    const opt = document.createElement('option');
+    opt.value = cat;
+    opt.textContent = cat.replace(/^kategori/i, "Kategori ");
+    filter.appendChild(opt);
+  });
+}
+
+function blogRenderPosts() {
+  const list = document.getElementById('postList');
+  const filterValue = document.getElementById('postFilter').value;
+  let filtered = blogPosts.filter(p => !filterValue || p.category === filterValue);
+  filtered.sort((a, b) => new Date(b.date) - new Date(a.date));
+  list.innerHTML = filtered.map((post, idx) => `
+    <div class="row mb-4 post-item ${(idx % 2 === 0) ? 'bg-light' : 'bg-secondary text-white'} p-3 rounded align-items-center">
+      <div class="col-md-3">
+        <a href="${post.url}">
+          <img src="${post.image}" class="img-fluid rounded" alt="${post.title} Görseli">
+        </a>
+      </div>
+      <div class="col-md-9">
+        <a href="${post.url}" class="text-decoration-none ${((idx % 2) ? 'text-white' : 'text-dark')}">
+          <h4>${post.title}</h4>
+          <p>${post.summary}</p>
+          <small>${post.category.replace(/^kategori/i, "Kategori ")} - ${new Date(post.date).toLocaleDateString('tr-TR', {day: '2-digit', month: 'long', year: 'numeric'})}</small>
+        </a>
+      </div>
+    </div>
+  `).join('');
+  // loadMoreBtn gizle
+  const loadMoreBtn = document.getElementById('loadMoreBtn');
+  if (loadMoreBtn) loadMoreBtn.style.display = 'none';
+}
+
+// Eventler:
+document.addEventListener('DOMContentLoaded', () => {
+  // Ana sayfa blog alanı varsa başlat
+  if(document.getElementById('postList')) {
+    blogFetchPosts();
+    document.getElementById('postFilter').addEventListener('change', function() {
+      blogRenderPosts();
     });
   }
 });
