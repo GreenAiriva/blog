@@ -11562,3 +11562,62 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 /* ==== Masthead Butonunu Web ve Mobilde Sağa Yasla ve Optimize Et Sonu ==== */
 
+/* Modern blog post style */
+.blog-article {
+  display: flex;
+  align-items: stretch;
+  margin-bottom: 2.5rem;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: box-shadow .15s;
+  min-height: 170px;
+}
+.blog-article:hover {
+  box-shadow: 0 4px 16px rgba(52,125,61,0.09);
+  background: #fafcfb;
+}
+.blog-img {
+  flex: 0 0 170px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 8px 0 0 8px;
+  margin-right: 0;
+}
+.blog-content {
+  flex: 1 1 0;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.blog-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: .5rem;
+}
+.blog-meta {
+  color: #64bc67;
+  font-size: 0.98rem;
+  font-weight: 600;
+}
+.blog-summary {
+  color: #333;
+  font-size: 1.05rem;
+  margin-bottom: 0.2rem;
+}
+@media (max-width: 768px) {
+  .blog-article {
+    flex-direction: column;
+    min-height: unset;
+  }
+  .blog-img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    height: 180px;
+    margin-bottom: 0.5rem;
+  }
+  .blog-content {
+    padding: 1rem;
+  }
+}
