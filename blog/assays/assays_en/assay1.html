@@ -11,111 +11,17 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
     <link href="../../../css/styles.css" rel="stylesheet" />
     <style>
-        /* Masthead (banner) */
-        .masthead {
-            position: relative;
-            width: 100%;
-            height: 50vh !important;
-            min-height: 240px;
-            background: #222 center center/cover no-repeat;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        .lang-switch {
+            display: inline-block;
+            padding: 5px 10px;
+            margin-left: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-family: 'Montserrat', sans-serif;
             color: #fff;
-            margin-bottom: 2rem;
         }
-        .masthead .masthead-img {
-            position: absolute;
-            inset: 0;
-            width: 100%;
-            height: 100% !important;
-            object-fit: cover;
-            z-index: 1;
-            opacity: 0.45;
-        }
-        .masthead .masthead-content {
-            position: relative;
-            z-index: 2;
-            text-align: center;
-        }
-        /* Article meta info */
-        .assay-meta {
-            display: flex;
-            gap: 1.5rem;
-            flex-wrap: wrap;
-            justify-content: flex-start;
-            margin-bottom: 1.5rem;
-            font-size: 1rem;
-            color: #888;
-        }
-        .assay-meta .assay-date::before {
-            content: "🗓️ ";
-        }
-        .assay-meta .assay-author::before {
-            content: "✍️ ";
-        }
-        .assay-meta .assay-tags {
-            display: flex;
-            gap: 0.5rem;
-        }
-        .assay-meta .assay-tag {
-            background: #f47a29;
-            color: #fff;
-            border-radius: 999px;
-            padding: 0 0.8em;
-            font-size: 0.95em;
-            font-weight: 600;
-            letter-spacing: 0.03em;
-            opacity: 0.85;
-        }
-        /* Article body */
-        .assay-body {
-            max-width: 800px;
-            margin: 0 auto 3rem auto;
-            padding: 0 1.5rem;
-            font-size: 1.13rem;
-            line-height: 1.7;
-        }
-        /* Floated images */
-        .img-float-left {
-            float: left;
-            margin: 0 1.5rem 1rem 0;
-            max-width: 44%;
-            height: auto;
-            border-radius: 12px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-        }
-        .img-float-right {
-            float: right;
-            margin: 0 0 1rem 1.5rem;
-            max-width: 44%;
-            height: auto;
-            border-radius: 12px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-        }
-        /* Responsive images and fix float on mobile */
-        @media (max-width: 768px) {
-            .img-float-left,
-            .img-float-right {
-                float: none;
-                display: block;
-                margin: 1rem auto;
-                max-width: 100%;
-            }
-            .assay-body {
-                font-size: 1.02rem;
-            }
-        }
-        /* Clear floats utility */
-        .clearfix::after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        /* Optional: hashtag hover effect */
-        .assay-tag:hover {
-            background: #d45706;
+        .lang-switch:hover {
+            background-color: #f47a29;
         }
     </style>
 </head>
