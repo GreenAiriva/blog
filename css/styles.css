@@ -11670,3 +11670,38 @@ section#contact form#contactForm :-ms-input-placeholder {
     box-sizing: border-box !important;
   }
 }
+@media (max-width: 768px) {
+  .blog-article {
+    flex-direction: column;
+    min-height: unset;
+    box-shadow: none;
+    border-radius: 10px;
+    border: 1px solid #e3e7e5;
+    margin-bottom: 1.5rem;
+  }
+  .blog-img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    height: 135px;
+    margin-bottom: 0.5rem;
+    object-fit: cover;
+  }
+  .blog-content {
+    padding: 0.8rem 1rem;
+    text-align: left;
+  }
+  .blog-title {
+    font-size: 1.1rem;
+    margin-bottom: .3rem;
+  }
+  .blog-meta {
+    font-size: 0.93rem;
+    color: #38c172 !important;
+    margin-bottom: .1rem;
+    display: block;
+  }
+  .blog-summary {
+    font-size: 0.96rem;
+    margin-bottom: 0.1rem;
+  }
+}
