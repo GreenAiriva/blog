@@ -11705,3 +11705,94 @@ section#contact form#contactForm :-ms-input-placeholder {
     margin-bottom: 0.1rem;
   }
 }
+/* === Masthead Responsive Düzeltme === */
+@media (max-width: 767px) {
+  header.masthead {
+    height: 46vh !important;
+    min-height: 220px !important;
+    padding-top: 44px !important;
+    padding-bottom: 16px !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+  }
+  header.masthead .masthead-heading {
+    font-size: 2rem !important;
+    line-height: 2.2rem !important;
+    margin-top: 0.7rem !important;
+    margin-bottom: 0.7rem !important;
+  }
+  header.masthead .masthead-subheading-script {
+    font-size: 2.6rem !important;
+    line-height: 2.5rem !important;
+    margin-bottom: 0.5rem !important;
+    margin-top: 0rem !important;
+  }
+  header.masthead .masthead-btn-row {
+    margin-top: 1.3rem;
+    margin-bottom: 0.6rem;
+    width: 100%;
+  }
+  header.masthead .masthead-btn-row .btn {
+    width: 100%;
+    min-width: 0;
+    font-size: 1rem;
+    padding: 12px 0;
+  }
+  header.masthead .container {
+    margin-top: 0;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    text-align: left !important;
+    display: block;
+  }
+}
+
+/* === Blog Main Mobile Card Responsive === */
+@media (max-width: 767px) {
+  .blog-article {
+    display: flex !important;
+    flex-direction: column !important;
+    min-height: unset !important;
+    box-shadow: none !important;
+    border-radius: 10px !important;
+    border: 1px solid #e3e7e5 !important;
+    margin-bottom: 1.5rem !important;
+    overflow: hidden;
+  }
+  .blog-img {
+    width: 100% !important;
+    border-radius: 10px 10px 0 0 !important;
+    height: 135px !important;
+    margin-bottom: 0.5rem !important;
+    object-fit: cover !important;
+    min-height: 80px;
+    max-height: 180px;
+  }
+  .blog-content {
+    padding: 0.8rem 1rem !important;
+    text-align: left !important;
+  }
+  .blog-title {
+    font-size: 1.1rem !important;
+    margin-bottom: .3rem !important;
+    font-weight: 700;
+  }
+  .blog-meta {
+    font-size: 0.93rem !important;
+    color: #38c172 !important;
+    margin-bottom: .1rem !important;
+    display: block !important;
+    font-weight: 600;
+    background: #eafbf1;
+    padding: 0.12rem 0.4rem;
+    border-radius: 6px;
+    width: fit-content;
+    margin-top: 0.1rem;
+    margin-bottom: 0.3rem;
+  }
+  .blog-summary {
+    font-size: 0.96rem !important;
+    margin-bottom: 0.1rem !important;
+    color: #444;
+  }
+}
