@@ -11621,3 +11621,11 @@ section#contact form#contactForm :-ms-input-placeholder {
     padding: 1rem;
   }
 }
+@media (max-width: 767px) {
+  section#contact {
+    min-height: 320px !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+  }
+}
