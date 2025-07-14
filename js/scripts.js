@@ -115,70 +115,70 @@ document.querySelectorAll('.navbar-nav .nav-link, .navbar-nav .dropdown-item').f
 
 // ==== DİNAMİK BLOG LİSTELEME SİSTEMİ ====
 // Not: JSON dosyanın yolunu aşağıda gerekirse değiştir (örn: '/data/posts.json' veya 'posts.json')
-const BLOG_JSON_PATH = 'posts.json';
-
+const BLOG_JSON_PATH = 'posts.json'; // veya yoluna göre değiştir
+const BLOG_POSTS_PER_PAGE = 6;
 let blogPosts = [];
 let blogCategories = new Set();
+let blogVisibleCount = BLOG_POSTS_PER_PAGE;
 
 async function blogFetchPosts() {
   try {
     const res = await fetch(BLOG_JSON_PATH);
     blogPosts = await res.json();
-
-    // Kategorileri bul
     blogCategories = new Set(blogPosts.map(p => p.category));
     blogRenderFilterOptions();
     blogRenderPosts();
   } catch (e) {
-    document.getElementById('postList').innerHTML = `<div class="alert alert-danger">Blog içerikleri yüklenemedi.</div>`;
+    document.getElementById('postList').innerHTML =
+      `<div class="alert alert-danger">Blog içerikleri yüklenemedi.</div>`;
   }
 }
-
 function blogRenderFilterOptions() {
   const filter = document.getElementById('postFilter');
-  // Mevcut seçenekleri sil, sadece "Tümü" kalsın
-  filter.innerHTML = `<option value="">Tümü</option>`;
+  filter.innerHTML = `<option value="">All Categories</option>`;
   Array.from(blogCategories).sort().forEach(cat => {
     const opt = document.createElement('option');
     opt.value = cat;
-    opt.textContent = cat.replace(/^kategori/i, "Kategori ");
+    opt.textContent = cat.charAt(0).toUpperCase() + cat.slice(1);
     filter.appendChild(opt);
   });
 }
-
 function blogRenderPosts() {
   const list = document.getElementById('postList');
   const filterValue = document.getElementById('postFilter').value;
   let filtered = blogPosts.filter(p => !filterValue || p.category === filterValue);
   filtered.sort((a, b) => new Date(b.date) - new Date(a.date));
-  list.innerHTML = filtered.map((post, idx) => `
-    <div class="row mb-4 post-item ${(idx % 2 === 0) ? 'bg-light' : 'bg-secondary text-white'} p-3 rounded align-items-center">
-      <div class="col-md-3">
-        <a href="${post.url}">
-          <img src="${post.image}" class="img-fluid rounded" alt="${post.title} Görseli">
-        </a>
+  const postsToShow = filtered.slice(0, blogVisibleCount);
+  list.innerHTML = postsToShow.map(post => `
+    <article class="blog-article" onclick="window.location.href='${post.url}'" tabindex="0">
+      <img src="${post.image}" alt="${post.title}" class="blog-img" />
+      <div class="blog-content">
+        <div class="blog-title">${post.title}</div>
+        <div class="blog-meta">${post.category} &bull; ${new Date(post.date).toLocaleDateString('tr-TR', {day:'2-digit',month:'long',year:'numeric'})}</div>
+        <div class="blog-summary">${post.summary}</div>
       </div>
-      <div class="col-md-9">
-        <a href="${post.url}" class="text-decoration-none ${((idx % 2) ? 'text-white' : 'text-dark')}">
-          <h4>${post.title}</h4>
-          <p>${post.summary}</p>
-          <small>${post.category.replace(/^kategori/i, "Kategori ")} - ${new Date(post.date).toLocaleDateString('tr-TR', {day: '2-digit', month: 'long', year: 'numeric'})}</small>
-        </a>
-      </div>
-    </div>
+    </article>
   `).join('');
-  // loadMoreBtn gizle
+  // Buton yönetimi
   const loadMoreBtn = document.getElementById('loadMoreBtn');
-  if (loadMoreBtn) loadMoreBtn.style.display = 'none';
+  if (filtered.length > blogVisibleCount) {
+    loadMoreBtn.style.display = '';
+  } else {
+    loadMoreBtn.style.display = 'none';
+  }
 }
-
-// Eventler:
+// Eventler
 document.addEventListener('DOMContentLoaded', () => {
-  // Ana sayfa blog alanı varsa başlat
   if(document.getElementById('postList')) {
     blogFetchPosts();
     document.getElementById('postFilter').addEventListener('change', function() {
+      blogVisibleCount = BLOG_POSTS_PER_PAGE;
+      blogRenderPosts();
+    });
+    document.getElementById('loadMoreBtn').addEventListener('click', function() {
+      blogVisibleCount += BLOG_POSTS_PER_PAGE;
       blogRenderPosts();
     });
   }
 });
+
