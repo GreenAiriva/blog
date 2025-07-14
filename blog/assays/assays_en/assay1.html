@@ -3,25 +3,119 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="GreenAiriva About Page - Learn about our journey and mission." />
+    <meta name="description" content="GreenAiriva Blog Article" />
     <meta name="author" content="GreenAiriva" />
-    <title>GreenAiriva – About</title>
+    <title>GreenAiriva – Assay Title</title>
     <link rel="icon" type="image/x-icon" href="../../../assets/favicon.svg" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
     <link href="../../../css/styles.css" rel="stylesheet" />
     <style>
-        .lang-switch {
-            display: inline-block;
-            padding: 5px 10px;
-            margin-left: 10px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-            font-family: 'Montserrat', sans-serif;
+        /* Masthead (banner) */
+        .masthead {
+            position: relative;
+            width: 100%;
+            height: 50vh;
+            min-height: 240px;
+            background: #222 center center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             color: #fff;
+            margin-bottom: 2rem;
         }
-        .lang-switch:hover {
-            background-color: #f47a29;
+        .masthead .masthead-img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+            opacity: 0.45;
+        }
+        .masthead .masthead-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+        /* Article meta info */
+        .assay-meta {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+            color: #888;
+        }
+        .assay-meta .assay-date::before {
+            content: "🗓️ ";
+        }
+        .assay-meta .assay-author::before {
+            content: "✍️ ";
+        }
+        .assay-meta .assay-tags {
+            display: flex;
+            gap: 0.5rem;
+        }
+        .assay-meta .assay-tag {
+            background: #f47a29;
+            color: #fff;
+            border-radius: 999px;
+            padding: 0 0.8em;
+            font-size: 0.95em;
+            font-weight: 600;
+            letter-spacing: 0.03em;
+            opacity: 0.85;
+        }
+        /* Article body */
+        .assay-body {
+            max-width: 800px;
+            margin: 0 auto 3rem auto;
+            padding: 0 1.5rem;
+            font-size: 1.13rem;
+            line-height: 1.7;
+        }
+        /* Floated images */
+        .img-float-left {
+            float: left;
+            margin: 0 1.5rem 1rem 0;
+            max-width: 44%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        }
+        .img-float-right {
+            float: right;
+            margin: 0 0 1rem 1.5rem;
+            max-width: 44%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        }
+        /* Responsive images and fix float on mobile */
+        @media (max-width: 768px) {
+            .img-float-left,
+            .img-float-right {
+                float: none;
+                display: block;
+                margin: 1rem auto;
+                max-width: 100%;
+            }
+            .assay-body {
+                font-size: 1.02rem;
+            }
+        }
+        /* Clear floats utility */
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Optional: hashtag hover effect */
+        .assay-tag:hover {
+            background: #d45706;
         }
     </style>
 </head>
@@ -65,161 +159,50 @@
             </div>
         </div>
     </nav>
-    <!-- About Us -->
-    <section class="page-section" id="about">
+
+        <!-- Masthead Section (Banner) -->
+    <header class="masthead">
+        <img class="masthead-img" src="../../../assets/img/blog/masthead-sample.jpg" alt="Main Visual">
+        <div class="masthead-content">
+            <h1 class="display-5 fw-bold">Assay Main Title Goes Here</h1>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
         <div class="container">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">Who We Are</h2>
-                <h3 class="section-subheading text-muted">
-GreenAiriva works to improve urban air quality, protect public health, and make concrete, measurable contributions to the fight against climate change. We set a new standard in sustainable urbanism with data-driven technologies.
-                </h3>
+            <!-- Meta info -->
+            <div class="assay-meta">
+                <span class="assay-date">14 July 2025</span>
+                <span class="assay-author">GreenAiriva Team</span>
+                <span class="assay-tags">
+                    <span class="assay-tag">#Climate</span>
+                    <span class="assay-tag">#Innovation</span>
+                    <span class="assay-tag">#UrbanAir</span>
+                </span>
             </div>
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <span class="service-img-wrap" style="display:inline-block; width:144px; height:144px; margin-bottom:20px;">
-                        <img src="../assets/img/Solution/SDG-3.jpg" alt="Good Health and Well-Being image" style="max-width:100%; max-height:100%;">
-                    </span>
-                    <h4 class="my-3">Good Health & Well-Being</h4>
-                    <p class="text-muted">We create healthier communities in cities by removing an average of 360 kg of particulate matter (PM) per device each year.</p>
-                </div>
-                <div class="col-md-4">
-                    <span class="service-img-wrap" style="display:inline-block; width:144px; height:144px; margin-bottom:20px;">
-                        <img src="../assets/img/Solution/SDG-11.jpg" alt="Sustainable Cities and Communities image" style="max-width:100%; max-height:100%;">
-                    </span>
-                    <h4 class="my-3">Sustainable Cities & Communities</h4>
-                    <p class="text-muted">We model cities with our sensor network and lead more sustainable urban transformation through real-time air quality and data analytics.</p>
-                </div>
-                <div class="col-md-4">
-                    <span class="service-img-wrap" style="display:inline-block; width:144px; height:144px; margin-bottom:20px;">
-                        <img src="../assets/img/Solution/SDG-13.jpg" alt="Climate Action image" style="max-width:100%; max-height:100%;">
-                    </span>
-                    <h4 class="my-3">Climate Action</h4>
-                    <p class="text-muted">Each of our devices directly captures a minimum of 5 and up to 30 tons of CO<sub>2</sub>e emissions annually, making a concrete contribution to climate action.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-<!-- VISION -->
-<section class="page-section bg-light" id="vision">
-    <div class="container">
-        <div class="row align-items-center">
-            <!-- Yazı solda (webde), görsel sağda (webde) -->
-            <div class="col-12 col-md-6 order-2 order-md-1 text-center text-md-start mb-4 mb-md-0">
-                <h2 class="section-heading text-uppercase">Vision</h2>
-                <p style="text-align:justify;">
-Our vision at GreenAiriva is to take concrete and measurable steps for healthier, more livable, and sustainable cities, leading the way in environmental health and the fight against climate change. With our technology that directly contributes to SDG-3, SDG-11, and SDG-13, we reduce air pollution and greenhouse gas emissions, protecting public health. Our dream is to pioneer the world’s first zero-carbon-footprint operations and production processes, setting a new global standard for sustainability.
-                </p>
-            </div>
-            <div class="col-12 col-md-6 order-1 order-md-2 text-center d-flex align-items-center justify-content-center mb-4 mb-md-0">
-                <img src="../assets/img/about/Adsız tasarım (1).png" alt="Vision" class="img-fluid shadow" style="max-width:480px; width:100%; height:auto;">
-            </div>
-        </div>
-    </div>
-</section>
-<!-- MISSION -->
-<section class="page-section bg-white" id="mission">
-    <div class="container">
-        <div class="row align-items-center">
-            <!-- Görsel solda (webde), üstte (mobilde) -->
-            <div class="col-12 col-md-6 order-1 order-md-1 text-center d-flex align-items-center justify-content-center mb-4 mb-md-0">
-                <img src="../assets/img/about/Adsız tasarım (2).png" alt="Mission" class="img-fluid shadow" style="max-width:480px; width:100%; height:auto;">
-            </div>
-            <div class="col-12 col-md-6 order-2 order-md-2 text-center text-md-start mb-4 mb-md-0">
-                <h2 class="section-heading text-uppercase">Mission</h2>
-                <p style="text-align:justify;">
-Our mission at GreenAiriva is to improve urban air quality and protect public health by offering innovative, science-based solutions that effectively capture harmful particles and greenhouse gases.<br><br>
-We are committed to supporting sustainable urban transformation by integrating advanced technology, data, and community engagement. By prioritizing measurable environmental outcomes, we aim to empower cities and organizations to reach climate targets, enhance quality of life, and promote a culture of sustainability.<br><br>
-Through continuous innovation, transparency, and collaboration, we strive to set new standards in clean air technologies and become a trusted partner for sustainable progress worldwide.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Neden GreenAiriva? -->
-<section class="page-section bg-light" id="whyus">
-    <div class="container">
-        <div class="row align-items-center">
-            <!-- Yazı solda (webde), altta (mobilde) -->
-            <div class="col-12 col-md-6 order-2 order-md-1 mb-4 mb-md-0">
-                <h2 class="section-heading text-uppercase">Why GreenAiriva?</h2>
-                <ul style="list-style-type: none; padding-left: 0; margin-bottom: 0; text-align: justify;">
-                    <li><b>Innovative Technology:</b> We go beyond traditional Direct Air Capture (DAC) methods, offering a low-energy, physical adsorption-based solution.</li>
-                    <li><b>Real-Time Monitoring:</b> We enable smart city integration with instant air quality analytics.</li>
-                    <li><b>Economic & Eco-Friendly:</b> We create economic value for our clients through carbon credit generation, sustainability reporting, and commercialization of captured pollutants.</li>
-                    <li><b>Global Vision:</b> Fully aligned with the EU Green Deal and the 2050 Net Zero Emissions goal, GreenAiriva is scalable from Turkey to the world.</li>
-                </ul>
-            </div>
-            <!-- Görsel sağda (webde), üstte (mobilde) -->
-            <div class="col-12 col-md-6 order-1 order-md-2 text-center d-flex align-items-center justify-content-center mb-4 mb-md-0">
-                <img src="../../../assets/img/about/Adsız tasarım (4).png" alt="Team" class="img-fluid shadow" style="max-width:480px; width:100%; height:auto;">
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Sosyal ve Çevresel katkı -->
-<section class="page-section bg-white" id="contribution">
-    <div class="container">
-        <div class="row align-items-center">
-            <!-- Görsel solda (webde), üstte (mobilde) -->
-            <div class="col-12 col-md-6 order-1 order-md-1 text-center d-flex align-items-center justify-content-center mb-4 mb-md-0">
-                <img src="../../../assets/img/about/Adsız tasarım (3).png" alt="Join Us" class="img-fluid shadow" style="max-width:480px; width:100%; height:auto;">
-            </div>
-            <div class="col-12 col-md-6 order-2 order-md-2 text-center text-md-start mb-4 mb-md-0">
-                <h2 class="section-heading text-uppercase">Social and Environmental Contribution</h2>
-                <p style="text-align:justify;">
-GreenAiriva operates year-round with nearly all its energy supplied by solar power, achieving an almost zero carbon footprint. Its filtration technology causes no additional environmental harm, and all components are highly durable. In terms of cost-effectiveness and climate benefit, GreenAiriva outperforms current greenhouse gas reduction alternatives, delivering 2–4 times greater impact than converting a CNG bus to electric. This makes it a sustainable, economical, and eco-friendly solution.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
 
-    
-    <!-- Takım -->
-    <!--
-<section class="page-section bg-light" id="team">
-    <div class="container">
-        <div class="row align-items-center">
-    -->
-            <!-- Yazı Kısmı -->
-    <!--
-            <div class="col-12 col-md-6 order-2 order-md-1 mb-4 mb-md-0">
-                <h2 class="section-heading text-uppercase">Our Team</h2>
-                <ul style="list-style-type: none; padding-left: 0; margin-bottom: 0; text-align: justify;">
-                    <li><b>Belediyeler & Yerel Yönetimler: </b> Hava kalitesi yönetimini üst seviyeye taşıyıp, iklim hedeflerine ulaşmak isteyen kamu kurumları.</li>
-                    <li><b>Sanayi Bölgeleri & Fabrikalar:</b> Yasal düzenlemelere uyum, sürdürülebilirlik raporlaması ve karbon ayak izini azaltmak isteyen endüstriyel aktörler.</li>
-                    <li><b>Akademik ve Araştırma Kurumları: </b>  Düşük maliyetli, yüksek hassasiyetli veri ile akademik çalışmalar ve çevresel analizler.</li>
-            </div>
-    -->
-            <!-- Görsel Kısmı -->
-    <!--   
-    <div class="col-12 col-md-6 order-1 order-md-2 text-center d-flex align-items-center justify-content-center mb-4 mb-md-0">
-                <img src="../../../assets/img/about/Adsız tasarım (1).png" alt="Team" class="img-fluid rounded shadow" style="max-width:480px; width:100%; height:auto;">
-            </div>
+            <!-- Article Body -->
+            <article class="assay-body clearfix">
+                <p>
+                    <img src="../../../assets/img/blog/sample-left.jpg" alt="Sample Left Visual" class="img-float-left" style="width: 32%;">
+                    This is an example paragraph of your assay. You can include images floated left or right using the <code>.img-float-left</code> or <code>.img-float-right</code> classes, and adjust their width inline as needed. This paragraph showcases a left-aligned image.
+                </p>
+                <p>
+                    More content can continue here, wrapping around the floated image. To clear floats and start a new section, just add <code>&lt;div class="clearfix"&gt;&lt;/div&gt;</code>.
+                </p>
+                <div class="clearfix"></div>
+                <p>
+                    <img src="../../../assets/img/blog/sample-right.jpg" alt="Sample Right Visual" class="img-float-right" style="width: 36%;">
+                    This paragraph has a right-aligned image. You may set the image width or height inline for each image, as needed for your content. For full-width images, just use a plain <code>&lt;img&gt;</code> without float classes.
+                </p>
+                <p>
+                    The rest of your article content comes here. You can freely mix text, floated images, and clear sections for flexible layouts.
+                </p>
+                <!-- More content and images as needed -->
+            </article>
         </div>
-    </div>
-</section>
--->
-
-    <!-- Katıl -->
-<!--    <section class="page-section bg-white" id="join">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-12 col-md-6 text-center mb-4 mb-md-0">
-                    <img src="../../../assets/img/about/Adsız tasarım (1).png" alt="Join Us" class="img-fluid rounded shadow" style="max-width:480px; width:100%; height:auto; margin:auto; display:block;">
-                </div>
-                <div class="col-12 col-md-6 text-center text-md-start">
-                    <h2 class="section-heading text-uppercase">Join Us</h2>
-                    <p style="text-align:justify;">
-                        Daha temiz, yaşanabilir ve sürdürülebilir şehirler için bizimle iş birliği yapmak veya ekibimize katılmak isterseniz iletişim sayfamızdan bize ulaşabilirsiniz.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    -->
-
-    
+    </main>
     <!-- Contact -->
     <section class="page-section" id="contact">
         <div class="container">
