@@ -111,3 +111,50 @@ document.querySelectorAll('.navbar-nav .nav-link, .navbar-nav .dropdown-item').f
     }
   });
 });
+// === Blog Listesinde "Daha Fazla İçerik" ve Filtreleme ===
+document.addEventListener('DOMContentLoaded', function () {
+  // Daha fazla içerik fonksiyonu
+  let postCount = 6;
+  const loadMoreBtn = document.getElementById('loadMoreBtn');
+  const postList = document.getElementById('postList');
+  if (loadMoreBtn && postList) {
+    loadMoreBtn.addEventListener('click', function () {
+      for (let i = 1; i <= 3; i++) {
+        postCount++;
+        const bg = (postCount % 2 === 1) ? 'bg-light' : 'bg-secondary text-white';
+        const post = document.createElement('div');
+        post.className = `row mb-4 post-item ${bg} p-3 rounded align-items-center`;
+        post.innerHTML = `
+          <div class="col-md-3">
+            <a href="/blog/assays/assays_tr/assay${postCount}/index.html">
+              <img src="assets/img/blog${postCount}.jpg" class="img-fluid rounded" alt="Post ${postCount} Görseli">
+            </a>
+          </div>
+          <div class="col-md-9">
+            <a href="/blog/assays/assays_tr/assay${postCount}/index.html" class="text-decoration-none ${bg.includes('secondary') ? 'text-white' : 'text-dark'}">
+              <h4>Assay ${postCount} Başlık</h4>
+              <p>Kısa özet veya giriş cümlesi burada olacak.</p>
+              <small>Kategori ${((postCount - 1) % 2) + 1} - 2025</small>
+            </a>
+          </div>
+        `;
+        postList.appendChild(post);
+      }
+    });
+  }
+
+  // Filtreleme fonksiyonu (kategoriye göre)
+  const postFilter = document.getElementById('postFilter');
+  if (postFilter && postList) {
+    postFilter.addEventListener('change', function () {
+      const selected = this.value;
+      document.querySelectorAll('#postList .post-item').forEach(post => {
+        if (!selected || post.innerHTML.includes(selected)) {
+          post.style.display = '';
+        } else {
+          post.style.display = 'none';
+        }
+      });
+    });
+  }
+});
