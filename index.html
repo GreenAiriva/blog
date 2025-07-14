@@ -64,185 +64,40 @@
             </div>
         </div>
     </nav>
-    <!-- Masthead -->
-    <header class="masthead">
-        <div class="container">
-            <div class="masthead-heading">Rise<br>for a</div>
-            <div class="masthead-subheading-script">Cleaner</div>
-            <div class="masthead-heading">Planet</div>
-          <div class="masthead-btn-row">
+<!-- Masthead -->
+<header class="masthead" style="height:50vh; min-height:350px; display:flex; align-items:center;">
+    <div class="container">
+        <div class="masthead-heading">Rise<br>for a</div>
+        <div class="masthead-subheading-script">Cleaner</div>
+        <div class="masthead-heading">Planet</div>
+        <div class="masthead-btn-row">
             <a class="btn btn-primary btn-xl text-uppercase" href="https://www.greenairiva.com.tr/about/#about">Discover Our Solutions</a>
         </div>
-    </header>
+    </div>
+</header>
 
-<!-- Main -->
-<div class="container mt-5">
-  <div class="row align-items-center mb-3">
-    <div class="col">
-      <h2 class="mb-0">Son Yazılar</h2>
+<!-- Blog Main -->
+<main class="container my-5">
+    <div class="row align-items-center mb-4">
+        <div class="col">
+            <h2 class="mb-0">Latest Blog Posts</h2>
+        </div>
+        <div class="col-auto">
+            <select class="form-select" id="postFilter" style="min-width:180px;">
+                <option value="">All Categories</option>
+            </select>
+        </div>
     </div>
-    <div class="col-auto">
-      <!-- Filtreleme Dropdown'u -->
-      <select class="form-select" id="postFilter" style="min-width: 180px;">
-        <option value="">Tümü</option>
-        <option value="kategori1">Kategori 1</option>
-        <option value="kategori2">Kategori 2</option>
-        <!-- Gerekirse kategori ekleyin -->
-      </select>
-    </div>
-  </div>
 
-  <div id="postList">
-    <!-- Post örneği, arka plan tek/çift için .bg-light/.bg-secondary -->
-    <div class="row mb-4 post-item bg-light p-3 rounded align-items-center">
-      <div class="col-md-3">
-        <a href="blog/assays/assays_en/assay1.html">
-          <img src="assets/img/blog/1.jpg" class="img-fluid rounded" alt="Post 1 Görseli">
-        </a>
-      </div>
-      <div class="col-md-9">
-        <a href="blog/assays/assays_en/assay1.html" class="text-decoration-none text-dark">
-          <h4>Sera Gazlarının Sosyal Maliyeti ve Dünya için Önemi: EPA SC-GHG Raporu</h4>
-          <p>Sera gazlarının sosyal maliyeti, atmosfere salınan gazların gelecekte yaratacağı çevresel ve ekonomik zararların bugünkü parasal değeridir. Bu çalışma, EPA'nın 2023 SC-GHG raporunu temel alarak, Türkiye özelinde Ankara ili için bir hesaplama sunmakta ve GreenAiriva’nın yenilikçi çözümleriyle sosyal maliyet azaltımına katkılarını analiz etmektedir.
-</p>
-          <small>Kategori 1 - 14 Temmuz 2025</small>
-        </a>
-      </div>
-    </div>
-	  
-    <div class="row mb-4 post-item bg-secondary text-white p-3 rounded align-items-center">
-      <div class="col-md-3">
-        <a href="/blog/assays/assays_tr/assay2/index.html">
-          <img src="assets/img/blog2.jpg" class="img-fluid rounded" alt="Post 2 Görseli">
-        </a>
-      </div>
-      <div class="col-md-9">
-        <a href="/blog/assays/assays_tr/assay2/index.html" class="text-decoration-none text-white">
-          <h4>Assay 2 Başlık</h4>
-          <p>Kısa özet veya giriş cümlesi burada olacak.</p>
-          <small>Kategori 2 - 10 Temmuz 2025</small>
-        </a>
-      </div>
-    </div>    
-    <div class="row mb-4 post-item bg-light p-3 rounded align-items-center">
-      <div class="col-md-3">
-        <a href="/blog/assays/assays_tr/assay1/index.html">
-          <img src="assets/img/blog1.jpg" class="img-fluid rounded" alt="Post 1 Görseli">
-        </a>
-      </div>
-      <div class="col-md-9">
-        <a href="/blog/assays/assays_tr/assay1/index.html" class="text-decoration-none text-dark">
-          <h4>Assay 1 Başlık</h4>
-          <p>Kısa özet veya giriş cümlesi burada olacak.</p>
-          <small>Kategori 1 - 14 Temmuz 2025</small>
-        </a>
-      </div>
-    </div>
-    <div class="row mb-4 post-item bg-secondary text-white p-3 rounded align-items-center">
-      <div class="col-md-3">
-        <a href="/blog/assays/assays_tr/assay2/index.html">
-          <img src="assets/img/blog2.jpg" class="img-fluid rounded" alt="Post 2 Görseli">
-        </a>
-      </div>
-      <div class="col-md-9">
-        <a href="/blog/assays/assays_tr/assay2/index.html" class="text-decoration-none text-white">
-          <h4>Assay 2 Başlık</h4>
-          <p>Kısa özet veya giriş cümlesi burada olacak.</p>
-          <small>Kategori 2 - 10 Temmuz 2025</small>
-        </a>
-      </div>
-    </div>
-    <div class="row mb-4 post-item bg-light p-3 rounded align-items-center">
-      <div class="col-md-3">
-        <a href="/blog/assays/assays_tr/assay1/index.html">
-          <img src="assets/img/blog1.jpg" class="img-fluid rounded" alt="Post 1 Görseli">
-        </a>
-      </div>
-      <div class="col-md-9">
-        <a href="/blog/assays/assays_tr/assay1/index.html" class="text-decoration-none text-dark">
-          <h4>Assay 1 Başlık</h4>
-          <p>Kısa özet veya giriş cümlesi burada olacak.</p>
-          <small>Kategori 1 - 14 Temmuz 2025</small>
-        </a>
-      </div>
-    </div>
-    <div class="row mb-4 post-item bg-secondary text-white p-3 rounded align-items-center">
-      <div class="col-md-3">
-        <a href="/blog/assays/assays_tr/assay2/index.html">
-          <img src="assets/img/blog2.jpg" class="img-fluid rounded" alt="Post 2 Görseli">
-        </a>
-      </div>
-      <div class="col-md-9">
-        <a href="/blog/assays/assays_tr/assay2/index.html" class="text-decoration-none text-white">
-          <h4>Assay 2 Başlık</h4>
-          <p>Kısa özet veya giriş cümlesi burada olacak.</p>
-          <small>Kategori 2 - 10 Temmuz 2025</small>
-        </a>
-      </div>
-    </div>
-    <div class="row mb-4 post-item bg-light p-3 rounded align-items-center">
-      <div class="col-md-3">
-        <a href="/blog/assays/assays_tr/assay1/index.html">
-          <img src="assets/img/blog1.jpg" class="img-fluid rounded" alt="Post 1 Görseli">
-        </a>
-      </div>
-      <div class="col-md-9">
-        <a href="/blog/assays/assays_tr/assay1/index.html" class="text-decoration-none text-dark">
-          <h4>Assay 1 Başlık</h4>
-          <p>Kısa özet veya giriş cümlesi burada olacak.</p>
-          <small>Kategori 1 - 14 Temmuz 2025</small>
-        </a>
-      </div>
-    </div>
-    <div class="row mb-4 post-item bg-secondary text-white p-3 rounded align-items-center">
-      <div class="col-md-3">
-        <a href="/blog/assays/assays_tr/assay2/index.html">
-          <img src="assets/img/blog2.jpg" class="img-fluid rounded" alt="Post 2 Görseli">
-        </a>
-      </div>
-      <div class="col-md-9">
-        <a href="/blog/assays/assays_tr/assay2/index.html" class="text-decoration-none text-white">
-          <h4>Assay 2 Başlık</h4>
-          <p>Kısa özet veya giriş cümlesi burada olacak.</p>
-          <small>Kategori 2 - 10 Temmuz 2025</small>
-        </a>
-      </div>
-    </div>
-    <div class="row mb-4 post-item bg-light p-3 rounded align-items-center">
-      <div class="col-md-3">
-        <a href="/blog/assays/assays_tr/assay1/index.html">
-          <img src="assets/img/blog1.jpg" class="img-fluid rounded" alt="Post 1 Görseli">
-        </a>
-      </div>
-      <div class="col-md-9">
-        <a href="/blog/assays/assays_tr/assay1/index.html" class="text-decoration-none text-dark">
-          <h4>Assay 1 Başlık</h4>
-          <p>Kısa özet veya giriş cümlesi burada olacak.</p>
-          <small>Kategori 1 - 14 Temmuz 2025</small>
-        </a>
-      </div>
-    </div>
-    <div class="row mb-4 post-item bg-secondary text-white p-3 rounded align-items-center">
-      <div class="col-md-3">
-        <a href="/blog/assays/assays_tr/assay2/index.html">
-          <img src="assets/img/blog2.jpg" class="img-fluid rounded" alt="Post 2 Görseli">
-        </a>
-      </div>
-      <div class="col-md-9">
-        <a href="/blog/assays/assays_tr/assay2/index.html" class="text-decoration-none text-white">
-          <h4>Assay 2 Başlık</h4>
-          <p>Kısa özet veya giriş cümlesi burada olacak.</p>
-          <small>Kategori 2 - 10 Temmuz 2025</small>
-        </a>
-      </div>
-    </div>
-    <!-- 4 tane daha, arka planı tek/çift sıralayarak aynı şekilde eklenmeli -->
-  </div>
+    <div id="postList"></div>
 
-  <div class="text-center my-4">
-    <button class="btn btn-outline-success" id="loadMoreBtn">Daha fazla içerik</button>
-  </div>
-</div>
+    <div class="text-center my-4">
+        <button class="btn btn-success btn-lg px-5 py-2" id="loadMoreBtn" style="display:none;">
+            <span class="fw-semibold">Load More</span>
+            <i class="fas fa-angle-down ms-2"></i>
+        </button>
+    </div>
+</main>
 
    <!-- Contact-->
 <section class="page-section" id="contact">
