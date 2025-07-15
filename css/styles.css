@@ -11066,6 +11066,41 @@ header.masthead .container {
     max-width: 97vw;
   }
 }
+/*===Masthead Article===*/
+.article-masthead {
+  position: relative;
+  background-color: #212529;
+}
+.article-masthead-info {
+  background: rgba(0,0,0,0.4);
+  padding: 2rem 1rem 1.3rem 1rem;
+  border-radius: 0 0 24px 24px;
+  max-width: 600px;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+.article-masthead-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 1.2rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+@media (max-width: 767px) {
+  .article-masthead {
+    height: 36vh;
+    min-height: 180px;
+  }
+  .article-masthead-info {
+    padding: 1.3rem 0.7rem 0.9rem 0.7rem;
+    max-width: 100%;
+    border-radius: 0 0 12px 12px;
+  }
+  .article-masthead-title {
+    font-size: 1.25rem;
+  }
+}
 
 /* ==== Masthead Butonunu Web ve Mobilde Sağa Yasla ve Optimize Et Sonu ==== */
  /* Masthead*/
