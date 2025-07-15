@@ -1,5 +1,6 @@
 [
   {
+    "slug": "2025-07-14-social-cost-ghg",  // Benzersiz, İngilizce karakterli, kısa ve başlığa uygun!
     "title": "Social Cost of Greenhouse Gases: EPA SC-GHG Report",
     "date": "2025-07-14",
     "category": "category1",
@@ -8,6 +9,7 @@
     "url": "blog/assays/assays_en/assay1.html"
   },
   {
+    "slug": "2025-07-10-hava-kalitesi-greenairiva",
     "title": "Hava Kalitesi Ölçümleri ve GreenAiriva Çözümleri",
     "date": "2025-07-10",
     "category": "kategori2",
