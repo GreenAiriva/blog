@@ -125,7 +125,16 @@ async function blogFetchPosts() {
   try {
     const res = await fetch(BLOG_JSON_PATH);
     blogPosts = await res.json();
-    blogCategories = new Set(blogPosts.map(p => p.category));
+    // Tüm yazılardaki tüm kategorileri bir diziye topla (tekil)
+    let allCats = [];
+    blogPosts.forEach(p => {
+      if (Array.isArray(p.category)) {
+        allCats = allCats.concat(p.category);
+      } else if (p.category) {
+        allCats.push(p.category);
+      }
+    });
+    blogCategories = new Set(allCats);
     blogRenderFilterOptions();
     blogRenderPosts();
   } catch (e) {
@@ -133,6 +142,7 @@ async function blogFetchPosts() {
       `<div class="alert alert-danger">Blog içerikleri yüklenemedi.</div>`;
   }
 }
+
 function blogRenderFilterOptions() {
   const filter = document.getElementById('postFilter');
   filter.innerHTML = `<option value="">All Categories</option>`;
@@ -143,18 +153,31 @@ function blogRenderFilterOptions() {
     filter.appendChild(opt);
   });
 }
+
 function blogRenderPosts() {
   const list = document.getElementById('postList');
   const filterValue = document.getElementById('postFilter').value;
-  let filtered = blogPosts.filter(p => !filterValue || p.category === filterValue);
+  let filtered = blogPosts.filter(p => {
+    if (Array.isArray(p.category)) {
+      // Eğer çoklu kategori varsa, herhangi biri filtreyle eşleşiyorsa göster
+      return !filterValue || p.category.includes(filterValue);
+    } else {
+      // Tek kategori ise
+      return !filterValue || p.category === filterValue;
+    }
+  });
   filtered.sort((a, b) => new Date(b.date) - new Date(a.date));
   const postsToShow = filtered.slice(0, blogVisibleCount);
   list.innerHTML = postsToShow.map(post => `
-<article class="blog-article" onclick="window.location.href='article.html?slug=${post.slug}'" tabindex="0">
+    <article class="blog-article" onclick="window.location.href='article.html?slug=${post.slug}'" tabindex="0">
       <img src="${post.image}" alt="${post.title}" class="blog-img" />
       <div class="blog-content">
         <div class="blog-title">${post.title}</div>
-        <div class="blog-meta">${post.category} &bull; ${new Date(post.date).toLocaleDateString('tr-TR', {day:'2-digit',month:'long',year:'numeric'})}</div>
+        <div class="blog-meta">${
+          Array.isArray(post.category)
+            ? post.category.join(', ')
+            : post.category
+        } &bull; ${new Date(post.date).toLocaleDateString('tr-TR', {day:'2-digit',month:'long',year:'numeric'})}</div>
         <div class="blog-summary">${post.summary}</div>
       </div>
     </article>
@@ -167,6 +190,7 @@ function blogRenderPosts() {
     loadMoreBtn.style.display = 'none';
   }
 }
+
 // Eventler
 document.addEventListener('DOMContentLoaded', () => {
   if(document.getElementById('postList')) {
