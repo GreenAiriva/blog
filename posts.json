@@ -3,16 +3,16 @@
     "slug": "2025-07-14-social-cost-ghg",
     "title": "Social Cost of Greenhouse Gases: EPA SC-GHG Report",
     "date": "2025-07-14",
-    "category": "category1",
-    "summary": "This article analyzes the EPA's 2023 SC-GHG report...",
+    "category": "EPA",
+    "summary": "Sera gazlarının sosyal maliyeti, atmosfere salınan gazların gelecekte yaratacağı çevresel ve ekonomik zararların bugünkü parasal değeridir. Bu çalışma, EPA'nın 2023 SC-GHG raporunu temel alarak, Türkiye özelinde Ankara ili için bir hesaplama sunmakta ve GreenAiriva’nın yenilikçi çözümleriyle sosyal maliyet azaltımına katkılarını analiz etmektedir.",
     "image": "assets/img/blog/1.jpg",
-    "url": "posts/2025-07-14-sera-gazlari.md"
+    "url": "posts/2025-07-15-social-cost.md"
   },
   {
     "slug": "2025-07-10-hava-kalitesi-greenairiva",
     "title": "Hava Kalitesi Ölçümleri ve GreenAiriva Çözümleri",
     "date": "2025-07-10",
-    "category": "kategori2",
+    "category": "Greenhouse Gases",
     "summary": "Bu yazıda, hava kalitesi ölçüm metodolojileri ve GreenAiriva'nın yenilikçi teknolojileri anlatılıyor.",
     "image": "assets/img/blog/2.jpg",
     "url": "posts/2025-07-14-sera-gazlari.md"
