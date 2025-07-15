@@ -10959,166 +10959,46 @@ p {
 }
 /*Masthead*/
 header.masthead {
-  min-height: 100vh;
+  min-height: 70vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;   /* Ortalar */
-  align-items: center;       /* Ortalar */
-  text-align: center;
+  justify-content: center;
+  align-items: center;
   color: #fff;
   background-image: url("../assets/img/header-bg.jpg");
   background-repeat: no-repeat;
-  background-attachment: scroll;
   background-position: center center;
   background-size: cover;
-  padding-top: 90px;      /* Navbar yüksekliği kadar boşluk */
-  padding-bottom: 48px;   /* Aşağıda biraz boşluk kalır */
+  text-align: center;
+  padding: 90px 0 48px 0;
   box-sizing: border-box;
 }
-header.masthead .masthead-subheading-script {
+header.masthead .container {
+  display: block;
+  text-align: center;
+  padding: 0 1.5rem;
+}
+.masthead-heading {
+  font-size: 3.25rem;
+  font-weight: 700;
+  margin: 2rem 0;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.1;
+}
+.masthead-subheading-script {
   font-size: 5rem;
   font-weight: 700;
   line-height: 4rem;
-  margin-bottom: 0rem;
-  margin-top: 0rem;
+  margin: 0;
   color: #f49a27;
   font-family: 'The Youngest Script', cursive;
 }
-header.masthead .masthead-heading {
-  font-size: 3.25rem;
-  font-weight: 700;
-  line-height: 3.25rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-header.masthead .container {
-  display: inline-block;
-  text-align: left;
-  margin-top: 0rem;
-}
-@media (min-width: 768px) {
-  header.masthead {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 72px;   /* Dilersen artır/azalt */
-    padding-bottom: 48px;
-  }
-  header.masthead .masthead-heading {
-    font-size: 3.25rem;
-    font-weight: 700;
-    line-height: 3.25rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-  }
-  header.masthead .masthead-subheading-script {
-    font-size: 5rem;
-    font-weight: 700;
-    line-height: 4rem;
-    margin-bottom: 0rem;
-    margin-top: 0rem;
-    color: #f49a27;
-    font-family: 'The Youngest Script', cursive;
-
-}
-  
-@media (max-width: 767.98px) {
-  .masthead {
-    height: 50vh  ;
-    min-height: 200px  ;
-    padding-top: 40px  ;
-    padding-bottom: 30px  ;
-    display: flex  ;
-    align-items: center  ;
-    text-align: center  ;
-  }
-  .masthead .container {
-    padding: 0 12px  ;
-  }
-  .masthead-heading {
-    font-size: 2.1rem  ;
-    line-height: 1.1  ;
-    letter-spacing: 0.5px  ;
-    font-family: "Montserrat", Arial, sans-serif  ;
-    font-weight: 700  ;
-  }
-  .masthead-subheading-script {
-    font-size: 1.6rem  ;
-    margin-bottom: 0.6rem  ;
-    display: block  ;
-    font-family: 'The Youngest Script', cursive  ;
-  }
-  .masthead-btn-row {
-    margin-top: 1rem  ;
-    display: flex  ;
-    justify-content: center  ;
-    width: 100%  ;
-  }
-  .masthead-btn-row .btn {
-    font-size: 1rem  ;
-    padding: 0.6rem 1.2rem  ;
-    min-width: 160px  ;
-    max-width: 95vw  ;
-    white-space: normal  ;
-    box-sizing: border-box  ;
-  }
-}
-/* ==== Masthead Mobile Responsive Düzenleme (NavBar Çakışma & Yazı Boyutu) ==== */
-@media (max-width: 575.98px) {
-  header.masthead {
-    padding-top: 20rem;
-    padding-bottom: 5rem;
-    text-align: center;
-    color: #fff;
-    background-image: url("../assets/img/header-bg.jpg");
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center center;
-    background-size: cover;
-  }
-  header.masthead .masthead-heading {
-    font-size: 2rem  ;
-    line-height: 2  ;
-    margin-bottom: 0.2em  ;
-    margin-top: 0.2em  ;
-    word-break: break-word;
-    text-align: left  ;   /* Ekstra garanti için */
-  }
-  header.masthead .masthead-subheading-script {
-    font-size: 2rem  ;
-    line-height: 1.8rem  ;
-    margin-bottom: 0em  ;
-    margin-top: 0em  ;
-    word-break: break-word;
-    text-align: left  ;   /* Ekstra garanti için */
-  }
-  header.masthead .btn {
-    font-size: 1rem  ;
-    padding: 0.75rem 1.25rem  ;
-    margin-top: 24px  ;
-    width: 100%;
-    max-width: 330px;
-  }
-  header.masthead .container {
-    margin-top: 0  ;
-    text-align: left  ;
-    display: block  ;
-  }
-}
-
-
-  /* ==== Masthead Butonunu Web ve Mobilde Sağa Yasla ve Optimize Et ==== */
 .masthead-btn-row {
   display: flex;
   justify-content: flex-end;
   margin-top: -100px;
   margin-right: 40px;
-  margin-bottom: 0;
 }
-
 .masthead .btn-xl {
   width: auto;
   min-width: 150px;
@@ -11130,26 +11010,63 @@ header.masthead .container {
   box-shadow: 0 2px 10px rgba(0,0,0,0.09);
 }
 
-@media (max-width: 575.98px) {
-  .masthead-btn-row {
-    display: flex  ;
-    justify-content: flex-end  ;
-    margin-top: -50px  ;
-    margin-right: 20px  ;
-    margin-bottom: 0  ;
+/* ----------- Responsive ------------ */
+@media (max-width: 991.98px) {
+  header.masthead {
+    min-height: 48vh;
+    padding-top: 64px;
+    padding-bottom: 24px;
   }
-  .masthead-btn-row .btn-xl {
-    width: auto  ;         /* Yazı kadar genişlik */
-    min-width: 0  ;
-    max-width: 95vw  ;     /* Taşmayı engelle */
-    padding: 1em 1.8em  ;  /* Dikey padding daha fazla, yatay makul */
-    font-size: 1rem  ;
-    text-align: center  ;
-    border-radius: 1.7em  ;
-    word-break: break-word  ;
-    white-space: normal  ;
+  .masthead-btn-row {
+    margin-top: 2rem;
+    margin-right: 0;
+    justify-content: center;
+  }
+  .masthead-heading {
+    font-size: 2.2rem;
+  }
+  .masthead-subheading-script {
+    font-size: 2.3rem;
   }
 }
+@media (max-width: 575.98px) {
+  header.masthead {
+    min-height: 34vh;
+    padding-top: 18vw;
+    padding-bottom: 16px;
+    text-align: left;
+    align-items: flex-start;
+  }
+  header.masthead .container {
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    text-align: left;
+  }
+  .masthead-heading {
+    font-size: 1.25rem;
+    margin: 0.4em 0;
+    line-height: 1.25;
+  }
+  .masthead-subheading-script {
+    font-size: 1.7rem;
+    margin: 0.2em 0;
+    line-height: 1.15;
+  }
+  .masthead-btn-row {
+    margin-top: 1.1rem;
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .masthead-btn-row .btn-xl {
+    width: 100%;
+    padding: 0.7em 0;
+    font-size: 1rem;
+    border-radius: 1.3em;
+    min-width: 0;
+    max-width: 97vw;
+  }
+}
+
 /* ==== Masthead Butonunu Web ve Mobilde Sağa Yasla ve Optimize Et Sonu ==== */
  /* Masthead*/
 
