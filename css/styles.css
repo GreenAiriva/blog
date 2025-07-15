@@ -10975,7 +10975,7 @@ header.masthead {
 }
 header.masthead .container {
   display: block;
-  text-align: center;
+  text-align: left;
   padding: 0 1.5rem;
 }
 .masthead-heading {
