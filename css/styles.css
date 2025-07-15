@@ -11026,7 +11026,8 @@ header.masthead .container {
     font-size: 2.2rem;
   }
   .masthead-subheading-script {
-    font-size: 2.3rem;
+    font-size: 3rem;
+    line-height: 1rem;
   }
 }
 @media (max-width: 575.98px) {
@@ -11043,18 +11044,18 @@ header.masthead .container {
     text-align: left;
   }
   .masthead-heading {
-    font-size: 1.25rem;
+    font-size: 3.25rem;
     margin: 0.4em 0;
     line-height: 1.25;
   }
   .masthead-subheading-script {
-    font-size: 1.7rem;
-    margin: 0.2em 0;
+    font-size: 4.7rem;
+    margin: 0em 0;
     line-height: 1.15;
   }
   .masthead-btn-row {
-    margin-top: 1.1rem;
-    width: 100%;
+    margin-top: 5.1rem;
+    width: 80%;
     justify-content: flex-start;
   }
   .masthead-btn-row .btn-xl {
