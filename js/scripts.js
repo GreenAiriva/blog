@@ -150,7 +150,7 @@ function blogRenderPosts() {
   filtered.sort((a, b) => new Date(b.date) - new Date(a.date));
   const postsToShow = filtered.slice(0, blogVisibleCount);
   list.innerHTML = postsToShow.map(post => `
-    <article class="blog-article" onclick="window.location.href='${post.url}'" tabindex="0">
+<article class="blog-article" onclick="window.location.href='article.html?slug=${post.slug}'" tabindex="0">
       <img src="${post.image}" alt="${post.title}" class="blog-img" />
       <div class="blog-content">
         <div class="blog-title">${post.title}</div>
