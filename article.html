@@ -176,6 +176,15 @@ document.addEventListener('DOMContentLoaded', function () {
         document.querySelector('.blog-single').style.display = 'none';
         return;
       }
+
+      if (post.image) {
+        document.getElementById('article-masthead').style.backgroundImage = `url('${post.image}')`;
+        document.getElementById('article-masthead').style.backgroundColor = "#212529";
+      }
+      document.getElementById('article-category-head').textContent = post.category || '';
+      document.getElementById('article-date-head').textContent = post.date ? new Date(post.date).toLocaleDateString('tr-TR', { day: '2-digit', month: 'long', year: 'numeric' }) : '';
+      document.getElementById('article-title-head').textContent = post.title || '';
+     
       // 3. Alanları doldur
       if (post.image) {
         const img = document.getElementById('article-image');
