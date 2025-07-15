@@ -196,16 +196,16 @@ document.addEventListener('DOMContentLoaded', function () {
       document.getElementById('article-title-head').textContent = post.title || '';
      
       // 3. Alanları doldur
-      if (post.image) {
-        const img = document.getElementById('article-image');
-        img.src = post.image;
-        img.alt = post.title;
-        img.style.display = 'block';
-      }
-      document.getElementById('article-category').textContent = post.category || '';
-      document.getElementById('article-date').textContent = post.date ? new Date(post.date).toLocaleDateString('tr-TR', { day: '2-digit', month: 'long', year: 'numeric' }) : '';
-      document.getElementById('article-title').textContent = post.title || '';
-      document.getElementById('article-summary').textContent = post.summary || '';
+//      if (post.image) {
+//        const img = document.getElementById('article-image');
+//        img.src = post.image;
+//        img.alt = post.title;
+//        img.style.display = 'block';
+//      }
+//      document.getElementById('article-category').textContent = post.category || '';
+//      document.getElementById('article-date').textContent = post.date ? new Date(post.date).toLocaleDateString('tr-TR', { day: '2-digit', month: 'long', year: 'numeric' }) : '';
+//      document.getElementById('article-title').textContent = post.title || '';
+//      document.getElementById('article-summary').textContent = post.summary || '';
       // 4. İçerik dosyasını fetch et (ör: /posts/2025-07-14-sera-gazlari.md)
       if (post.url) {
         fetch(post.url)
