@@ -77,7 +77,25 @@
 </header>
 
 <!-- article Main -->
-<!--???????????-->
+<!-- Article Main -->
+<main class="container my-5" id="article-main">
+  <div class="row justify-content-center">
+    <div class="col-lg-10 col-xl-8">
+      <article class="blog-single border-0 shadow-none">
+        <img id="article-image" src="" alt="" class="img-fluid rounded mb-3" style="display:none; max-height:320px; object-fit:cover;">
+        <div class="mb-2">
+          <span id="article-category" class="badge bg-success me-2"></span>
+          <span id="article-date" class="text-muted small"></span>
+        </div>
+        <h1 id="article-title" class="blog-title"></h1>
+        <div id="article-summary" class="lead text-muted mb-3"></div>
+        <div id="article-content" class="blog-content"></div>
+      </article>
+      <div id="article-notfound" class="alert alert-warning mt-4" style="display:none;">Article not found.</div>
+    </div>
+  </div>
+</main>
+
 
    <!-- Contact-->
 <section class="page-section" id="contact">
@@ -141,6 +159,52 @@
 
 			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 			<script src="https://kit.fontawesome.com/yourfontawesomekit.js" crossorigin="anonymous"></script>
-			<script src="/js/scripts.js"></script>	
+			<script src="/js/scripts.js"></script>
+	<script>
+document.addEventListener('DOMContentLoaded', function () {
+  // 1. URL'den slug/id oku (?slug=2025-07-14-sera-gazlari gibi)
+  const params = new URLSearchParams(window.location.search);
+  const slug = params.get('slug');
+
+  // 2. posts.json'dan ilgili yazıyı bul
+  fetch('posts.json')
+    .then(response => response.json())
+    .then(posts => {
+      const post = posts.find(p => p.slug === slug);
+      if (!post) {
+        document.getElementById('article-notfound').style.display = 'block';
+        document.querySelector('.blog-single').style.display = 'none';
+        return;
+      }
+      // 3. Alanları doldur
+      if (post.image) {
+        const img = document.getElementById('article-image');
+        img.src = post.image;
+        img.alt = post.title;
+        img.style.display = 'block';
+      }
+      document.getElementById('article-category').textContent = post.category || '';
+      document.getElementById('article-date').textContent = post.date ? new Date(post.date).toLocaleDateString('tr-TR', { day: '2-digit', month: 'long', year: 'numeric' }) : '';
+      document.getElementById('article-title').textContent = post.title || '';
+      document.getElementById('article-summary').textContent = post.summary || '';
+      // 4. İçerik dosyasını fetch et (ör: /posts/2025-07-14-sera-gazlari.md)
+      if (post.url) {
+        fetch(post.url)
+          .then(res => res.text())
+          .then(md => {
+            // Eğer markdown ise marked.js ile parse et, yoksa direkt göster
+            if (window.marked) {
+              document.getElementById('article-content').innerHTML = marked.parse(md);
+            } else {
+              document.getElementById('article-content').textContent = md;
+            }
+          });
+      }
+    });
+});
+</script>
+<!-- Optional: Markdown desteği için -->
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
 	</body>
 </html>
