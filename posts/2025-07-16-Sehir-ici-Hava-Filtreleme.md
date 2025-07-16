@@ -19,7 +19,7 @@ Bu sistemlerin her biri kendi içinde benzersiz avantajlar barındırsa da, öne
 
 Kentlerde hava temizliği deyince belki de en estetik çözümlerden biri, **biyolojik filtre sistemleri**. Özellikle yosun bazlı duvar panelleri veya dikey kent mobilyaları, doğal biyolojik süreçleri teknolojiyle harmanlayan çarpıcı örneklerdir.
 
-<img src=" ../assets/img/blog/2025-07-16-Sehir-ici-Hava-Filtreleme/2025-07-16-Sehir-ici-Hava-Filtreleme-GCS.jpg" alt= "Yosun Filtre" style="float: right; margin-left: 18px; width:220px; max-width:65%;">
+<img src="../assets/img/blog/2025-07-16-Sehir-ici-Hava-Filtreleme/2025-07-16-Sehir-ici-Hava-Filtreleme-GCS.jpg" alt= "Yosun Filtre" style="float: right; margin-left: 18px; width:220px; max-width:65%;">
 *(Green City Solutions, https://greencitysolutions.de/en/)*
 
 ### Yosun Duvarları Nasıl Çalışır?
@@ -45,7 +45,7 @@ Yine de kent estetiği, hava kalitesi ve iklim konforu açısından bu sistemler
 
 Hava temizleme teknolojisinde bir diğer yenilikçi yaklaşım, **pozitif iyonizasyon temelli kuleler**dir. Dünya çapında ses getiren örneklerden biri, Hollandalı sanatçı ve tasarımcı Daan Roosegaarde’nin geliştirdiği 7 metre boyundaki kule prototipidir. Tasarım yalnızca teknoloji değil, aynı zamanda çevresel farkındalık yaratmak için bir sanat enstalasyonu işlevi de görmüştür.
 
-<img src=" ../assets/img/blog/2025-07-16-Sehir-ici-Hava-Filtreleme/2025-07-16-Sehir-ici-Hava-Filtreleme-SFT.jpg" alt= "Yosun Filtre" style="float: right; margin-left: 18px; width:220px; max-width:65%;">
+<img src="../assets/img/blog/2025-07-16-Sehir-ici-Hava-Filtreleme/2025-07-16-Sehir-ici-Hava-Filtreleme-SFT.jpg" alt= "Yosun Filtre" style="float: right; margin-left: 18px; width:220px; max-width:65%;">
 
 ### İyonizasyon Nasıl Çalışır?
 
@@ -71,7 +71,7 @@ Bu sistemin ilginç bir yönü, toplanan partiküllerin işlenerek karbon bazlı
 
 Aktif hava temizleme alanındaki en çarpıcı teknolojilerden biri ise **doğrudan hava yakalama (DAC)**. DAC, doğrudan atmosferden CO₂ yakalamak ve bunu ya kullanmak ya da kalıcı olarak yer altına gömmek üzere geliştiriliyor. Bu teknoloji, yalnızca kent ölçeğinde değil, küresel iklim hedeflerinde de kritik bir araç olarak öne çıkıyor.
 
-<img src=" ../assets/img/blog/2025-07-16-Sehir-ici-Hava-Filtreleme/2025-07-16-Sehir-ici-Hava-Filtreleme-DAC.jpg" alt= "Yosun Filtre" style="float: right; margin-left: 18px; width:220px; max-width:45%;">
+<img src="../assets/img/blog/2025-07-16-Sehir-ici-Hava-Filtreleme/2025-07-16-Sehir-ici-Hava-Filtreleme-DAC.jpg" alt= "Yosun Filtre" style="float: right; margin-left: 18px; width:220px; max-width:45%;">
 
 ### DAC Nasıl Çalışır?
 
@@ -159,7 +159,7 @@ Son yıllarda pek çok farklı teknoloji bu soruna çözüm getirmeye çalışt�
 İşte tam bu noktada GreenAiriva, kent havası temizliğine daha **kapsamlı**, **modüler** ve **akıllı** bir yaklaşım getiriyor.
 
 ---
-<img src=" ../assets/img/blog/2025-07-16-Sehir-ici-Hava-Filtreleme/2025-07-16-Sehir-ici-Hava-Filtreleme-Greenairiva.png" alt= "Yosun Filtre" style="float: right; margin-left: 18px; width:220px; max-width:45%;">
+<img src="../assets/img/blog/2025-07-16-Sehir-ici-Hava-Filtreleme/2025-07-16-Sehir-ici-Hava-Filtreleme-Greenairiva.png" alt= "Yosun Filtre" style="float: right; margin-left: 18px; width:220px; max-width:45%;">
 ## GreenAiriva’yı Benzersiz Kılan Ne?
 
 GreenAiriva, kentsel hava kirliliğiyle mücadelede **çoklu kirletici hedefi** olan, gerçek zamanlı veriyle çalışan ve enerji verimliliğine odaklanan **aktif hava temizleme** teknolojisidir. Proje, klasik hava filtrelemenin ötesine geçerek kent ölçeğinde **kirleticilerin kaynağına müdahale** etmeyi amaçlar.
