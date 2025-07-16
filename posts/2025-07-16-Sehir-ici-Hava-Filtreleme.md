@@ -1,7 +1,7 @@
----
+
 # **Kentlerde Aktif Hava Temizleme Teknolojileri: Günümüz Yaklaşımları, Potansiyel ve Sınırlar**
 
-##Kent Havasının Krizi
+## Kent Havasının Krizi
 
 Kentler, insanlık tarihinin en büyük mühendislik başarıları olmasına karşın, bugün ciddi çevresel krizlerle yüzleşiyor. Nüfus yoğunluğu, motorlu taşıt sayısındaki artış, sanayi faaliyetleri ve yapılaşmanın getirdiği ısı adası etkisi, kent atmosferini hem kirletiyor hem de ısıtıyor. Dünya Sağlık Örgütü (DSÖ) verilerine göre her yıl 7 milyon insan hava kirliliğine bağlı nedenlerle yaşamını yitiriyor. Kent havasındaki partikül madde (PM2.5 ve PM10), azot oksitler (NOx), ozon, karbon siyahı ve sera gazları yalnızca insan sağlığını değil, küresel iklim dengesini de tehdit ediyor.
 
