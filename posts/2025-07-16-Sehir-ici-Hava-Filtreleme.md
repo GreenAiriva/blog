@@ -21,6 +21,8 @@ Bu sistemlerin her biri kendi içinde benzersiz avantajlar barındırsa da, öne
 
 Kentlerde hava temizliği deyince belki de en estetik çözümlerden biri, **biyolojik filtre sistemleri**. Özellikle yosun bazlı duvar panelleri veya dikey kent mobilyaları, doğal biyolojik süreçleri teknolojiyle harmanlayan çarpıcı örneklerdir.
 
+<img src=" ../assets/img/blog/2025-07-16-Sehir-ici-Hava-Filtreleme.png" alt= "Yosun Filtre" style="float: right; margin-left: 18px; width:220px; max-width:45%;">
+
 ### Yosun Duvarları Nasıl Çalışır?
 
 Bu sistemlerde birkaç tür seçilmiş mikroalgal yosun, özel dikey panellere veya matlara yerleştirilir. Hava, entegre fan sistemleriyle bu yosun yüzeylerinden geçirilir. Partikül madde, azot oksitler veya karbon siyahı gibi kirleticiler, yosun yapılarının mikroskobik yüzeylerine tutunur. Bunun yanı sıra yosunlar, fotosentez yoluyla sınırlı da olsa CO₂ tüketir ve oksijen üretir.
@@ -43,6 +45,8 @@ Yine de kent estetiği, hava kalitesi ve iklim konforu açısından bu sistemler
 ## Elektrostatik Temelli Yaklaşımlar: İyonizasyon Kuleleri
 
 Hava temizleme teknolojisinde bir diğer yenilikçi yaklaşım, **pozitif iyonizasyon temelli kuleler**dir. Dünya çapında ses getiren örneklerden biri, Hollandalı sanatçı ve tasarımcı Daan Roosegaarde’nin geliştirdiği 7 metre boyundaki kule prototipidir. Tasarım yalnızca teknoloji değil, aynı zamanda çevresel farkındalık yaratmak için bir sanat enstalasyonu işlevi de görmüştür.
+
+<img src=" ../assets/img/blog/2025-07-16-Sehir-ici-Hava-Filtreleme.png" alt= "Yosun Filtre" style="float: right; margin-left: 18px; width:220px; max-width:45%;">
 
 ### İyonizasyon Nasıl Çalışır?
 
@@ -67,6 +71,8 @@ Bu sistemin ilginç bir yönü, toplanan partiküllerin işlenerek karbon bazlı
 ## Doğrudan Hava Yakalama (DAC) ve Depolama Yaklaşımları
 
 Aktif hava temizleme alanındaki en çarpıcı teknolojilerden biri ise **doğrudan hava yakalama (DAC)**. DAC, doğrudan atmosferden CO₂ yakalamak ve bunu ya kullanmak ya da kalıcı olarak yer altına gömmek üzere geliştiriliyor. Bu teknoloji, yalnızca kent ölçeğinde değil, küresel iklim hedeflerinde de kritik bir araç olarak öne çıkıyor.
+
+<img src=" ../assets/img/blog/2025-07-16-Sehir-ici-Hava-Filtreleme.png" alt= "Yosun Filtre" style="float: right; margin-left: 18px; width:220px; max-width:45%;">
 
 ### DAC Nasıl Çalışır?
 
@@ -108,6 +114,18 @@ Yukarıda özetlenen üç aktif hava temizleme yaklaşımı, birbirinden oldukç
 * **Elektrostatik Kuleler** → PM azaltmada lokal olarak başarılı, enerji tüketimi düşük. Ancak gaz kirleticilerini temizleyemez ve etki alanı çok dar.
 * **Doğrudan Hava Yakalama (DAC)** → Yalnızca CO₂’yi hedefler, küresel iklim için kritik. Ancak şehir havasını doğrudan temizlemez ve enerji/maliyet açısından hâlâ zorluklarla karşı karşıyadır.
 
+| Özellik                  | Climeworks (DAC)                      | GreenAiriva                                   | Smog Free Tower                    | Green City Solutions                     |
+|--------------------------|---------------------------------------|-----------------------------------------------|-------------------------------------|------------------------------------------|
+| Temizlediği kirleticiler | Yalnız CO₂                            | CO₂, N₂O, CH₄, PM, F-gazlar                   | PM10, PM2.5                         | PM, NOx, siyah karbon                   |
+| Teknoloji                | Kimyasal adsorpsiyon + ısı desorpsiyon| Gelişmiş adsorbanlar (COF, Zeolit, MOF) + HEPA| Elektrostatik iyonizasyon           | Biyolojik yosun filtresi + IoT           |
+| Enerji ihtiyacı          | Çok yüksek (2.000 kWh/ton CO₂)        | Orta (~3–4 kWh/gün)                           | Düşük (~1.4 kWh/gün)                | Düşük (~1.4 kWh/gün)                    |
+| Soğutma etkisi           | Yok                                   | Yok                                          | Yok                                 | Evet (~4 °C)                            |
+| Debi                     | Düşük (ton bazlı CO₂)                 | Orta (600 m³/saat)                            | Orta (~1.250 m³/saat)               | Yüksek (~4.400–5.000 m³/saat)           |
+| Uygulama Alanı           | Kırsal, endüstriyel                   | Kentsel, trafik & endüstri noktaları          | Kentsel, lokal alanlar              | Kentsel, meydanlar, duraklar, binalar   |
+| Kurulum Ölçeği           | Dev tesisler (Mt/yıl hedefli)         | Modüler küçük cihazlar                        | Küçük kuleler                       | Modüler paneller, duvarlar              |
+| Maliyet                  | Çok yüksek (~1.000 USD/t CO₂)         | Orta-yüksek (adsorban maliyeti)               | Orta (tek kule ~50–100k €)          | Orta (kurulum maliyeti yüksek)          |
+
+
 Tek başına hiçbir sistem, hem şehir ölçeğinde hem de küresel ölçekte yeterli değildir. Kentlerin geleceği için en iyi senaryo, bu teknolojilerin bir **kombinasyonunu** kullanmaktır:
 
 * **Kısa vadede** → Yosun bazlı filtreler, elektrostatik kuleler gibi lokal çözümler.
@@ -122,9 +140,6 @@ Kent havasını temizlemek, yalnızca bir mühendislik meselesi değil, aynı za
 Kentlerin kaderi, aktif hava temizleme teknolojilerinin başarısına bağlanmamalıdır. En etkili çözüm hâlâ **kaynakta emisyon azaltımıdır.** Yine de, biyolojik filtreler, iyonizasyon kuleleri ve doğrudan hava yakalama tesisleri, temiz hava ve iklim hedeflerinde kritik araçlar olmaya devam edecek.
 
 Önümüzdeki on yıllar, bu teknolojilerin yalnızca mühendislik değil, aynı zamanda ekonomi, toplum ve çevre arasında nasıl dengeleneceğini belirleyecek. Kentler, ancak bu dengeleri doğru kurarak daha temiz ve yaşanabilir bir geleceğe kavuşabilir.
-
----
-Harika! İşte **GreenAiriva’yı merkeze alarak**, senin önceki makalene bağlanan ve yaklaşık 10.000 karakter uzunluğunda, kapsamlı bir **makale taslağı**. Üslup; akademik/popüler bilim karışımı, web ortamında okuyucu dostu ve SEO’ya uygun.
 
 ---
 
@@ -301,6 +316,18 @@ GreenAiriva’nın teknoloji avantajlarının yanında önemli sosyal faydaları
 ---
 
 ## Sonuç: Kentler için Daha Akıllı Bir Yol
+
+| Özellik                  | Climeworks (DAC)                      | GreenAiriva                                   | Smog Free Tower                    | Green City Solutions                     |
+|--------------------------|---------------------------------------|-----------------------------------------------|-------------------------------------|------------------------------------------|
+| Temizlediği kirleticiler | Yalnız CO₂                            | CO₂, N₂O, CH₄, PM, F-gazlar                   | PM10, PM2.5                         | PM, NOx, siyah karbon                   |
+| Teknoloji                | Kimyasal adsorpsiyon + ısı desorpsiyon| Gelişmiş adsorbanlar (COF, Zeolit, MOF) + HEPA| Elektrostatik iyonizasyon           | Biyolojik yosun filtresi + IoT           |
+| Enerji ihtiyacı          | Çok yüksek (2.000 kWh/ton CO₂)        | Orta (~3–4 kWh/gün)                           | Düşük (~1.4 kWh/gün)                | Düşük (~1.4 kWh/gün)                    |
+| Soğutma etkisi           | Yok                                   | Yok                                          | Yok                                 | Evet (~4 °C)                            |
+| Debi                     | Düşük (ton bazlı CO₂)                 | Orta (600 m³/saat)                            | Orta (~1.250 m³/saat)               | Yüksek (~4.400–5.000 m³/saat)           |
+| Uygulama Alanı           | Kırsal, endüstriyel                   | Kentsel, trafik & endüstri noktaları          | Kentsel, lokal alanlar              | Kentsel, meydanlar, duraklar, binalar   |
+| Kurulum Ölçeği           | Dev tesisler (Mt/yıl hedefli)         | Modüler küçük cihazlar                        | Küçük kuleler                       | Modüler paneller, duvarlar              |
+| Maliyet                  | Çok yüksek (~1.000 USD/t CO₂)         | Orta-yüksek (adsorban maliyeti)               | Orta (tek kule ~50–100k €)          | Orta (kurulum maliyeti yüksek)          |
+
 
 Kent havası temizliği, artık yalnızca filtre takmakla çözülecek bir sorun değildir. Kaynağı kontrol etmeyen hiçbir sistem uzun vadede başarılı olamaz. Climeworks gibi DAC teknolojileri küresel iklim açısından önemli ama şehir havasına doğrudan katkısı yoktur.
 
