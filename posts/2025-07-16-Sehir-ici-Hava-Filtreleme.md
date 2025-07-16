@@ -128,23 +128,25 @@ Yukarıda özetlenen üç aktif hava temizleme yaklaşımı, birbirinden oldukç
 * **Elektrostatik Kuleler** → PM azaltmada lokal olarak başarılı, enerji tüketimi düşük. Ancak gaz kirleticilerini temizleyemez ve etki alanı çok dar.
 * **Doğrudan Hava Yakalama (DAC)** → Yalnızca CO₂’yi hedefler, küresel iklim için kritik. Ancak şehir havasını doğrudan temizlemez ve enerji/maliyet açısından hâlâ zorluklarla karşı karşıyadır.
 
-| Özellik                  | Climeworks (DAC)                      | Smog Free Tower                    | Green City Solutions                     |
-|--------------------------|---------------------------------------|------------------------------------|------------------------------------------|
-| Temizlediği kirleticiler | Yalnız CO₂                            | PM10, PM2.5                        | PM, NOx, siyah karbon                   |
-| Teknoloji                | Kimyasal adsorpsiyon + ısı desorpsiyon| Elektrostatik iyonizasyon          | Biyolojik yosun filtresi + IoT           |
-| Enerji ihtiyacı          | Çok yüksek (2.000 kWh/ton CO₂)        |Düşük (~1.4 kWh/gün)                | Düşük (~1.4 kWh/gün)                    |
-| Soğutma etkisi           | Yok                                   | Yok                                 | Evet (~4 °C)                            |
-| Debi                     | Düşük (ton bazlı CO₂)                 | Orta (~1.250 m³/saat)               | Yüksek (~4.400–5.000 m³/saat)           |
-| Uygulama Alanı           | Kırsal, endüstriyel                   | Kentsel, lokal alanlar              | Kentsel, meydanlar, duraklar, binalar   |
-| Kurulum Ölçeği           | Dev tesisler (Mt/yıl hedefli)         | Küçük kuleler                       | Modüler paneller, duvarlar              |
-| Maliyet                  | Çok yüksek (~1.000 USD/t CO₂)         | Orta (tek kule ~50–100k €)          | Orta (kurulum maliyeti yüksek)          |
+| Özellik                  | Climeworks (DAC)                      | Smog Free Tower                    |  Green City Solutions                  |
+|--------------------------|---------------------------------------|------------------------------------|----------------------------------------|
+| Temizlediği kirleticiler | Yalnız CO₂                            | PM10, PM2.5                        |  PM, NOx, siyah karbon                 |
+| Teknoloji                | Kimyasal adsorpsiyon + ısı desorpsiyon| Elektrostatik iyonizasyon          |  Biyolojik yosun filtresi + IoT        |
+| Enerji ihtiyacı          | Çok yüksek (2.000 kWh/ton CO₂)        |Düşük (~1.4 kWh/gün)                |  Düşük (~1.4 kWh/gün)                  |
+| Soğutma etkisi           | Yok                                   | Yok                                |  Evet (~4 °C)                          |
+| Debi                     | Düşük (ton bazlı CO₂)                 | Orta (~1.250 m³/saat)              |  Yüksek (~4.400–5.000 m³/saat)         |
+| Uygulama Alanı           | Kırsal, endüstriyel                   | Kentsel, lokal alanlar             |  Kentsel, meydanlar, duraklar, binalar |
+| Kurulum Ölçeği           | Dev tesisler (Mt/yıl hedefli)         | Küçük kuleler                      |  Modüler paneller, duvarlar            |
+| Maliyet                  | Çok yüksek (~1.000 USD/t CO₂)         | Orta (tek kule ~50–100k €)         |  Orta (kurulum maliyeti yüksek)        |
+
+
 
 
 ---
 
-## Büyük Resmi Kaçırmayalım – Son Söz
+## Büyük Resmi Kaçırmayalım!
 
-Kent havasını temizlemek, yalnızca bir mühendislik meselesi değil, aynı zamanda sosyal, ekonomik ve politik bir meseledir. Mevcut teknolojilerin her biri, insanlık için değerli çözümler sunuyor. Ancak kent yönetimlerinin ve politika yapıcıların bu teknolojileri **yerine göre, ölçüsünde** kullanması büyük önem taşıyor.
+Kent havasını temizlemek, yalnızca bir mühendislik meselesi değil, aynı zamanda sosyal, ekonomik ve politik bir meseledir. Mevcut teknolojilerin her biri, insanlık için değerli çözümler sunuyor. Ancak kent yönetimlerinin ve politika yapıcıların bu teknolojileri **yerine göre ve ölçüsünde** kullanması büyük önem taşıyor.
 
 Kentlerin kaderi, aktif hava temizleme teknolojilerinin başarısına bağlanmamalıdır. En etkili çözüm hâlâ **kaynakta emisyon azaltımıdır.** Yine de, biyolojik filtreler, iyonizasyon kuleleri ve doğrudan hava yakalama tesisleri, temiz hava ve iklim hedeflerinde kritik araçlar olmaya devam edecek.
 
@@ -156,23 +158,26 @@ Kentlerin kaderi, aktif hava temizleme teknolojilerinin başarısına bağlanmam
 
 ## Kent Havası ve Çözümsüzlük Kıskacı
 
-Kent havası, insanlık için büyük bir başarı olan şehirleşmenin belki de en ağır bedeli. Artan nüfus, ulaşım, sanayi ve enerji tüketimi şehir atmosferini adeta görünmez bir düşmana dönüştürüyor. Partikül maddeler (PM2.5, PM10), sera gazları (CO₂, N₂O, CH₄), azot oksitler (NOx) ve siyah karbon gibi kirleticiler hem halk sağlığını hem de iklimi tehdit ediyor.
+Kent havasının kirlenmesi, insanlık için büyük bir başarı olan şehirleşmenin belki de en ağır bedeli. Artan nüfus, ulaşım, sanayi ve enerji tüketimi şehir atmosferini adeta görünmez bir düşmana dönüştürüyor. Partikül maddeler (PM2.5, PM10), sera gazları (CO₂, N₂O, CH₄), azot oksitler (NOx) ve florlanmış gazlar gibi kirleticiler hem halk sağlığını hem de iklimi tehdit ediyor.
 
 Son yıllarda pek çok farklı teknoloji bu soruna çözüm getirmeye çalıştı. Biyolojik yosun filtreleri, elektrostatik iyonizasyon kuleleri ve doğrudan hava yakalama (DAC) tesisleri gibi sistemler önemli adımlar attı. Ancak her biri bazı kritik sınırlamalarla karşılaştı:
 
 * Yosun filtreleri → Yalnızca lokal ölçekte etkili, gaz emisyonlarına karşı sınırlı.
 * İyonizasyon kuleleri → Gaz kirleticileri tutamaz, yalnızca partikül maddeyi hedefler.
-* DAC → Yalnızca CO₂ yakalar, dev tesisler ve çok yüksek enerji-maliyet gerektirir.
+* DAC → Yalnızca CO₂ yakalar, dev tesisler ve çok yüksek enerji-maliyet gerektirir. Çevresel etkileri hala soru işaretidir!
 
 İşte tam bu noktada GreenAiriva, kent havası temizliğine daha **kapsamlı**, **modüler** ve **akıllı** bir yaklaşım getiriyor.
 
 ---
-<img src="../assets/img/blog/2025-07-16-Sehir-ici-Hava-Filtreleme/2025-07-16-Sehir-ici-Hava-Filtreleme-Greenairiva.png" alt= "Yosun Filtre">
-
 
 ## GreenAiriva’yı Benzersiz Kılan Ne?
 
-GreenAiriva, kentsel hava kirliliğiyle mücadelede **çoklu kirletici hedefi** olan, gerçek zamanlı veriyle çalışan ve enerji verimliliğine odaklanan **aktif hava temizleme** teknolojisidir. Proje, klasik hava filtrelemenin ötesine geçerek kent ölçeğinde **kirleticilerin kaynağına müdahale** etmeyi amaçlar.
+
+<img src="../assets/img/blog/2025-07-16-Sehir-ici-Hava-Filtreleme/2025-07-16-Sehir-ici-Hava-Filtreleme-Greenairiva.png" alt= "Yosun Filtre">
+
+
+
+GreenAiriva, kentsel hava kirliliğiyle mücadelede **çoklu kirletici hedefi** olan, gerçek zamanlı veriyle çalışan ve enerji verimliliğine odaklanan **aktif hava temizleme** teknolojisidir. Proje, klasik hava filtrelemenin ötesine geçerek kent ölçeğinde **kirleticilerin kaynağına en yakın yerde müdahale** etmeyi amaçlar.
 
 Öne çıkan başlıca farkları şunlardır:
 
@@ -180,7 +185,6 @@ GreenAiriva, kentsel hava kirliliğiyle mücadelede **çoklu kirletici hedefi** 
 * **Gerçek Zamanlı Veri Analitiği**
 * **Güneş Enerjisiyle Otonom Çalışma**
 * **Modüler ve Ölçeklenebilir Sistem Tasarımı**
-* **Kent Ölçeğine Uygun Hedefleme**
 
 ---
 
@@ -190,50 +194,23 @@ GreenAiriva, kentsel hava kirliliğiyle mücadelede **çoklu kirletici hedefi** 
 
 * Yosun sistemleri ve iyonizasyon kuleleri esas olarak partikül maddeyi (PM) tutar.
 * DAC yalnızca CO₂’ye odaklanır.
-* Oysa kent havası çok daha karmaşık bir karışım: CO₂, CH₄, N₂O, NOx, F-gazları…
 
-Bu da birçok mevcut teknolojiyi, kent havasındaki **çoklu kirletici sorununa** karşı yetersiz kılar.
+Oysa kent havası çok daha karmaşık bir karışımdır. CO₂'nin yanı sıra CH₄, N₂O, NOx, F-gazları gibi kirleticiler de atmosfere salınmaktadır. NOAA ve EPA verilerine göre majör sera gazları ve F-gazların son yüzyılda dramatik bir artış grafiği izlemiştir. Güncel teknolojilerin partiküler madde ve karbondioksit gazına fazlaca odaklanmış olması birçok mevcut teknolojiyi, kent havasındaki **çoklu kirletici sorununa** karşı yetersiz kılar.
 
-### GreenAiriva’nın Çözümü
-
-GreenAiriva, **çok katmanlı adsorban sistemleri** kullanır. Her gaz için farklı malzemeler seçilmiştir:
-
-* **CO₂ için:** Kovalent Organik Çerçeveler (COF-999) → Seçici adsorpsiyon kapasitesi yüksek.
-* **N₂O için:** Sentetik Zeolit bazlı CaX moleküler elek → Hidrofobik yapı sayesinde nem etkisinden korunur.
-* **CH₄ için:** Metal-Organik Kafes (MOF) MFM-300(Fe) → Özellikle trafik bölgelerinde metan azaltımında etkili.
-* **F-gazları ve VOC’ler için:** Aktif karbon haznesi → Çok amaçlı adsorpsiyon.
-
-Bu sayede GreenAiriva, **bir cihazda birden fazla kirleticiyi** hedef alır. Bu, şehirde karmaşık hava kirliliği profiline sahip alanlar için devrim niteliğindedir.
-
----
-
-## Sorun 2 – Hedefsiz Temizlik Çabaları
-
-### Mevcut Çözümlerin Eksikliği
-
-* Yosun panelleri → sabit, hava akımlarına bağımlı.
-* DAC → şehre uzak dev tesisler, lokal kirli bölgeleri hedefleyemez.
-* İyonizasyon kuleleri → sadece kulenin etrafında sınırlı alan etkisi var.
-
-Yani çoğu sistem **kent ölçeğinde spesifik kirli bölgeleri** hedefleyecek esneklikten yoksun.
 
 ### GreenAiriva’nın Çözümü
 
-GreenAiriva, **gerçek zamanlı sensörler ve veri analitiği** kullanır:
+GreenAiriva, **çok katmanlı adsorban sistemleri** kullanır. Her gaz için farklı filtre malzemesi seçilmiştir. Seçici ayrıştırma yapabilecek çok katmanlı bu filtrasyon yöntemiyle kirleticiler cihaz içerisinde hem yakalanmakta hem de ayrıştırılabilmektedir. Bu sayede GreenAiriva, **bir cihazda birden fazla kirleticiyi** hedef alır. Bu, şehirde karmaşık hava kirliliği profiline sahip alanlar için devrim niteliğindedir.
 
-* Cihaz, bulunduğu lokasyondaki CO₂, N₂O, CH₄, PM2.5 gibi gaz ve partikül yoğunluklarını sürekli ölçer.
-* Bulut tabanlı algoritmalar, hangi adsorbanın hangi saatte daha yoğun çalışması gerektiğini belirler.
-* Böylece cihaz **trafik, sanayi veya meteorolojik etkilerle değişen kirlilik profiline göre kendini ayarlar.**
-
-Örneğin, bir trafik kavşağında yoğun saatlerde metan yakalaması arttırılırken, gece CO₂ odaklı modda çalışabilir.
-
-Bu **dinamik çalışma** özelliği, klasik sistemlerden radikal biçimde ayrılır.
+Düşük desorpsiyon sıcaklığına sahip bu adsorban materyallerinin kullanımı, düşük maliyetlerde kirletici geri kazanımı imkanı sunmaktadır.
 
 ---
 
-## Sorun 3 – Enerji Bağımlılığı ve Sürdürülebilirlik
+## Sorun 2 – Enerji Bağımlılığı ve Sürdürülebilirlik
 
 ### Mevcut Çözümlerin Eksikliği
+
+Çoğu mevcut teknoloji kendi enerjisini üretebilecek yapılara sahiptir. Ancak bazı sistemler için bu durum mümkün değildir. Özellikle büyük çaplı operasyonların yenilenebilir kaynak kullanması maliyet açısından risk oluşturmakta, operasyon ve bakım problemleri ortaya çıkmaktadır.
 
 * DAC → ton CO₂ başına 2.000 kWh’e kadar enerji ister.
 * Yosun sistemleri → pompalar ve sulama için sürekli elektrik tüketir.
@@ -245,28 +222,26 @@ GreenAiriva, **güneş enerjisi destekli çalışır.**
 
 * Üzerindeki yüksek verimli fotovoltaik paneller, cihazın motorlarını ve sensörlerini besler.
 * Kış aylarında enerji eksikliği yaşandığında cihaz, çalışma döngüsünü optimize ederek enerji tüketimini azaltır.
+* FV paneller, çevresel faktörlerden kaynaklı (toz, bulut, yağmur, kar vb.) verim kaybında bile yılın 9-10 ayı tam performansta çalışabilecek enerji sağlayabilmektedir.
 
 Örneğin:
 
-> Ankara ikliminde 18 m² panel yüzeyiyle yıllık enerji ihtiyacının %85’i güneşten karşılanabiliyor.
-
-Bu sayede GreenAiriva, **şebekeden bağımsız** çalışabilen nadir hava temizleme sistemlerinden biridir.
+> Türkiye'de 40° Enleminde 18 m² panel yüzeyiyle %60 verim kaybı gözetildiğinde yıl boyu ortalama 5kWh/gün enerji güneşten karşılanabilir. Bu sayede GreenAiriva, **şebekeden bağımsız** çalışabilen nadir hava temizleme sistemlerinden biridir.
 
 ---
 
-## Sorun 4 – Lokal Etki Alanı
+## Sorun 3 – Lokal Etki Alanı
 
 ### Mevcut Çözümlerin Eksikliği
 
 * İyonizasyon kuleleri → yalnızca 20–30 m yarıçap etkili.
-* Yosun duvarları → sınırlı hava çekiş kapasitesi (\~5.000 m³/saat).
 * DAC tesisleri → şehirden uzakta çalışır, şehir havasını doğrudan etkilemez.
 
 ### GreenAiriva’nın Çözümü
 
-GreenAiriva, **600 m³/saat hava işleme kapasitesine** sahip.
+GreenAiriva, **600 m³/saat hava işleme kapasitesine** sahip. Düşük debili fanlar hem enerji tüketimi konusunda hem de şehir içi ses kirliliğine yol açmaması açısından (37 dB) pozitif fayda sağlamaktadır.
 
-Bu, bir cihazın yılda:
+Bu, bir cihazın yılda minimum:
 
 * 5 ton CO₂e
 * 200 kg PM10
@@ -274,19 +249,13 @@ Bu, bir cihazın yılda:
 * 7.4 kg metan
 * 3.17 kg N₂O
 
-yakalamasını sağlar.
+yakalamasını sağlar. Bu veriler saha testleri henüz gerçekleştirilmediği için Atmosferdeki ortala kirletici konsantrasyonları kullanılarak yapılmıştır. Bu veriler EPA, NOAA, TÜİK ve UHKAİ (Ulusal Hava Kalitesi İzleme Ağı) kaynakları kullanılarak yapılmıştır.
 
-Ancak esas avantajı modülerliktir:
-
-* Çok sayıda cihaz kentin farklı noktalarına yerleştirilebilir.
-* Her biri farklı kirleticilere odaklanabilir.
-* **Temiz hava bölgeleri** yaratılabilir.
-
-Bu, özellikle trafik noktaları, sanayi bölgeleri ve yoğun nüfuslu bölgelerde önemli avantaj sağlar.
+Gerçek sahada performansın daha yüksek olacağı ön görülmektedir. GreenAiriva kurulumu yapılacak bölgeler, özellikle majör sera gazlarının konsantrasyonunun yüksek olduğu bölgelerde yapılacaktır. Özellikle trafik noktaları, sanayi bölgeleri ve yoğun nüfuslu bölgelerde önemli avantaj sağlar.
 
 ---
 
-## Sorun 5 – Kalıcı Depolama Eksikliği
+## Sorun 4 – Kalıcı Depolama Eksikliği
 
 ### Mevcut Çözümlerin Eksikliği
 
@@ -305,7 +274,7 @@ GreenAiriva:
 Bu süreçte GreenAiriva’nın farkı:
 
 * **CO₂ taşlaştırma yapmaz.** Yani Climeworks tarzı kalıcı depolama gerçekleştirmez.
-* Ancak şehir ölçeğinde emisyonları **kaynakta azaltır.**
+* Ancak şehir ölçeğinde emisyonları **kaynağa en yakın bölgede azaltır.**
 
 Sonuç:
 
@@ -329,11 +298,11 @@ GreenAiriva’nın teknoloji avantajlarının yanında önemli sosyal faydaları
 ## Sonuç: Kentler için Daha Akıllı Bir Yol
 
 
-Kent havası temizliği, artık yalnızca filtre takmakla çözülecek bir sorun değildir. Kaynağı kontrol etmeyen hiçbir sistem uzun vadede başarılı olamaz. Climeworks gibi DAC teknolojileri küresel iklim açısından önemli ama şehir havasına doğrudan katkısı yoktur.
+Kent havası temizliği, artık yalnızca filtre takmakla çözülecek bir sorun değildir. Kaynağı kontrol etmeyen hiçbir sistem uzun vadede başarılı olamaz. DAC teknolojileri küresel iklim açısından önemli ama şehir havasına doğrudan katkısı yoktur.
 
 Yosun panelleri ve iyonizasyon kuleleri estetik ve yerel ölçekte yararlı olsa da gaz kirleticilere karşı sınırlı kalır.
 
-GreenAiriva, **çoklu kirletici hedefleme**, **gerçek zamanlı veriyle dinamik çalışma**, **düşük enerji tüketimi** ve **modüler yapı** sayesinde kentsel hava temizliğinde yeni bir standart oluşturuyor. Elbette hâlâ çözülmesi gereken zorluklar var. Özellikle CO₂ adsorpsiyon maliyetlerinin düşmesi ve adsorbanların sürdürülebilirliği kritik bir araştırma alanı olmaya devam ediyor.
+GreenAiriva, **çoklu kirletici hedefleme**, **gerçek zamanlı veriyle dinamik çalışma**, **düşük enerji tüketimi** ve **modüler yapı** sayesinde kentsel hava temizliğinde yeni bir standart oluşturuyor. Elbette hâlâ çözülmesi gereken zorluklar var. Özellikle CO₂ adsorpsiyonun gerçekleştirilebilmesi kritik bir araştırma alanı olmaya devam ediyor.
 
 Ancak görünen o ki:
 
