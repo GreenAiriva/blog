@@ -17,4 +17,13 @@
     "image": "assets/img/blog/2.jpg",
     "url": "posts/2025-07-14-sera-gazlari.md"
   }
+    {
+    "slug": "2025-07-16-Sehir-ici-Hava-Filtreleme",
+    "title": "Kentlerde Aktif Hava Temizleme Teknolojileri: Günümüz Yaklaşımları, Potansiyel ve Sınırlar",
+    "date": "2025-07-16",
+    "category": ["urban air cleaning", "active air filters", "CO2 capture", "city air quality", "green tech"],
+    "summary": "Bu yazıda, hava kalitesi ölçüm metodolojileri ve GreenAiriva'nın yenilikçi teknolojileri anlatılıyor.",
+    "image": "assets/img/blog/2025-07-16-Sehir-ici-Hava-Filtreleme.png",
+    "url": "posts/2025-07-16-Sehir-ici-Hava-Filtreleme.md"
+  }
 ]
