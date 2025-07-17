@@ -7,7 +7,7 @@ While cities represent one of humanity’s greatest engineering achievements, to
 
 This reality points to a problem far too complex to be resolved by emission source control alone. That’s why “active air purification technologies” have been gaining increased attention in recent years. These technologies aim not only to monitor polluted air but also to purify it—and in some cases, to permanently remove certain gases. Moreover, some solutions integrate with art, architecture, and biotechnology, contributing to urban aesthetics as well. The three primary technology domains currently in focus are:
 
-* Biological filters and algae-based systems
+* Biological filters and Moss-based systems
 * Electrostatic ionization towers
 * Direct air capture and carbon storage technologies
 
@@ -15,28 +15,28 @@ While each of these systems offers unique advantages, they also come with import
 
 ---
 
-## Biologically-Based Approaches: Algae Filter Technologies
+## Biologically-Based Approaches: Moss Filter Technologies
 
-When it comes to urban air purification, one of the most aesthetically pleasing solutions is undoubtedly **biological filter systems**. In particular, algae-based wall panels or vertical urban furniture are striking examples that blend natural biological processes with technology.
+When it comes to urban air purification, one of the most aesthetically pleasing solutions is undoubtedly **biological filter systems**. In particular, Moss-based wall panels or vertical urban furniture are striking examples that blend natural biological processes with technology.
 
-<img src="../assets/img/blog/2025-07-16-Sehir-ici-Hava-Filtreleme/2025-07-16-Sehir-ici-Hava-Filtreleme-GCS.jpg" alt= "Yosun Filtre">
+<img src="../../assets/img/blog/2025-07-16-Sehir-ici-Hava-Filtreleme/2025-07-16-Sehir-ici-Hava-Filtreleme-GCS.jpg" alt= "Yosun Filtre">
 
 *[(Green City Solutions)](https://greencitysolutions.de/en/)*
 
 
-### How Do Algae Walls Work?
+### How Do Moss Walls Work?
 
-These systems place several selected species of microalgal algae onto specialized vertical panels or mats. Air is drawn through these algae-covered surfaces using integrated fan systems. Pollutants such as particulate matter, nitrogen oxides, or black carbon adhere to the microscopic surfaces of the algae structures. Additionally, the algae perform photosynthesis—consuming limited amounts of CO₂ and producing oxygen.
+These systems place several selected species of microalgal Moss onto specialized vertical panels or mats. Air is drawn through these Moss-covered surfaces using integrated fan systems. Pollutants such as particulate matter, nitrogen oxides, or black carbon adhere to the microscopic surfaces of the Moss structures. Additionally, the Moss perform photosynthesis—consuming limited amounts of CO₂ and producing oxygen.
 
-One of the most recent implementations is a **vertical algae filter system** developed by a Europe-based company. The company’s products combine biological filtration, IoT-based monitoring, and energy efficiency. The algae not only filter pollutants but also reduce ambient heat through evaporative cooling from their surfaces. Measurements have shown that these systems can provide localized cooling of up to 4 °C.
+One of the most recent implementations is a **vertical Moss filter system** developed by a Europe-based company. The company’s products combine biological filtration, IoT-based monitoring, and energy efficiency. The Moss not only filter pollutants but also reduce ambient heat through evaporative cooling from their surfaces. Measurements have shown that these systems can provide localized cooling of up to 4 °C.
 
 ### Performance and Limitations
 
 Tests have shown that these biological filters can reach an air purification capacity of approximately 4,400 to 5,000 m³ per hour. Their particulate matter (PM) filtration efficiency can exceed 80%. However, the system's performance depends on several key variables:
 
 * **Wind Impact:** Outdoor air dynamics can reduce filtration efficiency.
-* **Humidity and Irrigation Needs:** Regular water supply is required to keep the algae alive.
-* **CO₂ Capture Limitation:** The amount of CO₂ absorbed by the algae is relatively low. On average, one algae wall can capture about 342 kg of CO₂ per year—a limited figure compared to urban CO₂ emissions.
+* **Humidity and Irrigation Needs:** Regular water supply is required to keep the Moss alive.
+* **CO₂ Capture Limitation:** The amount of CO₂ absorbed by the Moss is relatively low. On average, one Moss wall can capture about 342 kg of CO₂ per year—a limited figure compared to urban CO₂ emissions.
 * **Cost:** Installation, maintenance, and irrigation costs are significantly high and cannot be overlooked.
 
 Nevertheless, in terms of urban aesthetics, air quality, and climate comfort, these systems are regarded as an important tool at the local scale. They have started to spread across public squares, bus stops, and building façades in various cities across Europe and Asia.
@@ -48,7 +48,7 @@ Nevertheless, in terms of urban aesthetics, air quality, and climate comfort, th
 
 Another innovative approach in air purification technology is the use of **positive ionization-based towers**. One of the most widely recognized examples is the 7-meter-tall tower prototype developed by Dutch artist and designer Daan Roosegaarde. The design serves not only as a technological solution but also as an art installation aimed at raising environmental awareness.
 
-<img src="../assets/img/blog/2025-07-16-Sehir-ici-Hava-Filtreleme/2025-07-16-Sehir-ici-Hava-Filtreleme-SFT.jpg" alt= "Yosun Filtre">
+<img src="../../assets/img/blog/2025-07-16-Sehir-ici-Hava-Filtreleme/2025-07-16-Sehir-ici-Hava-Filtreleme-SFT.jpg" alt= "SFT">
 
 *[(Studio Roosegaarde)](https://www.studioroosegaarde.net/project/smog-free-tower)*
 
@@ -77,7 +77,7 @@ An interesting feature of this system is the processing of collected particulate
 
 One of the most striking technologies in the field of active air purification is **Direct Air Capture (DAC)**. DAC is designed to capture CO₂ directly from the atmosphere, with the goal of either utilizing it or permanently storing it underground. This technology stands out not only at the urban scale but also as a critical tool for achieving global climate targets.
 
-<img src="../assets/img/blog/2025-07-16-Sehir-ici-Hava-Filtreleme/2025-07-16-Sehir-ici-Hava-Filtreleme-DAC.jpg" alt= "Yosun Filtre">
+<img src="../../assets/img/blog/2025-07-16-Sehir-ici-Hava-Filtreleme/2025-07-16-Sehir-ici-Hava-Filtreleme-DAC.jpg" alt= "DAC">
 
 *[(Carbon Direct)](https://www.carbon-direct.com/insights/direct-air-capture-is-ready-for-its-close-up)*
 
@@ -125,7 +125,7 @@ DAC technology differs significantly from in-city air purification devices. DAC 
 
 The three active air purification approaches outlined above differ significantly in scale, technology, and objectives:
 
-* **Biological Algae Systems** → Reduce PM and NOx locally, provide aesthetic value, and offer cooling effects. However, they have limited gas capture capacity and high maintenance costs.
+* **Biological Moss Systems** → Reduce PM and NOx locally, provide aesthetic value, and offer cooling effects. However, they have limited gas capture capacity and high maintenance costs.
 * **Electrostatic Towers** → Effective for local PM reduction and have low energy consumption. However, they cannot remove gaseous pollutants and have a very narrow range of effectiveness.
 * **Direct Air Capture (DAC)** → Targets CO₂ exclusively and is critical for global climate efforts. However, it does not clean urban air directly and still faces challenges in energy demand and cost.
 
@@ -134,7 +134,7 @@ The three active air purification approaches outlined above differ significantly
 | Feature            | Climeworks (DAC)                         | Smog Free Tower          | Green City Solutions                 |
 | ------------------ | ---------------------------------------- | ------------------------ | ------------------------------------ |
 | Pollutants Removed | CO₂ only                                 | PM10, PM2.5              | PM, NOx, black carbon                |
-| Technology         | Chemical adsorption + thermal desorption | Electrostatic ionization | Biological algae filter + IoT        |
+| Technology         | Chemical adsorption + thermal desorption | Electrostatic ionization | Biological Moss filter + IoT        |
 | Energy Demand      | Very high (2,000 kWh/ton CO₂)            | Low (\~1.4 kWh/day)      | Low (\~1.4 kWh/day)                  |
 | Cooling Effect     | None                                     | None                     | Yes (\~4 °C)                         |
 | Airflow Rate       | Low (ton-based CO₂)                      | Medium (\~1,250 m³/h)    | High (\~4,400–5,000 m³/h)            |
@@ -163,9 +163,9 @@ The coming decades will determine how these technologies are balanced—not just
 
 Urban air pollution is perhaps the heaviest price paid for the great human achievement of urbanization. Rising populations, transportation, industry, and energy consumption have transformed the urban atmosphere into an almost invisible enemy. Pollutants such as particulate matter (PM2.5, PM10), greenhouse gases (CO₂, N₂O, CH₄), nitrogen oxides (NOx), and fluorinated gases pose threats to both public health and the climate.
 
-In recent years, many different technologies have attempted to tackle this issue. Systems such as biological algae filters, electrostatic ionization towers, and direct air capture (DAC) plants have made important strides. However, each has encountered some critical limitations:
+In recent years, many different technologies have attempted to tackle this issue. Systems such as biological Moss filters, electrostatic ionization towers, and direct air capture (DAC) plants have made important strides. However, each has encountered some critical limitations:
 
-* Algae filters → Effective only on a local scale, with limited impact on gas emissions.
+* Moss filters → Effective only on a local scale, with limited impact on gas emissions.
 * Ionization towers → Cannot capture gaseous pollutants; target only particulate matter.
 * DAC → Captures only CO₂, requires massive facilities and very high energy and cost. Its environmental impacts remain uncertain!
 
@@ -177,7 +177,7 @@ This is precisely where GreenAiriva introduces a more **comprehensive**, **modul
 ## What Makes GreenAiriva Unique?
 
 
-<img src="../assets/img/blog/2025-07-16-Sehir-ici-Hava-Filtreleme/2025-07-16-Sehir-ici-Hava-Filtreleme-Greenairiva.png" alt= "Yosun Filtre">
+<img src="../../assets/img/blog/2025-07-16-Sehir-ici-Hava-Filtreleme/2025-07-16-Sehir-ici-Hava-Filtreleme-Greenairiva.png" alt= "GreenAiriva">
 
 
 
@@ -196,7 +196,7 @@ Key distinguishing features include:
 
 ### The Shortcomings of Existing Solutions
 
-* Algae systems and ionization towers primarily capture particulate matter (PM).
+* Moss systems and ionization towers primarily capture particulate matter (PM).
 * DAC focuses exclusively on CO₂.
 
 However, urban air is a much more complex mixture. In addition to CO₂, pollutants such as CH₄, N₂O, NOx, and F-gases are also released into the atmosphere. According to NOAA and EPA data, major greenhouse gases and F-gases have shown a dramatic upward trend over the past century. The current overemphasis on particulate matter and carbon dioxide in existing technologies renders many of them insufficient in addressing the **multi-pollutant nature** of urban air.
@@ -217,7 +217,7 @@ The use of adsorbent materials with low desorption temperatures also enables **c
 While many current technologies are capable of generating some of their own energy, this is not always feasible—particularly for large-scale operations. Relying on renewable sources for such systems can become costly and introduce operational and maintenance challenges.
 
 * DAC → Requires up to 2,000 kWh per ton of CO₂ captured.
-* Algae systems → Constant electricity consumption for pumps and irrigation.
+* Moss systems → Constant electricity consumption for pumps and irrigation.
 * Ionization towers → Although individual units consume little electricity, large-scale deployment can create a substantial energy burden on the grid.
 
 ### GreenAiriva’s Solution
@@ -265,7 +265,7 @@ Real-world performance is expected to be even higher. GreenAiriva installations 
 
 ### The Shortcomings of Existing Solutions
 
-* Algae systems → Convert gases into biomass but do not offer permanent storage.
+* Moss systems → Convert gases into biomass but do not offer permanent storage.
 * Ionization towers → Mechanically capture PM; storage is not a concern.
 * DAC → Permanently stores CO₂ by mineralizing it in basalt rock (carbonation).
 
@@ -306,7 +306,7 @@ In particular, GreenAiriva serves as a valuable tool in alignment with the Europ
 
 Urban air purification is no longer a problem that can be solved by simply installing filters. No system that fails to address the source of pollution can succeed in the long run. DAC technologies are crucial for the global climate, but they offer no direct benefit to city air.
 
-While algae panels and ionization towers are aesthetically pleasing and locally beneficial, they remain limited in tackling gaseous pollutants.
+While Moss panels and ionization towers are aesthetically pleasing and locally beneficial, they remain limited in tackling gaseous pollutants.
 
 GreenAiriva sets a new standard in urban air purification through **multi-pollutant targeting**, **dynamic operation with real-time data**, **low energy consumption**, and **a modular design**. Of course, there are still challenges to overcome—especially the implementation of effective CO₂ adsorption, which remains a critical area of research.
 
