@@ -308,3 +308,4 @@ Ancak görünen o ki:
 
 > Kentlerimizin daha temiz, daha sağlıklı ve daha yaşanabilir olması için **GreenAiriva gibi bütüncül yaklaşımlar** geleceğin anahtarı olacak.
 
+Daha fazla gelişme için bizi takip edin. **Daha Temiz bir Dünya Mümkün!**
