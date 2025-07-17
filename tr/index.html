@@ -149,31 +149,41 @@
                 </a>
             </div>
             <div class="col-lg-4 text-lg-end text-center">
-                <a class="link-dark text-decoration-none me-3" href="/privacy/">Privacy Policy</a>
-                <a class="link-dark text-decoration-none" href="/terms/">Terms of Use</a>
+                <a class="link-dark text-decoration-none me-3" href="/privacy/">Gİzlilik Politikası</a>
+                <a class="link-dark text-decoration-none" href="/terms/">Kullanım Şartları</a>
             </div>
         </div>
     </div>
 </footer>
 <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/yourfontawesomekit.js" crossorigin="anonymous"></script>
-    <script src="../js/scripts.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/yourfontawesomekit.js" crossorigin="anonymous"></script>
+<script src="../js/scripts.js"></script>
 
-
-	<script>
+<!-- Türkçe Kategori Override -->
+<script>
   document.addEventListener("DOMContentLoaded", function () {
     const lang = document.documentElement.lang || 'en';
-    if (lang === 'tr') {
-      const filter = document.getElementById("postFilter");
-      if (filter) {
-        const defaultOption = filter.querySelector('option[value=""]');
-        if (defaultOption) defaultOption.textContent = "Tüm Kategoriler";
+    if (lang !== 'tr') return;
+
+    const filter = document.getElementById("postFilter");
+    if (!filter) return;
+
+    const updateLabel = () => {
+      const defaultOption = filter.querySelector('option[value=""]');
+      if (defaultOption && defaultOption.textContent !== "Tüm Kategoriler") {
+        defaultOption.textContent = "Tüm Kategoriler";
       }
-    }
+    };
+
+    // İlk düzeltmeyi yap
+    updateLabel();
+
+    // Değişiklikleri gözlemle
+    const observer = new MutationObserver(updateLabel);
+    observer.observe(filter, { childList: true, subtree: true });
   });
 </script>
 
-	
 </body>
 </html>
