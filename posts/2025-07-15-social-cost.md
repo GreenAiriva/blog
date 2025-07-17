@@ -1,47 +1,47 @@
 
-# **Sera Gazlarının Sosyal Maliyeti ve Türkiye İçin Önemi: EPA SC-GHG Raporu Çerçevesinde Detaylı Bir Analiz**
+# **The Social Cost of Greenhouse Gases and Its Importance for Turkey: A Detailed Analysis within the Framework of the EPA SC-GHG Report**
 
-
-İklim krizi, Sanayi Devrimi’nden günümüze dek gerçekleştirilen insan kaynaklı faaliyetlerin bir sonucu olarak karşımıza çıkmaktadır. Dünya tarihi boyunca çeşitli iklim değişimleri yaşanmıştır ancak bu değişimlerin hiçbiri, günümüzdeki gibi hızlı bir artış göstermemiştir. İklim krizinin etkileri günlük hayatımızda sıcaklık artışı, nem dengesizlikleri ve aşırı hava olayları gibi çevresel değişimlerle hissedilmektedir. Örneğin, mevsim normallerinin dışındaki sıcaklıklar, olağan dışı kar yağışları ya da yaz aylarında görülen aşırı sıcaklık artışları bu krizin gündelik yaşamımıza yansımalarıdır.
+The climate crisis is a consequence of human-induced activities carried out since the Industrial Revolution. Throughout world history, various climate changes have occurred; however, none have shown an increase as rapid as the one we are currently experiencing. The effects of the climate crisis are felt in our daily lives through environmental changes such as rising temperatures, humidity imbalances, and extreme weather events. For example, temperatures deviating from seasonal norms, unusual snowfall, or extreme heatwaves during summer are reflections of this crisis in our everyday lives.
 
 
 <img src="../assets/img/blog/2025-07-15-social-cost/2025-07-15-social-cost-GlWa-Graph.png" alt= "Global Wasming Historical Data">
 
 
-Ancak, iklim krizinin esas yıkıcı etkisi, hava koşulları dışında kalan ekosistemlerin yaşadığı adaptasyon sorunlarıdır. Her canlı türü belirli çevresel koşullarda yaşamını sürdürebilir. Besin zincirinin temelini oluşturan mikroorganizmaların iklim kaynaklı yok oluşu, zincirleme olarak tüm ekosistemlerin dengesini bozmaktadır. Kara ekosistemlerinde yaşanan bozulmalar gibi, deniz ekosistemleri de ciddi tehditlerle karşı karşıyadır. Artan atmosferik CO₂ konsantrasyonu, difüzyon ile su ortamına geçerek [okyanus asidifikasyonuna](https://oceanservice.noaa.gov/facts/acidification.html) neden olur ve su ortamlarında karbonik asit oluşumunu tetikler. Bu durum, okyanuslardaki flora ve faunayı zincirleme olarak yok etmekte ve ekosistemi tehdit etmektedir.
+However, the truly devastating impact of the climate crisis lies in the adaptation challenges faced by ecosystems beyond weather conditions. Each species can survive only within specific environmental parameters. The climate-induced extinction of microorganisms—organisms that form the foundation of the food chain—disrupts the balance of entire ecosystems in a cascading manner. Just like the degradation occurring in terrestrial ecosystems, marine ecosystems also face serious threats. The increasing atmospheric CO₂ concentration diffuses into aquatic environments, leading to [ocean acidification](https://oceanservice.noaa.gov/facts/acidification.html) and triggering the formation of carbonic acid in water. This process causes a chain reaction of destruction to oceanic flora and fauna, thereby threatening the entire marine ecosystem.
 
-## Sosyal Maliyet Nedir?
+## What Is Social Cost?
 
-İşte burada “sosyal maliyet” kavramı devreye girmektedir. Sosyal maliyet, sera gazlarının atmosfere salınmasının gelecekte yaratacağı ekonomik ve çevresel zararların bugünkü parasal değeridir. Bu hesaplamaların amacı, sera gazlarının neden olduğu olumsuz etkileri ekonomik değerler üzerinden ifade ederek politika yapıcılar için somut veriler sunmaktır.
+This is where the concept of "social cost" comes into play. Social cost refers to the present monetary value of the future economic and environmental damages caused by the release of greenhouse gases into the atmosphere. The purpose of these calculations is to express the adverse effects of greenhouse gases in economic terms, providing policymakers with concrete data.
 
-2008 yılında ABD Çevre Koruma Ajansı (EPA), karbon emisyonlarının sosyal maliyetini hesaplamak üzere [“Social Cost of Greenhouse Gases” (SC-GHG)](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.epa.gov/system/files/documents/2023-12/epa_scghg_2023_report_final.pdf) adlı çalışmasını başlatmıştır. Bu çalışma, IPCC (Hükümetlerarası İklim Değişikliği Paneli) ve Greenhouse Gas Protocol tarafından belirlenmiş üç temel sera gazı olan CO₂ (karbondioksit), CH₄ (metan) ve N₂O (azot oksit) gazlarının sağlık, tarım, ekonomi ve ekosistem üzerindeki etkilerini parasal olarak ifade etmektedir. EPA, bu hesaplamalar için Ramsey İskonto Oranı metodolojisini kullanmış ve 2080 yılına kadar olan on yıllık dönemlerde tahminlerde bulunmuştur. Çalışma, 2023 yılında güncellenerek yayımlanmıştır.
+In 2008, the U.S. Environmental Protection Agency (EPA) launched a study titled [“Social Cost of Greenhouse Gases” (SC-GHG)](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.epa.gov/system/files/documents/2023-12/epa_scghg_2023_report_final.pdf) to estimate the social cost of carbon emissions. This study expresses the monetary impacts of the three primary greenhouse gases identified by the IPCC (Intergovernmental Panel on Climate Change) and the Greenhouse Gas Protocol—CO₂ (carbon dioxide), CH₄ (methane), and N₂O (nitrous oxide)—on health, agriculture, the economy, and ecosystems. For these calculations, the EPA utilized the Ramsey Discount Rate methodology and made projections in ten-year intervals through the year 2080. The study was updated and republished in 2023.
 
-## EPA SC-GHG Raporunun Önemi ve İçeriği
+## Importance and Content of the EPA SC-GHG Report
 
-EPA'nın 2023 tarihli SC-GHG raporu, sera gazlarının sosyal maliyetinin hesaplanmasında en güncel ve detaylı çalışmalardan biridir. Bu rapor, metodolojik olarak dört temel modülden oluşmaktadır:
+The EPA’s 2023 SC-GHG report is one of the most up-to-date and detailed studies on calculating the social cost of greenhouse gases. Methodologically, the report consists of four main modules:
 
-1. **Sosyoekonomik ve Emisyon Modülü:** Gelecekteki nüfus artışı, ekonomik büyüme ve enerji kullanımı senaryolarını (RFF-SPs) kullanarak tahminlerde bulunur.
-2. **İklim Modülü:** FaIR modeli kullanılarak atmosferdeki gazların konsantrasyonunu ve bu gazların sıcaklık artışına etkisini hesaplar.
-3. **Zarar Modülü:** Sağlık, tarım, enerji, altyapı ve ekosistem gibi farklı alanlarda sera gazlarının yaratacağı zararları belirler.
-4. **İskonto Modülü:** Ramsey İskonto Oranı kullanılarak gelecekteki zararların bugünkü parasal değerini hesaplar. Düşük iskonto oranı kullanılması, gelecek zararların bugünkü değerini artırmaktadır.
+1. **Socioeconomic and Emissions Module:** Uses scenarios (RFF-SPs) related to future population growth, economic development, and energy consumption to make projections.
+2. **Climate Module:** Employs the FaIR model to calculate the concentration of gases in the atmosphere and their impact on temperature increase.
+3. **Damage Module:** Assesses the damages caused by greenhouse gases across various sectors such as health, agriculture, energy, infrastructure, and ecosystems.
+4. **Discounting Module:** Applies the Ramsey Discount Rate to calculate the present monetary value of future damages. Using a lower discount rate increases the present value of future damages.
 
-Rapor, ayrıca belirsizliklerin etkisini ölçmek için Monte Carlo simülasyonlarını kullanmaktadır. Bu analizler, sonuçların daha sağlam ve güvenilir olmasını sağlar.
+The report also uses Monte Carlo simulations to measure the impact of uncertainties. These analyses help ensure the robustness and reliability of the results.
 
-## Türkiye İçin Sosyal Maliyet Hesaplama Örneği: Ankara
 
-EPA’nın çalışmaları büyük ölçüde ABD ve Kanada odaklı olduğundan, Türkiye’ye doğrudan uygulanması sınırlıdır. Ancak bu çalışma Türkiye’nin kendi hesaplamalarını yapmasına rehber olabilir.
+## Social Cost Calculation Example for Turkey
 
-Örneğin, Türkiye genelindeki karasal ulaşım emisyonları üzerinden bir sosyal maliyet hesabı yapalım:
+Since the EPA’s studies are largely focused on the U.S. and Canada, their direct application to Turkey is limited. However, this work can serve as a guide for Turkey to conduct its own calculations.
 
-Türkiye'de 2024 yılı itibarıyla trafiğe kayıtlı araç sayısı [29,95 milyondur]() (Linkteki sayfadan *Tablo-3 Yıllara göre motorlu kara taşıtları sayısı* tablosunu inceleyebilirsiniz). TÜİK verilerine göre, otomobillerin %29’u benzinli, %33’ü dizel, %33’ü LPG’li ve %0,03’ü elektrikli veya hibrittir. Diğer taşıtlar için de IPCC Emisyon Faktörleri tablosundaki ortala değerleri kullanalım. Her taşıtın günde ortalama 10 km yol yaptığını var sayalım.
+For example, let’s calculate the social cost based on land transportation emissions across Turkey:
 
-Tüm bu var sayımlarımız sonucunda türkiye genelinde yılda 38,5 Mt CO₂, 1.615,8 ton CH₄ ve 1.608,7 ton N₂O gazının atmosfere salındığını göreceğiz. 
+As of 2024, the number of registered vehicles in traffic in Turkey is [29.95 million]() (You can review *Table-3: Number of motor land vehicles by years* on the linked page). According to TÜİK (Turkish Statistical Institute) data, 29% of cars use gasoline, 33% use diesel, 33% use LPG, and 0.03% are electric or hybrid. For other vehicle types, let’s use the average values from the IPCC Emission Factors table. We’ll assume that each vehicle travels an average of 10 km per day.
 
+As a result of all these assumptions, we estimate that across Turkey, approximately 38.5 Mt of CO₂, 1,615.8 tons of CH₄, and 1,608.7 tons of N₂O are emitted into the atmosphere annually.
 
 <img src="../assets/img/blog/2025-07-15-social-cost/2025-07-15-social-cost-Car Emission-GraphTur.png" alt= "Türkiye">
 
 
-Şimdi de EPA tarafından hazırlanmış sosyal maliyet tablosuna [(Excel çalışmasına buradan ulaşabilirsiniz)](https://www.epa.gov/environmental-economics/scghg) bu rakamları koyalım.
+Now, let’s input these figures into the social cost table prepared by the EPA [(You can access the Excel spreadsheet here)](https://www.epa.gov/environmental-economics/scghg).
+
 
 
 ## GHG Emission Changes: Present & Annualized Value Table (2024, millions, 2020$)
@@ -99,33 +99,36 @@ Tüm bu var sayımlarımız sonucunda türkiye genelinde yılda 38,5 Mt CO₂, 1
 > For further details, see the [EPA SC-GHG documentation](https://www.epa.gov/environmental-economics/scghg).
 
 
-Bu verileri EPA’nın sosyal maliyet hesaplama aracına uyguladığımızda, Türkiye genelinde karasal ulaşımın sosyal maliyeti yaklaşık 14,013 milyar ABD Doları olarak hesaplanmaktadır. Bu rakam, sera gazlarının yarattığı ekonomik zararları net biçimde ortaya koymaktadır. Peki neden 1,5% iskonto oranını kullandık?
+When we apply these data to the EPA’s social cost calculation tool, the social cost of land transportation across Turkey is estimated at approximately \$14.013 billion USD. This figure clearly illustrates the economic damages caused by greenhouse gas emissions. So, why did we use the 1.5% discount rate?
 
-## 1.5% Discount Rate (Düşük iskonto oranı – Yüksek gelecek değeri)
-### Ne zaman tercih edilmeli?
+## 1.5% Discount Rate (Low Discount Rate – High Future Value)
 
-* İklim değişikliği risklerine karşı daha duyarlı, geleceği daha fazla önemseyen yaklaşımlarda.
+### When should it be preferred?
 
-* Sosyal adalet ve kuşaklar arası sorumluluk ön plandaysa.
+* In approaches that are more sensitive to the risks of climate change and that place greater emphasis on the future.
 
-* AB’nin ve bazı EPA belgelerinin önerdiği düzeyde.
+* When social justice and intergenerational responsibility are prioritized.
 
-### Ne anlama gelir?
+* This is the level recommended by the EU and some EPA documents.
 
-* Gelecekteki zararları daha fazla ciddiye alırsınız.
+### What does it mean?
 
-* Emisyonların sosyal maliyeti daha yüksek çıkar.
+* You place greater importance on future damages.
 
-* Kullanım durumu: Sürdürülebilirlik raporları, aktivist raporlamalar, yüksek çevresel standartlar arayan projelerde.
+* The social cost of emissions appears significantly higher.
+
+* **Use case:** Sustainability reports, activist publications, projects targeting high environmental standards.
+
 
 ---
 
-## GreenAiriva’nın Sosyal Maliyet Azaltımına Katkıları
+## GreenAiriva’s Contributions to Reducing Social Cost
 
-GreenAiriva, sera gazlarının sosyal maliyetini azaltmak üzere yenilikçi çözümler sunmaktadır. Geliştirdiği adsorpsiyon teknolojileri ile özellikle CH₄, N₂O ve F-gazlarının atmosferdeki konsantrasyonlarını azaltmaya odaklanmaktadır. Bu teknoloji, ekonomik sürdürülebilirliği destekleyerek iklim krizinin ekonomik ve çevresel maliyetlerinin azaltılmasında önemli rol oynamaktadır. GreenAiriva’nın çözümleri, sosyal maliyet hesaplamalarına yönelik örnek teşkil etmekte ve küresel çapta uygulanabilir sürdürülebilirlik modelleri sunmaktadır.
+GreenAiriva offers innovative solutions aimed at reducing the social cost of greenhouse gases. Its developed adsorption technologies focus specifically on lowering atmospheric concentrations of CH₄, N₂O, and F-gases. This technology plays a vital role in reducing both the economic and environmental costs of the climate crisis, while also supporting economic sustainability. GreenAiriva’s solutions serve as examples for social cost accounting and provide globally applicable sustainability models.
 
-Teorik hesaplamalarımız göstermektedir ki; her bir GreenAiriva cihazı **kullanım alanına bağlı** olmakla birlikte cihaz başı 321,8 ABD doları azaltım sağlayabilmektedir. Bu sayılar, [EPA ve NOAA tarafından paylaşılmış atmosfereki ortalama gaz konsantrasyonları](https://blog.greenairiva.com.tr/article.html?slug=2025-07-10-hava-kalitesi-greenairiva) üzerinden yapılmış teorik hesaplamalara göre tespit edilmiştir. Gerçek sahadaki verim çok daha yüksek olabilecektir.
+Our theoretical calculations show that each GreenAiriva device—depending on its area of application—can provide a reduction of **\$321.8 USD per unit**. These figures are based on theoretical estimates derived from [average atmospheric gas concentrations shared by the EPA and NOAA](https://blog.greenairiva.com.tr/article.html?slug=2025-07-10-hava-kalitesi-greenairiva). In real-world scenarios, actual efficiency could be significantly higher.
 
-Sosyal maliyetteki azaltım ve Karbon kredisi yaratabiliyor oluşuyla GreenAiriva kendi maliyetini çok kısa bir sürede karşılayabilmektedir. Diğer rakipleri ve iklim değişikliğiyle mücadele eylemlerinden ise maliyet ve uygulanabilirlik açısından oldukça avantajlıdır.
+Thanks to its contribution to social cost reduction and its ability to generate carbon credits, GreenAiriva can offset its own cost in a very short time. Compared to its competitors and other climate action measures, it offers significant advantages in terms of cost and feasibility.
 
-Daha fazla gelişme için bizi takip edin. **Daha Temiz bir Dünya Mümkün!**
+Stay tuned for more developments. **Rise for a Cleaner Planet!**
+
