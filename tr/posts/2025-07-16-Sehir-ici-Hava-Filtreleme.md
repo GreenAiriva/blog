@@ -18,7 +18,7 @@ Bu sistemlerin her biri kendi içinde benzersiz avantajlar barındırsa da, öne
 
 Kentlerde hava temizliği deyince belki de en estetik çözümlerden biri, **biyolojik filtre sistemleri**. Özellikle yosun bazlı duvar panelleri veya dikey kent mobilyaları, doğal biyolojik süreçleri teknolojiyle harmanlayan çarpıcı örneklerdir.
 
-<img src="../assets/img/blog/2025-07-16-Sehir-ici-Hava-Filtreleme/2025-07-16-Sehir-ici-Hava-Filtreleme-GCS.jpg" alt= "Yosun Filtre">
+<img src="../../assets/img/blog/2025-07-16-Sehir-ici-Hava-Filtreleme/2025-07-16-Sehir-ici-Hava-Filtreleme-GCS.jpg" alt= "Yosun Filtre">
 
 *[(Green City Solutions)](https://greencitysolutions.de/en/)*
 
@@ -46,7 +46,7 @@ Yine de kent estetiği, hava kalitesi ve iklim konforu açısından bu sistemler
 
 Hava temizleme teknolojisinde bir diğer yenilikçi yaklaşım, **pozitif iyonizasyon temelli kuleler**dir. Dünya çapında ses getiren örneklerden biri, Hollandalı sanatçı ve tasarımcı Daan Roosegaarde’nin geliştirdiği 7 metre boyundaki kule prototipidir. Tasarım yalnızca teknoloji değil, aynı zamanda çevresel farkındalık yaratmak için bir sanat enstalasyonu işlevi de görmüştür.
 
-<img src="../assets/img/blog/2025-07-16-Sehir-ici-Hava-Filtreleme/2025-07-16-Sehir-ici-Hava-Filtreleme-SFT.jpg" alt= "Yosun Filtre">
+<img src="../../assets/img/blog/2025-07-16-Sehir-ici-Hava-Filtreleme/2025-07-16-Sehir-ici-Hava-Filtreleme-SFT.jpg" alt= "Yosun Filtre">
 
 *[(Studio Roosegaarde)](https://www.studioroosegaarde.net/project/smog-free-tower)*
 
@@ -75,7 +75,7 @@ Bu sistemin ilginç bir yönü, toplanan partiküllerin işlenerek karbon bazlı
 
 Aktif hava temizleme alanındaki en çarpıcı teknolojilerden biri ise **doğrudan hava yakalama (DAC)**. DAC, doğrudan atmosferden CO₂ yakalamak ve bunu ya kullanmak ya da kalıcı olarak yer altına gömmek üzere geliştiriliyor. Bu teknoloji, yalnızca kent ölçeğinde değil, küresel iklim hedeflerinde de kritik bir araç olarak öne çıkıyor.
 
-<img src="../assets/img/blog/2025-07-16-Sehir-ici-Hava-Filtreleme/2025-07-16-Sehir-ici-Hava-Filtreleme-DAC.jpg" alt= "Yosun Filtre">
+<img src="../../assets/img/blog/2025-07-16-Sehir-ici-Hava-Filtreleme/2025-07-16-Sehir-ici-Hava-Filtreleme-DAC.jpg" alt= "Yosun Filtre">
 
 *[(Carbon Direct)](https://www.carbon-direct.com/insights/direct-air-capture-is-ready-for-its-close-up)*
 
@@ -172,7 +172,7 @@ Son yıllarda pek çok farklı teknoloji bu soruna çözüm getirmeye çalışt�
 ## GreenAiriva’yı Benzersiz Kılan Ne?
 
 
-<img src="../assets/img/blog/2025-07-16-Sehir-ici-Hava-Filtreleme/2025-07-16-Sehir-ici-Hava-Filtreleme-Greenairiva.png" alt= "Yosun Filtre">
+<img src="../../assets/img/blog/2025-07-16-Sehir-ici-Hava-Filtreleme/2025-07-16-Sehir-ici-Hava-Filtreleme-Greenairiva.png" alt= "Yosun Filtre">
 
 
 
