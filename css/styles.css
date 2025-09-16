@@ -1908,7 +1908,7 @@ header.masthead.article-masthead::before {
 /* 06.4 Contact */
 section#contact {
   background-color: #212529;
-  background-image: url("../assets/img/map-image.webp");
+  background-image: url("../assets/img/map-image.png");
   background-repeat: no-repeat;
   background-position: center;
 }
