@@ -168,20 +168,36 @@ function blogRenderPosts() {
   });
   filtered.sort((a, b) => new Date(b.date) - new Date(a.date));
   const postsToShow = filtered.slice(0, blogVisibleCount);
-  list.innerHTML = postsToShow.map(post => `
-    <article class="blog-article" onclick="window.location.href='article.html?slug=${post.slug}'" tabindex="0">
-      <img src="${post.image}" alt="${post.title}" class="blog-img" />
-      <div class="blog-content">
-        <div class="blog-title">${post.title}</div>
-        <div class="blog-meta">${
-          Array.isArray(post.category)
-            ? post.category.join(', ')
-            : post.category
-        } &bull; ${new Date(post.date).toLocaleDateString('tr-TR', {day:'2-digit',month:'long',year:'numeric'})}</div>
-        <div class="blog-summary">${post.summary}</div>
+  list.innerHTML = postsToShow
+    .map(post => {
+      const categoriesText = Array.isArray(post.category)
+        ? post.category.join(', ')
+        : (post.category || '');
+      const formattedDate = post.date
+        ? new Date(post.date).toLocaleDateString('tr-TR', {
+            day: '2-digit',
+            month: 'long',
+            year: 'numeric'
+          })
+        : '';
+      const metaText = [categoriesText, formattedDate]
+        .filter(Boolean)
+        .join(' • ');
+      return `
+    <article class="blog-card" onclick="window.location.href='article.html?slug=${post.slug}'" tabindex="0">
+      <div class="blog-card-img">
+        <img src="${post.image}" alt="${post.title}" loading="lazy" />
+      </div>
+      <div class="blog-card-body">
+        <h3>${post.title}</h3>
+        <div class="blog-meta">${metaText}</div>
+        <p>${post.summary}</p>
+        <a class="read-blog-btn" href="article.html?slug=${post.slug}" onclick="event.stopPropagation();">Yazıyı Oku</a>
       </div>
     </article>
-  `).join('');
+      `;
+    })
+    .join('');
   // Buton yönetimi
   const loadMoreBtn = document.getElementById('loadMoreBtn');
   if (filtered.length > blogVisibleCount) {
