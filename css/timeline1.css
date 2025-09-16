@@ -1,0 +1,183 @@
+
+/* Updated timeline1.css - responsive and consistent */
+
+.ps-timeline-sec {
+  position: relative;
+  background: #fff;
+}
+
+.ps-timeline-sec .container {
+  position: relative;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* Optional starting and ending dots (disabled with display: none) */
+.ps-timeline-sec .container ol:before,
+.ps-timeline-sec .container ol:after {
+  display: none !important;
+}
+
+.ps-timeline-sec .container ol.ps-timeline {
+  margin: 300px 0;
+  padding: 0;
+  border-top: 2px solid #348e80;
+  list-style: none;
+}
+
+.ps-timeline-sec .container ol.ps-timeline li {
+  float: left;
+  width: 25%;
+  padding-top: 30px;
+  position: relative;
+}
+
+.ps-timeline-sec .container ol.ps-timeline li span {
+  width: 50px;
+  height: 50px;
+  margin-left: -25px;
+  background: #fff;
+  border: 4px solid #348e80;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  color: #df8625;
+  font-size: 2em;
+  position: absolute;
+  top: -26px;
+  left: 50%;
+}
+
+.ps-timeline-sec .container ol.ps-timeline li span.ps-sp-top:before,
+.ps-timeline-sec .container ol.ps-timeline li span.ps-sp-bot:before {
+  content: '';
+  background: #348e80;
+  width: 2px;
+  height: 50px;
+  position: absolute;
+  left: 50%;
+}
+
+.ps-timeline-sec .container ol.ps-timeline li span.ps-sp-top:before {
+  top: -50px;
+}
+
+.ps-timeline-sec .container ol.ps-timeline li span.ps-sp-bot:before {
+  bottom: -50px;
+}
+
+.ps-timeline-sec .container ol.ps-timeline li span.ps-sp-top:after,
+.ps-timeline-sec .container ol.ps-timeline li span.ps-sp-bot:after {
+  content: '';
+  background: #348e80;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  border-radius: 100%;
+  left: 44%;
+}
+
+.ps-timeline-sec .container ol.ps-timeline li span.ps-sp-top:after {
+  bottom: 90px;
+}
+
+.ps-timeline-sec .container ol.ps-timeline li span.ps-sp-bot:after {
+  top: 90px;
+}
+
+.ps-timeline-sec .container ol.ps-timeline li .img-handler-top,
+.ps-timeline-sec .container ol.ps-timeline li .img-handler-bot {
+  position: absolute;
+  width: 100%;
+}
+
+.ps-timeline-sec .container ol.ps-timeline li .img-handler-top {
+  bottom: 0;
+  margin-bottom: 130px;
+}
+
+.ps-timeline-sec .container ol.ps-timeline li .img-handler-bot {
+  margin-top: 60px;
+}
+
+.ps-timeline-sec .container ol.ps-timeline li .img-handler-top img,
+.ps-timeline-sec .container ol.ps-timeline li .img-handler-bot img {
+  display: block;
+  margin: 0 auto;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 4rem;
+}
+
+.ps-timeline-sec .container ol.ps-timeline li p {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  font-weight: 700;
+}
+
+.ps-timeline-sec .container ol.ps-timeline li .ps-top {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 100px;
+}
+
+.ps-timeline-sec .container ol.ps-timeline li .ps-bot {
+  position: absolute;
+  margin-top: 35px;
+}
+
+/* Responsive mobile layout fix */
+@media screen and (max-width: 767px) {
+  .ps-timeline-sec .container ol.ps-timeline {
+    margin: 100px 0 !important;
+    padding-top: 100px !important;
+    margin-left: 20px !important;
+    border-left: 2px solid #348e80;
+    border-top: none !important;
+  }
+
+  .ps-timeline-sec .container ol.ps-timeline li {
+    float: none !important;
+    width: 100% !important;
+    margin-bottom: 60px;
+    height: auto !important;
+  }
+
+  .ps-timeline-sec .container ol.ps-timeline li .img-handler-top,
+  .ps-timeline-sec .container ol.ps-timeline li .img-handler-bot {
+    position: relative !important;
+    width: 100% !important;
+    margin: 0 auto 10px !important;
+    text-align: center;
+  }
+
+  .ps-timeline-sec .container ol.ps-timeline li .img-handler-top img,
+  .ps-timeline-sec .container ol.ps-timeline li .img-handler-bot img {
+    width: 200px !important;
+    height: auto !important;
+    object-fit: contain;
+  }
+
+  .ps-timeline-sec .container ol.ps-timeline li .ps-top,
+  .ps-timeline-sec .container ol.ps-timeline li .ps-bot {
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    width: 100% !important;
+    text-align: left !important;
+    margin-top: 10px;
+  }
+
+  .ps-timeline-sec .container ol.ps-timeline li span {
+    left: 0 !important;
+    margin-top: 10px;
+  }
+
+  .ps-timeline-sec .container ol.ps-timeline li span.ps-sp-top:before,
+  .ps-timeline-sec .container ol.ps-timeline li span.ps-sp-top:after,
+  .ps-timeline-sec .container ol.ps-timeline li span.ps-sp-bot:before,
+  .ps-timeline-sec .container ol.ps-timeline li span.ps-sp-bot:after {
+    display: none !important;
+  }
+}
