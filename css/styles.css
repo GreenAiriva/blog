@@ -1950,7 +1950,8 @@ h1, h2, h3, h4, h5 {
 /* KART GÖRSELİ */
 .blog-card-img {
   width: 100%;
-  aspect-ratio: 16/9 !important;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
   background: #dbeafe;
   display: flex;
   align-items: center;
