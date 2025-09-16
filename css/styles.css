@@ -1763,6 +1763,96 @@ header.masthead .container {
 /* ==== Masthead Butonunu Web ve Mobilde Sağa Yasla ve Optimize Et Sonu ==== */
  /* Masthead*/
 
+/* Article Masthead */
+header.masthead.article-masthead {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  height: 60vh;
+  min-height: 350px;
+  padding: 6rem 0 3rem;
+  color: #fff;
+  background-color: #212529;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+header.masthead.article-masthead::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(18, 20, 24, 0.2) 0%, rgba(18, 20, 24, 0.75) 100%);
+  pointer-events: none;
+}
+
+.article-masthead .container {
+  position: relative;
+  z-index: 1;
+}
+
+.article-masthead-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.article-masthead-title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.article-masthead .badge {
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.article-masthead .text-light,
+.article-masthead .article-masthead-title {
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+
+.article-image {
+  display: none;
+  max-height: 320px;
+  object-fit: cover;
+}
+
+.article-notfound {
+  display: none;
+}
+
+.footer-social-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  filter: invert(1);
+}
+
+@media (max-width: 991.98px) {
+  header.masthead.article-masthead {
+    height: auto;
+    min-height: 320px;
+    padding-top: 7rem;
+    padding-bottom: 2.5rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  header.masthead.article-masthead {
+    padding-top: 6.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .article-masthead-title {
+    font-size: clamp(2rem, 9vw, 2.8rem);
+  }
+}
+
   /* 06.3 Timeline */
 .timeline {
   position: relative;
