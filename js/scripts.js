@@ -716,17 +716,23 @@ function initHero() {
   }
 
   const heroFigure = heroCard.querySelector('.hero-cover');
-  const heroImg = heroCard.querySelector('.hero-img');
+  const heroImg = document.getElementById('article-hero-img');
   if (heroImg) {
-    if (post.cover) {
-      heroImg.src = post.cover;
-      heroImg.alt = `${post.title} cover image`;
+    const coverSource = post.cover || post.image || '';
+    if (coverSource) {
+      heroImg.src = coverSource;
+      heroImg.alt = post.title || '';
       heroImg.loading = 'lazy';
       if (heroFigure) {
+        heroFigure.hidden = false;
         heroFigure.style.display = '';
       }
-    } else if (heroFigure) {
-      heroFigure.style.display = 'none';
+    } else {
+      heroImg.removeAttribute('src');
+      heroImg.alt = '';
+      if (heroFigure) {
+        heroFigure.hidden = true;
+      }
     }
   }
 
@@ -896,42 +902,7 @@ function initToc() {
   }
 }
 
-function slugifyTag(tag) {
-  return slugifyText(tag, '').replace(/^-+|-+$/g, '') || slugifyText(tag, 'tag');
-}
-
-const tagUrlCache = new Map();
-async function resolveTagHref(tagSlug) {
-  if (tagUrlCache.has(tagSlug)) {
-    return tagUrlCache.get(tagSlug);
-  }
-  const fallback = `/?tag=${encodeURIComponent(tagSlug)}`;
-  if (window.location.protocol === 'file:' || typeof fetch !== 'function') {
-    tagUrlCache.set(tagSlug, fallback);
-    return fallback;
-  }
-  const candidates = [
-    `tags/${tagSlug}/`,
-    `tags/${tagSlug}.html`,
-    `/tags/${tagSlug}/`,
-    `/tags/${tagSlug}.html`
-  ];
-  for (const candidate of candidates) {
-    try {
-      const response = await fetch(candidate, { method: 'HEAD' });
-      if (response.ok) {
-        tagUrlCache.set(tagSlug, candidate);
-        return candidate;
-      }
-    } catch (error) {
-      // ignore and try next candidate
-    }
-  }
-  tagUrlCache.set(tagSlug, fallback);
-  return fallback;
-}
-
-async function initTags() {
+function initTags() {
   const post = articleState.post;
   const container = document.getElementById('post-tags');
   if (!post || !container) {
@@ -944,18 +915,9 @@ async function initTags() {
     return;
   }
   container.hidden = false;
-  container.innerHTML = '';
-  const links = await Promise.all(tags.map(async (tag) => {
-    const slug = slugifyTag(tag);
-    const href = await resolveTagHref(slug);
-    const anchor = document.createElement('a');
-    anchor.className = 'tag';
-    anchor.href = href;
-    anchor.textContent = `#${tag}`;
-    anchor.setAttribute('data-tag-slug', slug);
-    return anchor;
-  }));
-  links.forEach((anchor) => container.appendChild(anchor));
+  container.innerHTML = tags
+    .map((tag) => `<a class="tag" href="/?tag=${encodeURIComponent(tag)}">#${tag}</a>`)
+    .join('');
 }
 
 function compareByDateDesc(a, b) {
@@ -1049,7 +1011,7 @@ async function setupArticlePage() {
     initHero();
     await renderArticleContent(current);
     initToc();
-    await initTags();
+    initTags();
     initRelated();
   } catch (error) {
     console.error('Unable to set up article page', error);
