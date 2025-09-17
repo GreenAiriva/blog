@@ -394,8 +394,20 @@ const ARTICLE_FALLBACK_COVER = 'data:image/svg+xml;charset=UTF-8,' + encodeURICo
 const articleState = {
   posts: [],
   post: null,
-  slug: ''
+  slug: '',
+  lang: 'en'
 };
+
+function getArticleLanguage() {
+  const docLang = (document.documentElement.getAttribute('lang') || '').toLowerCase();
+  if (docLang.startsWith('tr')) {
+    return 'tr';
+  }
+  if (window.location.pathname.toLowerCase().includes('/tr/')) {
+    return 'tr';
+  }
+  return 'en';
+}
 
 function prefersReducedMotion() {
   return Boolean(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
@@ -605,12 +617,14 @@ function initBreadcrumb() {
   }
   breadcrumbList.innerHTML = '';
 
-  const homeUrl = absoluteUrl('/');
-  const blogUrl = absoluteUrl('index.html');
+  const lang = articleState.lang || getArticleLanguage();
+  const isTr = lang === 'tr';
+  const homeUrl = isTr ? absoluteUrl('/tr/') : absoluteUrl('/');
+  const blogUrl = isTr ? absoluteUrl('/tr/index.html') : absoluteUrl('/index.html');
   const articleUrl = absoluteUrl(window.location.pathname + window.location.search);
 
   const crumbs = [
-    { label: 'Home', href: homeUrl },
+    { label: isTr ? 'Anasayfa' : 'Home', href: homeUrl },
     { label: 'Blog', href: blogUrl },
     { label: post.title, href: null }
   ];
@@ -662,13 +676,16 @@ function initHero() {
 
   const bylineEl = heroCard.querySelector('.post-byline');
   if (bylineEl) {
-    const authorName = post.author || 'GreenAiriva Team';
+    const lang = articleState.lang || getArticleLanguage();
+    const isTr = lang === 'tr';
+    const authorName = post.author || (isTr ? 'GreenAiriva Ekibi' : 'GreenAiriva Team');
     const segments = [];
     if (authorName) {
       segments.push({ type: 'author', value: authorName });
     }
     if (post.dateObj) {
-      const formattedDate = post.dateObj.toLocaleDateString(undefined, {
+      const dateLocale = isTr ? 'tr-TR' : undefined;
+      const formattedDate = post.dateObj.toLocaleDateString(dateLocale || undefined, {
         year: 'numeric',
         month: 'long',
         day: 'numeric'
@@ -683,7 +700,7 @@ function initHero() {
       bylineEl.innerHTML = '';
       segments.forEach((segment, index) => {
         if (segment.type === 'author') {
-          const authorText = document.createTextNode('By ');
+          const authorText = document.createTextNode(isTr ? 'Yazan ' : 'By ');
           const authorSpan = document.createElement('span');
           authorSpan.className = 'post-author';
           authorSpan.textContent = segment.value;
@@ -716,22 +733,30 @@ function initHero() {
   }
 
   const heroFigure = heroCard.querySelector('.hero-cover');
-  const heroImg = heroCard.querySelector('.hero-img');
+  const heroImg = document.getElementById('article-hero-img');
   if (heroImg) {
-    if (post.cover) {
-      heroImg.src = post.cover;
-      heroImg.alt = `${post.title} cover image`;
+    const coverSource = post.cover || post.image || '';
+    if (coverSource) {
+      heroImg.src = coverSource;
+      heroImg.alt = post.title || '';
       heroImg.loading = 'lazy';
       if (heroFigure) {
+        heroFigure.hidden = false;
         heroFigure.style.display = '';
       }
-    } else if (heroFigure) {
-      heroFigure.style.display = 'none';
+    } else {
+      heroImg.removeAttribute('src');
+      heroImg.alt = '';
+      if (heroFigure) {
+        heroFigure.hidden = true;
+      }
     }
   }
 
   if (post.title) {
-    document.title = `${post.title} – GreenAiriva Blog`;
+    const lang = articleState.lang || getArticleLanguage();
+    const suffix = lang === 'tr' ? 'GreenAiriva Blogu' : 'GreenAiriva Blog';
+    document.title = `${post.title} – ${suffix}`;
   }
 }
 
@@ -896,42 +921,7 @@ function initToc() {
   }
 }
 
-function slugifyTag(tag) {
-  return slugifyText(tag, '').replace(/^-+|-+$/g, '') || slugifyText(tag, 'tag');
-}
-
-const tagUrlCache = new Map();
-async function resolveTagHref(tagSlug) {
-  if (tagUrlCache.has(tagSlug)) {
-    return tagUrlCache.get(tagSlug);
-  }
-  const fallback = `/?tag=${encodeURIComponent(tagSlug)}`;
-  if (window.location.protocol === 'file:' || typeof fetch !== 'function') {
-    tagUrlCache.set(tagSlug, fallback);
-    return fallback;
-  }
-  const candidates = [
-    `tags/${tagSlug}/`,
-    `tags/${tagSlug}.html`,
-    `/tags/${tagSlug}/`,
-    `/tags/${tagSlug}.html`
-  ];
-  for (const candidate of candidates) {
-    try {
-      const response = await fetch(candidate, { method: 'HEAD' });
-      if (response.ok) {
-        tagUrlCache.set(tagSlug, candidate);
-        return candidate;
-      }
-    } catch (error) {
-      // ignore and try next candidate
-    }
-  }
-  tagUrlCache.set(tagSlug, fallback);
-  return fallback;
-}
-
-async function initTags() {
+function initTags() {
   const post = articleState.post;
   const container = document.getElementById('post-tags');
   if (!post || !container) {
@@ -944,18 +934,11 @@ async function initTags() {
     return;
   }
   container.hidden = false;
-  container.innerHTML = '';
-  const links = await Promise.all(tags.map(async (tag) => {
-    const slug = slugifyTag(tag);
-    const href = await resolveTagHref(slug);
-    const anchor = document.createElement('a');
-    anchor.className = 'tag';
-    anchor.href = href;
-    anchor.textContent = `#${tag}`;
-    anchor.setAttribute('data-tag-slug', slug);
-    return anchor;
-  }));
-  links.forEach((anchor) => container.appendChild(anchor));
+  const lang = articleState.lang || getArticleLanguage();
+  const baseHref = lang === 'tr' ? '/tr/?tag=' : '/?tag=';
+  container.innerHTML = tags
+    .map((tag) => `<a class="tag" href="${baseHref}${encodeURIComponent(tag)}">#${tag}</a>`)
+    .join('');
 }
 
 function compareByDateDesc(a, b) {
@@ -965,8 +948,10 @@ function compareByDateDesc(a, b) {
 }
 
 function createRelatedCard(post) {
+  const lang = articleState.lang || getArticleLanguage();
+  const locale = lang === 'tr' ? 'tr-TR' : undefined;
   const dateText = post.dateObj
-    ? post.dateObj.toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' })
+    ? post.dateObj.toLocaleDateString(locale || undefined, { year: 'numeric', month: 'short', day: 'numeric' })
     : '';
   const dateISO = post.dateISO || '';
   const cover = post.cover || ARTICLE_FALLBACK_COVER;
@@ -1022,10 +1007,15 @@ async function setupArticlePage() {
   if (!articleContainer) {
     return;
   }
+  const lang = getArticleLanguage();
+  articleState.lang = lang;
+  const isTr = lang === 'tr';
+  const notFoundText = isTr ? 'Yazı bulunamadı.' : 'Article not found.';
+  const loadErrorText = isTr ? 'Yazı yüklenemedi. Lütfen daha sonra tekrar deneyin.' : 'Unable to load article. Please try again later.';
   const slug = getArticleSlugFromLocation();
   articleState.slug = slug;
   if (!slug) {
-    showArticleNotFound('Article not found.');
+    showArticleNotFound(notFoundText);
     return;
   }
 
@@ -1040,7 +1030,7 @@ async function setupArticlePage() {
     const slugLower = slug.toLowerCase();
     const current = normalizedPosts.find((item) => item.slug === slugLower || (item.raw && item.raw.slug && String(item.raw.slug).toLowerCase() === slugLower));
     if (!current) {
-      showArticleNotFound('Article not found.');
+      showArticleNotFound(notFoundText);
       return;
     }
     articleState.post = current;
@@ -1049,11 +1039,11 @@ async function setupArticlePage() {
     initHero();
     await renderArticleContent(current);
     initToc();
-    await initTags();
+    initTags();
     initRelated();
   } catch (error) {
     console.error('Unable to set up article page', error);
-    showArticleNotFound('Unable to load article. Please try again later.');
+    showArticleNotFound(loadErrorText);
   }
 }
 

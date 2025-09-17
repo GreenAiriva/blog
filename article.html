@@ -66,20 +66,22 @@
       </nav>
     </header>
     <div class="article-wrapper container">
-      <nav aria-label="Breadcrumb">
-        <ol class="breadcrumb">
-          <!-- JS dolduracak: Home › Blog › {title} -->
-        </ol>
-      </nav>
-
       <section class="hero-card">
         <div class="hero-meta">
           <h1 class="post-title"></h1>
           <p class="post-byline">By <span class="post-author"></span> · <time class="post-date"></time></p>
         </div>
-        <figure class="hero-cover"><img class="hero-img" alt=""></figure>
+        <figure class="hero-cover">
+          <img class="hero-img" id="article-hero-img" alt="">
+        </figure>
         <div class="post-abstract callout"></div>
       </section>
+
+      <nav aria-label="Breadcrumb">
+        <ol class="breadcrumb">
+          <!-- JS dolduracak: Home › Blog › {title} -->
+        </ol>
+      </nav>
 
       <div id="article-notfound" class="alert alert-warning article-notfound" hidden>Article not found.</div>
 
