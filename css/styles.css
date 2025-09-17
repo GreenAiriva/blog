@@ -2277,7 +2277,7 @@ h1, h2, h3, h4, h5 {
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 1rem;
   overflow: hidden;
-  margin: 0.75rem 0 0;
+  margin: 0.75rem 0 0.75rem;
 }
 
 .hero-card .hero-cover .hero-img {
