@@ -397,6 +397,39 @@ const articleState = {
   slug: ''
 };
 
+const documentLangAttr = (document.documentElement.getAttribute('lang') || '').toLowerCase();
+const articleLang = documentLangAttr.startsWith('tr') ? 'tr' : 'en';
+const articleLocale = articleLang === 'tr' ? 'tr-TR' : 'en-US';
+const ARTICLE_I18N = {
+  en: {
+    homeLabel: 'Home',
+    blogLabel: 'Blog',
+    homePath: '/',
+    blogPath: '/index.html',
+    byLabel: 'By ',
+    defaultAuthor: 'GreenAiriva Team',
+    notFound: 'Article not found.',
+    loadError: 'Unable to load article. Please try again later.',
+    contentError: 'Unable to load article content at the moment.',
+    pageTitleSuffix: 'GreenAiriva Blog',
+    tagsLinkBase: '/?tag='
+  },
+  tr: {
+    homeLabel: 'Anasayfa',
+    blogLabel: 'Blog',
+    homePath: '/tr/',
+    blogPath: '/tr/index.html',
+    byLabel: 'Yazar: ',
+    defaultAuthor: 'GreenAiriva Ekibi',
+    notFound: 'Yazı bulunamadı.',
+    loadError: 'Yazı yüklenemedi. Lütfen daha sonra tekrar deneyin.',
+    contentError: 'İçerik şu anda yüklenemiyor.',
+    pageTitleSuffix: 'GreenAiriva Blogu',
+    tagsLinkBase: '/tr/?tag='
+  }
+};
+const articleText = ARTICLE_I18N[articleLang] || ARTICLE_I18N.en;
+
 function prefersReducedMotion() {
   return Boolean(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
 }
@@ -520,6 +553,7 @@ function normalizePost(raw = {}) {
 }
 
 function showArticleNotFound(message) {
+  const finalMessage = message || articleText.notFound;
   const sectionsToHide = [
     document.querySelector('.hero-card'),
     document.querySelector('.article-layout'),
@@ -534,9 +568,7 @@ function showArticleNotFound(message) {
   });
   const notFound = document.getElementById('article-notfound');
   if (notFound) {
-    if (message) {
-      notFound.textContent = message;
-    }
+    notFound.textContent = finalMessage;
     notFound.hidden = false;
   }
 }
@@ -590,7 +622,7 @@ async function renderArticleContent(post) {
     }
   } catch (error) {
     console.error('Unable to load article content', error);
-    container.innerHTML = '<p class="alert alert-warning">Unable to load article content at the moment.</p>';
+    container.innerHTML = `<p class="alert alert-warning">${articleText.contentError}</p>`;
   }
 }
 
@@ -605,13 +637,13 @@ function initBreadcrumb() {
   }
   breadcrumbList.innerHTML = '';
 
-  const homeUrl = absoluteUrl('/');
-  const blogUrl = absoluteUrl('index.html');
+  const homeUrl = absoluteUrl(articleText.homePath);
+  const blogUrl = absoluteUrl(articleText.blogPath);
   const articleUrl = absoluteUrl(window.location.pathname + window.location.search);
 
   const crumbs = [
-    { label: 'Home', href: homeUrl },
-    { label: 'Blog', href: blogUrl },
+    { label: articleText.homeLabel, href: homeUrl },
+    { label: articleText.blogLabel, href: blogUrl },
     { label: post.title, href: null }
   ];
 
@@ -662,13 +694,14 @@ function initHero() {
 
   const bylineEl = heroCard.querySelector('.post-byline');
   if (bylineEl) {
-    const authorName = post.author || 'GreenAiriva Team';
+    const authorName = post.author || articleText.defaultAuthor;
+    const authorLabel = articleText.byLabel || '';
     const segments = [];
     if (authorName) {
-      segments.push({ type: 'author', value: authorName });
+      segments.push({ type: 'author', value: authorName, label: authorLabel });
     }
     if (post.dateObj) {
-      const formattedDate = post.dateObj.toLocaleDateString(undefined, {
+      const formattedDate = post.dateObj.toLocaleDateString(articleLocale, {
         year: 'numeric',
         month: 'long',
         day: 'numeric'
@@ -683,11 +716,13 @@ function initHero() {
       bylineEl.innerHTML = '';
       segments.forEach((segment, index) => {
         if (segment.type === 'author') {
-          const authorText = document.createTextNode('By ');
+          if (segment.label) {
+            bylineEl.append(document.createTextNode(segment.label));
+          }
           const authorSpan = document.createElement('span');
           authorSpan.className = 'post-author';
           authorSpan.textContent = segment.value;
-          bylineEl.append(authorText, authorSpan);
+          bylineEl.appendChild(authorSpan);
         }
         if (segment.type === 'date') {
           if (index > 0) {
@@ -737,7 +772,7 @@ function initHero() {
   }
 
   if (post.title) {
-    document.title = `${post.title} – GreenAiriva Blog`;
+    document.title = `${post.title} – ${articleText.pageTitleSuffix}`;
   }
 }
 
@@ -915,8 +950,9 @@ function initTags() {
     return;
   }
   container.hidden = false;
+  const tagsBase = articleText.tagsLinkBase || '/?tag=';
   container.innerHTML = tags
-    .map((tag) => `<a class="tag" href="/?tag=${encodeURIComponent(tag)}">#${tag}</a>`)
+    .map((tag) => `<a class="tag" href="${tagsBase}${encodeURIComponent(tag)}">#${tag}</a>`)
     .join('');
 }
 
@@ -928,7 +964,7 @@ function compareByDateDesc(a, b) {
 
 function createRelatedCard(post) {
   const dateText = post.dateObj
-    ? post.dateObj.toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' })
+    ? post.dateObj.toLocaleDateString(articleLocale, { year: 'numeric', month: 'short', day: 'numeric' })
     : '';
   const dateISO = post.dateISO || '';
   const cover = post.cover || ARTICLE_FALLBACK_COVER;
@@ -987,7 +1023,7 @@ async function setupArticlePage() {
   const slug = getArticleSlugFromLocation();
   articleState.slug = slug;
   if (!slug) {
-    showArticleNotFound('Article not found.');
+    showArticleNotFound(articleText.notFound);
     return;
   }
 
@@ -1002,7 +1038,7 @@ async function setupArticlePage() {
     const slugLower = slug.toLowerCase();
     const current = normalizedPosts.find((item) => item.slug === slugLower || (item.raw && item.raw.slug && String(item.raw.slug).toLowerCase() === slugLower));
     if (!current) {
-      showArticleNotFound('Article not found.');
+      showArticleNotFound(articleText.notFound);
       return;
     }
     articleState.post = current;
@@ -1015,7 +1051,7 @@ async function setupArticlePage() {
     initRelated();
   } catch (error) {
     console.error('Unable to set up article page', error);
-    showArticleNotFound('Unable to load article. Please try again later.');
+    showArticleNotFound(articleText.loadError);
   }
 }
 
