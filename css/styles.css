@@ -2281,10 +2281,10 @@ h1, h2, h3, h4, h5 {
 }
 
 .hero-card .hero-cover .hero-img {
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
+/*max-width: 100%;
+  max-height: 100%; */
+  width: 1200px;
+  height: 4000pz;
   object-fit: contain;
   display: block;
   border-radius: 0.75rem;
