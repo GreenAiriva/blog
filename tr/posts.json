@@ -3,10 +3,15 @@
     "slug": "2025-07-14-social-cost-ghg",
     "title": "Sera Gazlarının Sosyal Maliyeti ve Türkiye İçin Önemi: EPA SC-GHG Raporu Çerçevesinde Detaylı Bir Analiz",
     "date": "2025-07-14",
-    "category": ["EPA","Greenhouse Gases"],
+    "category": ["EPA", "Greenhouse Gases"],
     "summary": "Sera gazlarının sosyal maliyeti, atmosfere salınan gazların gelecekte yaratacağı çevresel ve ekonomik zararların bugünkü parasal değeridir. Bu çalışma, EPA'nın 2023 SC-GHG raporunu temel alarak, Türkiye özelinde Ankara ili için bir hesaplama sunmakta ve GreenAiriva’nın yenilikçi çözümleriyle sosyal maliyet azaltımına katkılarını analiz etmektedir.",
+    "abstract": "Sera gazlarının sosyal maliyeti, atmosfere salınan gazların gelecekte yaratacağı çevresel ve ekonomik zararların bugünkü parasal değeridir. Bu çalışma, EPA'nın 2023 SC-GHG raporunu temel alarak, Türkiye özelinde Ankara ili için bir hesaplama sunmakta ve GreenAiriva’nın yenilikçi çözümleriyle sosyal maliyet azaltımına katkılarını analiz etmektedir.",
     "image": "../assets/img/blog/1.jpg",
-    "url": "posts/2025-07-15-social-cost.md"
+    "cover": "../assets/img/blog/1.jpg",
+    "author": "GreenAiriva Araştırma Ekibi",
+    "tags": ["EPA", "Sosyal Maliyet", "İklim Politikası"],
+    "url": "article.html?slug=2025-07-14-social-cost-ghg",
+    "content": "posts/2025-07-15-social-cost.md"
   },
   {
     "slug": "2025-07-10-hava-kalitesi-greenairiva",
@@ -14,8 +19,13 @@
     "date": "2025-07-15",
     "category": "Greenhouse Gases",
     "summary": "Bu yazıda, hava kalitesi ölçüm metodolojileri ve GreenAiriva'nın yenilikçi teknolojileri anlatılıyor.",
+    "abstract": "Bu yazıda, hava kalitesi ölçüm metodolojileri ve GreenAiriva'nın yenilikçi teknolojileri anlatılıyor.",
     "image": "../assets/img/blog/2.jpg",
-    "url": "posts/2025-07-14-sera-gazlari.md"
+    "cover": "../assets/img/blog/2.jpg",
+    "author": "GreenAiriva Veri Ekibi",
+    "tags": ["Hava Kalitesi", "İzleme", "GreenAiriva"],
+    "url": "article.html?slug=2025-07-10-hava-kalitesi-greenairiva",
+    "content": "posts/2025-07-14-sera-gazlari.md"
   },
   {
     "slug": "2025-07-16-Sehir-ici-Hava-Filtreleme",
@@ -23,7 +33,12 @@
     "date": "2025-07-16",
     "category": ["urban air cleaning", "active air filters", "CO2 capture", "green tech"],
     "summary": "Kentlerde PM, NOx ve sera gazları kaynaklı hava kirliliği sağlık ve iklimi tehdit ediyor. Yosun filtreleri, iyonizasyon kuleleri ve DAC gibi çözümler sınırlı kalıyor. GreenAiriva, çok katmanlı adsorban teknolojisi, gerçek zamanlı veri analizi ve güneş enerjisiyle çalışarak farklı kirleticileri hedef alıyor. Bu sayede mevcut teknolojilerdeki boşlukları dolduruyor ve kentsel hava temizliğinde yenilikçi, sürdürülebilir bir çözüm sunuyor.",
+    "abstract": "Kentlerde PM, NOx ve sera gazları kaynaklı hava kirliliği sağlık ve iklimi tehdit ediyor. Yosun filtreleri, iyonizasyon kuleleri ve DAC gibi çözümler sınırlı kalıyor. GreenAiriva, çok katmanlı adsorban teknolojisi, gerçek zamanlı veri analizi ve güneş enerjisiyle çalışarak farklı kirleticileri hedef alıyor. Bu sayede mevcut teknolojilerdeki boşlukları dolduruyor ve kentsel hava temizliğinde yenilikçi, sürdürülebilir bir çözüm sunuyor.",
     "image": "../assets/img/blog/2025-07-16-Sehir-ici-Hava-Filtreleme/2025-07-16-Sehir-ici-Hava-Filtreleme.png",
-    "url": "posts/2025-07-16-Sehir-ici-Hava-Filtreleme.md"
+    "cover": "../assets/img/blog/2025-07-16-Sehir-ici-Hava-Filtreleme/2025-07-16-Sehir-ici-Hava-Filtreleme.png",
+    "author": "GreenAiriva Ar-Ge Ekibi",
+    "tags": ["Kentsel Hava", "CO2 Yakalama", "Yeşil Teknoloji"],
+    "url": "article.html?slug=2025-07-16-Sehir-ici-Hava-Filtreleme",
+    "content": "posts/2025-07-16-Sehir-ici-Hava-Filtreleme.md"
   }
 ]
