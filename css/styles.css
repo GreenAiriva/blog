@@ -2168,3 +2168,58 @@ h1, h2, h3, h4, h5 {
 /* =========================================================
    07. Print
    ========================================================= */
+/* === GreenAiriva Blog Board (Dark) === */
+.ga-board { background:#0f1115; padding:2.5rem 0 3.5rem; }
+.ga-title { color:#fff; font-size:clamp(1.4rem,2.5vw,1.8rem); font-weight:800; margin:0 0 1rem; }
+.ga-toolbar { display:flex; align-items:center; justify-content:space-between; gap:1rem; margin-bottom:1rem; }
+.ga-tags { display:flex; gap:.5rem; overflow:auto; padding-bottom:.25rem; scrollbar-width:none; }
+.ga-tags::-webkit-scrollbar{ display:none; }
+
+.ga-pill {
+  background:#151923; color:#cbd5e1; border:1px solid #1f2430;
+  padding:.45rem .85rem; border-radius:1rem; font-weight:600; white-space:nowrap;
+}
+.ga-pill:hover { background:#1a2030; color:#e5e7eb; }
+.ga-pill.active { background:#2a3347; color:#fff; border-color:#2f3a51; }
+
+.ga-search { background:#0f131c; color:#e5e7eb; border:1px solid #1f2430; padding:.55rem .9rem; border-radius:.6rem; min-width:220px; }
+.ga-search::placeholder{ color:#93a1b5; }
+
+.ga-grid { display:grid; grid-template-columns:repeat(1,minmax(0,1fr)); gap:1rem; }
+@media (min-width:768px){ .ga-grid{ grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media (min-width:1200px){ .ga-grid{ grid-template-columns:repeat(3,minmax(0,1fr)); } }
+.ga-empty{ color:#9fb0c9; text-align:center; padding:2.4rem 0; font-size:.95rem; }
+
+.ga-card {
+  background:#11151e; border:1px solid #1a2030; border-radius:14px;
+  box-shadow:0 6px 20px rgba(0,0,0,.25); overflow:hidden; display:flex; flex-direction:column;
+  transition:transform .18s ease, box-shadow .18s ease, border-color .18s;
+}
+.ga-card:hover{ transform:translateY(-2px); box-shadow:0 16px 40px rgba(0,0,0,.35); border-color:#273149; }
+
+.ga-thumb{ display:block; aspect-ratio:16/9; background:#0b0d12; }
+.ga-thumb img{ width:100%; height:100%; object-fit:cover; display:block; }
+
+.ga-body{ padding:.9rem .95rem .25rem; }
+.ga-h3{ margin:0 0 .35rem; font-size:1rem; line-height:1.35; }
+.ga-h3 a{ color:#eef2ff; text-decoration:none; }
+.ga-h3 a:hover{ text-decoration:underline; }
+.ga-excerpt{ color:#98a6be; font-size:.92rem; line-height:1.55; margin:0; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+
+.ga-meta{
+  display:flex; align-items:center; justify-content:space-between;
+  padding:.6rem .8rem .8rem; gap:.5rem; border-top:1px solid #1a2030; color:#9fb0c9;
+}
+.ga-meta-left{ display:flex; align-items:center; gap:.45rem; flex-wrap:wrap; }
+.ga-badge{ background:#172033; color:#cbd5e1; border:1px solid #24314a; font-size:.75rem; padding:.15rem .5rem; border-radius:.5rem;}
+.ga-dot{ width:4px; height:4px; background:#3b4457; border-radius:999px; display:inline-block; margin:0 .15rem; }
+.ga-sep{ opacity:.6; }
+.ga-read{ font-size:.82rem; }
+
+.ga-meta-right{ display:flex; align-items:center; gap:.55rem; }
+.ga-stat{ display:inline-flex; align-items:center; gap:.35rem; font-size:.82rem; color:#9fb0c9; }
+.ga-stat svg{ width:16px; height:16px; opacity:.85; }
+
+.ga-pager{ display:flex; justify-content:center; gap:.4rem; margin-top:1rem; }
+.ga-pager .pg{ background:#151923; color:#cfd8ea; border:1px solid #222a3a; padding:.5rem .75rem; border-radius:.5rem; }
+.ga-pager .pg.active, .ga-pager .pg:hover{ background:#2a3347; color:#fff; border-color:#2f3a51; }

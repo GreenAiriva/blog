@@ -75,26 +75,20 @@
     </div>
 </header>
 
-    <!-- Blog Main -->
-    <main class="container my-5">
-        <div class="row align-items-center mb-4">
-            <div class="col">
-                <h2 class="mb-0">İklim Kriziyle ilgili En Güncel Yazılar</h2>
-            </div>
-            <div class="col-auto">
-                <select class="form-select" id="postFilter" style="min-width:180px;">
-                    <option value="">Tüm Kategoriler</option>
-                </select>
-            </div>
+    <!-- GreenAiriva Blog Board -->
+    <section id="ga-board" class="ga-board">
+      <div class="container">
+        <h2 class="ga-title">Son Yazılar</h2>
+        <div class="ga-toolbar">
+          <div class="ga-tags" id="gaTagBar"></div>
+          <div class="ga-actions">
+            <input id="gaSearch" class="ga-search" placeholder="Yazılarda ara…" />
+          </div>
         </div>
-        <div id="postList"></div>
-        <div class="text-center my-4">
-            <button class="btn btn-success btn-lg px-5 py-2" id="loadMoreBtn" style="display:none;">
-                <span class="fw-semibold">Daha Fazla İçerik</span>
-                <i class="fas fa-angle-down ms-2"></i>
-            </button>
-        </div>
-    </main>
+        <div id="gaGrid" class="ga-grid"></div>
+        <div class="ga-pager" id="gaPager"></div>
+      </div>
+    </section>
 
    <!-- Contact-->
 <section class="page-section" id="contact">
@@ -158,31 +152,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://kit.fontawesome.com/yourfontawesomekit.js" crossorigin="anonymous"></script>
 <script src="../js/scripts.js"></script>
-
-<!-- Türkçe Kategori Override -->
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const lang = document.documentElement.lang || 'en';
-    if (lang !== 'tr') return;
-
-    const filter = document.getElementById("postFilter");
-    if (!filter) return;
-
-    const updateLabel = () => {
-      const defaultOption = filter.querySelector('option[value=""]');
-      if (defaultOption && defaultOption.textContent !== "Tüm Kategoriler") {
-        defaultOption.textContent = "Tüm Kategoriler";
-      }
-    };
-
-    // İlk düzeltmeyi yap
-    updateLabel();
-
-    // Değişiklikleri gözlemle
-    const observer = new MutationObserver(updateLabel);
-    observer.observe(filter, { childList: true, subtree: true });
-  });
-</script>
 
 </body>
 </html>

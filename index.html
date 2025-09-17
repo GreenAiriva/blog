@@ -75,26 +75,20 @@
     </div>
 </header>
 
-    <!-- Blog Main -->
-    <main class="container my-5">
-        <div class="row align-items-center mb-4">
-            <div class="col">
-                <h2 class="mb-0">Latest Blog Posts</h2>
-            </div>
-            <div class="col-auto">
-                <select class="form-select" id="postFilter" style="min-width:180px;">
-                    <option value="">All Categories</option>
-                </select>
-            </div>
+    <!-- GreenAiriva Blog Board -->
+    <section id="ga-board" class="ga-board">
+      <div class="container">
+        <h2 class="ga-title">Latest Insights</h2>
+        <div class="ga-toolbar">
+          <div class="ga-tags" id="gaTagBar"></div>
+          <div class="ga-actions">
+            <input id="gaSearch" class="ga-search" placeholder="Search posts…" />
+          </div>
         </div>
-        <div id="postList"></div>
-        <div class="text-center my-4">
-            <button class="btn btn-success btn-lg px-5 py-2" id="loadMoreBtn" style="display:none;">
-                <span class="fw-semibold">Load More</span>
-                <i class="fas fa-angle-down ms-2"></i>
-            </button>
-        </div>
-    </main>
+        <div id="gaGrid" class="ga-grid"></div>
+        <div class="ga-pager" id="gaPager"></div>
+      </div>
+    </section>
 
    <!-- Contact-->
 <section class="page-section" id="contact">
