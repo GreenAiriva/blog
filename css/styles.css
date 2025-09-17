@@ -2267,11 +2267,27 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 2rem;
 }
 
-.hero-card .hero-img {
+.hero-card .hero-cover {
   width: 100%;
+  height: clamp(220px, 36vh, 420px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--surface, rgba(255, 255, 255, 0.06));
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 1rem;
+  overflow: hidden;
+  margin: 0.75rem 0 0;
+}
+
+.hero-card .hero-cover .hero-img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
   height: auto;
-  border-radius: 0.75rem;
+  object-fit: contain;
   display: block;
+  border-radius: 0.75rem;
 }
 
 .hero-card .post-title {
@@ -2304,6 +2320,15 @@ h1, h2, h3, h4, h5 {
   border-radius: 0.75rem;
   padding: 1rem;
   background: var(--surface, rgba(255, 255, 255, 0.04));
+}
+
+.article-content img,
+.article-content figure img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1rem auto;
+  border-radius: 0.75rem;
 }
 
 .toc-header {
@@ -2405,22 +2430,26 @@ h1, h2, h3, h4, h5 {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin-top: 2rem;
+  margin-top: 1.25rem;
 }
 
 .post-tags .tag {
-  display: inline-block;
-  padding: 0.25rem 0.6rem;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0.7rem;
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
   border-radius: 999px;
   font-size: 0.9rem;
-  background: var(--chip-bg, rgba(255, 255, 255, 0.08));
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #334155;
   text-decoration: none;
-  color: inherit;
+  transition: background 0.2s, border-color 0.2s, transform 0.12s;
 }
 
 .post-tags .tag:hover {
-  filter: brightness(1.1);
+  background: #eafaf0;
+  border-color: #bbf7d0;
+  transform: translateY(-1px);
 }
 
 .breadcrumb {
@@ -2432,18 +2461,26 @@ h1, h2, h3, h4, h5 {
   flex-wrap: wrap;
 }
 
+.breadcrumb a {
+  text-decoration: none;
+  opacity: 0.85;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s, color 0.2s, opacity 0.2s;
+}
+
+.breadcrumb a:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  opacity: 1;
+}
+
 .breadcrumb li::after {
-  content: "\203A";
-  margin-left: 0.5rem;
+  content: "›";
+  margin-left: 0.35rem;
   opacity: 0.6;
 }
 
 .breadcrumb li:last-child::after {
   content: "";
-}
-
-.breadcrumb a {
-  text-decoration: none;
-  opacity: 0.85;
-  color: inherit;
 }
