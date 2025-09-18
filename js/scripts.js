@@ -227,57 +227,30 @@ function gaBlogBoardInit(){
   if(!isIndex) return;
 
   const lang = location.pathname.startsWith('/tr') ? 'tr' : 'en';
-  const jsonURL = lang==='tr' ? '/tr/posts.json' : '/posts.json';
-  const state = { q:'', tag:null, page:1, per:9, rows:[] };
+  const jsonURL = lang === 'tr' ? '/tr/posts.json' : '/posts.json';
+  const state = { q: '', page: 1, per: 9, rows: [] };
 
   const $grid = document.getElementById('gaGrid');
   const $pager = document.getElementById('gaPager');
-  const $tagBar = document.getElementById('gaTagBar');
   const $search = document.getElementById('gaSearch');
 
-  if(!$grid || !$pager || !$tagBar) return;
-
-  const GA_TAGS_FALLBACK = [
-    'greenairiva','urban-air','air-quality','methane','nitrous-oxide',
-    'device','prototype','adsorbent','solar','field-test','policy','r-and-d'
-  ];
-
-  const icons = {
-    eye:`<svg viewBox="0 0 24 24" fill="none"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12Z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.6"/></svg>`,
-    cmt:`<svg viewBox="0 0 24 24" fill="none"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v8Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>`,
-    like:`<svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.35-9-8c-2-3.65 1-8 5-8 3 0 4 2 4 2s1-2 4-2c4 0 7 4.35 5 8-2 3.65-9 8-9 8Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>`
-  };
-
-  const brandifyTag = (value) => {
-    const base = String(value || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-    return base ? `greenairiva-${base}` : 'greenairiva';
-  };
+  if(!$grid || !$pager) return;
 
   const normaliseRows = (arr) => arr.map((item) => {
     const baseTags = Array.isArray(item.tags) ? item.tags :
       Array.isArray(item.category) ? item.category :
       item.category ? [item.category] : [];
-    const slugDerived = (item.slug || '')
-      .split(/[^a-z0-9]+/i)
-      .filter(Boolean)
-      .slice(0, 3);
-    const tagsSource = baseTags.length ? baseTags : slugDerived;
-    const tags = tagsSource.length ? tagsSource.map(brandifyTag) : ['greenairiva'];
-    const uniqueTags = [...new Set(tags)];
-    const minutesCandidate = parseInt(item.readingMinutes || item.reading_minutes || item.reading || item.minutes, 10);
     return {
       ...item,
       lang: item.lang || lang,
       cover: item.cover || item.image || item.thumbnail || '',
       excerpt: item.excerpt || item.summary || item.description || '',
-      tags: uniqueTags,
-      readingMinutes: Number.isFinite(minutesCandidate) && minutesCandidate > 0 ? minutesCandidate : 5
+      tags: baseTags
     };
   });
 
   const applyData = (rows = []) => {
     state.rows = normaliseRows(rows).filter((entry) => entry.lang === lang);
-    buildTags();
     render();
   };
 
@@ -286,29 +259,26 @@ function gaBlogBoardInit(){
     .then(applyData)
     .catch(() => {
       state.rows = [];
-      buildTags();
       render(true);
     });
 
-  function buildTags(){
-    const fromData = [...new Set(state.rows.flatMap((p) => p.tags || []))];
-    const tags = (fromData.length ? fromData : GA_TAGS_FALLBACK).slice(0, 12);
-    $tagBar.innerHTML = tags.map((t) => `<button class="ga-pill${state.tag===t ? ' active' : ''}" data-tag="${t}">#${t}</button>`).join('');
-  }
-
-  function render(isError){
+  const filteredRows = () => {
     let rows = state.rows.slice();
     if(state.q){
       const q = state.q.toLowerCase();
-      rows = rows.filter((p) =>
-        (p.title || '').toLowerCase().includes(q) ||
-        (p.excerpt || '').toLowerCase().includes(q) ||
-        (p.tags || []).some((t) => t.toLowerCase().includes(q))
-      );
+      rows = rows.filter((p) => {
+        const titleMatch = (p.title || '').toLowerCase().includes(q);
+        const excerptMatch = (p.excerpt || '').toLowerCase().includes(q);
+        const tagMatch = (p.tags || []).some((t) => String(t).toLowerCase().includes(q));
+        return titleMatch || excerptMatch || tagMatch;
+      });
     }
-    if(state.tag) rows = rows.filter((p) => (p.tags || []).includes(state.tag));
     rows.sort((a, b) => new Date(b.date) - new Date(a.date));
+    return rows;
+  };
 
+  function render(isError){
+    const rows = filteredRows();
     const pages = Math.max(1, Math.ceil(rows.length / state.per));
     if(state.page > pages) state.page = pages;
     const start = (state.page - 1) * state.per;
@@ -316,14 +286,12 @@ function gaBlogBoardInit(){
 
     if(pageRows.length){
       $grid.innerHTML = pageRows.map((p) => {
-        const url = (p.hreflang && p.hreflang[lang]) || `${lang==='tr'?'/tr':''}/article.html?slug=${p.slug}`;
+        const url = (p.hreflang && p.hreflang[lang]) || `${lang === 'tr' ? '/tr' : ''}/article.html?slug=${p.slug}`;
         const cover = p.cover || '';
         const title = p.title || '';
         const excerpt = p.excerpt || '';
-        const dateHuman = p.date ? new Date(p.date).toLocaleDateString(lang, {year:'numeric', month:'short', day:'2-digit'}) : '';
-        const firstTag = (p.tags && p.tags[0]) ? `#${p.tags[0]}` : '#greenairiva';
+        const dateHuman = p.date ? new Date(p.date).toLocaleDateString(lang, { year: 'numeric', month: 'short', day: '2-digit' }) : '';
         const datetimeAttr = p.date ? ` datetime="${p.date}"` : '';
-        const minutesText = `${p.readingMinutes || 5} ${lang==='tr' ? 'dk' : 'min'}`;
         return `
       <article class="ga-card">
         <a class="ga-thumb" href="${url}">
@@ -334,45 +302,19 @@ function gaBlogBoardInit(){
           <p class="ga-excerpt">${excerpt}</p>
         </div>
         <div class="ga-meta">
-          <div class="ga-meta-left">
-            <span class="ga-badge">${firstTag}</span>
-            <span class="ga-dot"></span>
-            <time${datetimeAttr}>${dateHuman}</time>
-            <span class="ga-sep">·</span>
-            <span class="ga-read">${minutesText}</span>
-          </div>
-          <div class="ga-meta-right">
-            <span class="ga-stat">${icons.eye}<b>0</b></span>
-            <span class="ga-stat">${icons.cmt}<b>0</b></span>
-            <span class="ga-stat">${icons.like}<b>0</b></span>
-          </div>
+          <time${datetimeAttr}>${dateHuman}</time>
         </div>
       </article>`;
       }).join('');
     } else {
       const emptyMessage = isError
-        ? (lang==='tr' ? 'Yazılar yüklenemedi.' : 'Unable to load insights.')
-        : (lang==='tr' ? 'Seçilen filtrelerle eşleşen yazı yok.' : 'No insights match your filters.');
+        ? (lang === 'tr' ? 'Yazılar yüklenemedi.' : 'Unable to load insights.')
+        : (lang === 'tr' ? 'Aramanızla eşleşen içerik bulunamadı.' : 'No insights match your search.');
       $grid.innerHTML = `<div class="ga-empty">${emptyMessage}</div>`;
     }
 
-    $pager.innerHTML = Array.from({length: pages}, (_, i) => `<button class="pg${i + 1 === state.page ? ' active' : ''}" data-page="${i + 1}">${i + 1}</button>`).join('');
+    $pager.innerHTML = Array.from({ length: pages }, (_, i) => `<button class="pg${i + 1 === state.page ? ' active' : ''}" data-page="${i + 1}">${i + 1}</button>`).join('');
   }
-
-  document.addEventListener('click', (e) => {
-    const tag = e.target?.dataset?.tag;
-    const pg = e.target?.dataset?.page;
-    if(tag){
-      state.tag = (state.tag === tag ? null : tag);
-      state.page = 1;
-      buildTags();
-      render();
-    }
-    if(pg){
-      state.page = Number(pg);
-      render();
-    }
-  });
 
   const debounce = (fn, ms) => { let t; return (...args) => { clearTimeout(t); t = setTimeout(() => fn(...args), ms); }; };
   if($search){
@@ -382,7 +324,15 @@ function gaBlogBoardInit(){
       render();
     }, 120));
   }
+
+  $pager.addEventListener('click', (e) => {
+    const btn = e.target.closest('[data-page]');
+    if(!btn) return;
+    state.page = Number(btn.dataset.page);
+    render();
+  });
 }
+
 document.addEventListener('DOMContentLoaded', gaBlogBoardInit);
 
 
