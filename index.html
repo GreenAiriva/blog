@@ -14,21 +14,23 @@
     <style>
         .lang-switch {
             display: inline-block;
-            padding: 5px 10px;
+            padding: 6px 14px;
             margin-left: 10px;
             cursor: pointer;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, color 0.3s;
             font-family: 'Montserrat', sans-serif;
-            color: #fff;
+            color: #232323;
+            border-radius: 999px;
         }
         .lang-switch:hover {
-            background-color: #f47a29;
+            background-color: rgba(35, 35, 35, 0.08);
+            color: #101828;
         }
     </style>
 </head>
 <body id="page-top">
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container">
             <a class="navbar-brand" href="https://www.greenairiva.com.tr/"><img src="assets/img/navbar-logo.svg" alt="GreenAiriva logo" /></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,26 +66,18 @@
         </div>
     </nav>
 <!-- Masthead -->
-<header class="masthead" style="height:60vh; min-height:350px; display:flex; align-items:center;">
+<header class="masthead">
     <div class="container">
-        <div class="masthead-heading">Rise<br>for a</div>
-        <div class="masthead-subheading-script">Cleaner</div>
-        <div class="masthead-heading">Planet</div>
-        <div class="masthead-btn-row">
-            <a class="btn btn-primary btn-xl text-uppercase" href="https://www.greenairiva.com.tr/about/#about">Discover Our Solutions</a>
-        </div>
+        <h1 class="masthead-title">Rise for a Cleaner Planet</h1>
+        <p class="masthead-tagline">Stories, updates, and ideas from the GreenAiriva team on making cleaner urban air a reality.</p>
     </div>
 </header>
 
     <!-- GreenAiriva Blog Board -->
     <section id="ga-board" class="ga-board">
       <div class="container">
-        <h2 class="ga-title">Latest Insights</h2>
-        <div class="ga-toolbar">
-          <div class="ga-tags" id="gaTagBar"></div>
-          <div class="ga-actions">
-            <input id="gaSearch" class="ga-search" placeholder="Search posts…" />
-          </div>
+        <div class="ga-search-wrap">
+          <input id="gaSearch" class="ga-search" placeholder="Search insights…" />
         </div>
         <div id="gaGrid" class="ga-grid"></div>
         <div class="ga-pager" id="gaPager"></div>
@@ -131,14 +125,14 @@
                 Copyright &copy; GreenAiriva 2025
             </div>
             <div class="col-lg-4 my-3 my-lg-0 text-center">
-                <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/greenairiva/" aria-label="X">
-                    <img src="assets/img/logos/icons8-x-500.svg" alt="X" style="width:24px; height:24px; object-fit:contain; filter:invert(1);" />
+                <a class="btn btn-social mx-2" href="https://www.instagram.com/greenairiva/" aria-label="X">
+                    <img src="assets/img/logos/icons8-x-500.svg" alt="X" class="footer-social-icon" />
                 </a>
-                <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/greenairiva/" aria-label="Instagram">
-                    <img src="assets/img/logos/icons8-instagram-500.svg" alt="Instagram" style="width:24px; height:24px; object-fit:contain; filter:invert(1);" />
+                <a class="btn btn-social mx-2" href="https://www.instagram.com/greenairiva/" aria-label="Instagram">
+                    <img src="assets/img/logos/icons8-instagram-500.svg" alt="Instagram" class="footer-social-icon" />
                 </a>
-                <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/company/greenairiva/" aria-label="LinkedIn">
-                    <img src="assets/img/logos/icons8-linkedin-500.svg" alt="LinkedIn" style="width:24px; height:24px; object-fit:contain; filter:invert(1);" />
+                <a class="btn btn-social mx-2" href="https://www.linkedin.com/company/greenairiva/" aria-label="LinkedIn">
+                    <img src="assets/img/logos/icons8-linkedin-500.svg" alt="LinkedIn" class="footer-social-icon" />
                 </a>
             </div>
             <div class="col-lg-4 text-lg-end text-center">
