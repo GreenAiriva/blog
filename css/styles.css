@@ -2624,13 +2624,6 @@ h1, h2, h3, h4, h5 {
 
 /* ---- Masthead slogan kurgusu (minimal ve responsive) ---- */
 
-/* 1) The Youngest Script font tanımı (varsa tekrar etmeyin) */
-@font-face {
-  font-family: "TheYoungestScript";
-  src: url("{{ site.baseurl }}assets/fonts/the-youngest-script.ttf") format("truetype");
-  font-display: swap;
-}
-
 /* 2) Başlığın temel ayarları: Arial, tek akış, geniş ekranda tek satır hedefi */
 .masthead .hero-title {
   /* görünürlük ve okunabilirlik */
@@ -2652,7 +2645,7 @@ h1, h2, h3, h4, h5 {
 
 /* 3) Script kelimesi – renk ve ağırlık sabit; baseline’ı yumuşat */
 .masthead .hero-title .hero-script {
-  font-family: "TheYoungestScript", cursive !important;
+  font-family: 'The Youngest Script', cursive !important;
   font-weight: 400 !important;             /* bazı eklentiler 700’e çekebiliyor */
   color: #F49A27;
   display: inline-block;
