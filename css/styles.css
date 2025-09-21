@@ -2621,3 +2621,37 @@ h1, h2, h3, h4, h5 {
 .breadcrumb li:last-child::after {
   content: "";
 }
+
+/* ---- Masthead slogan tipografisi (minimal) ---- */
+
+/* 1) The Youngest Script: repo'da mevcut dosya: assets/fonts/the-youngest-script.ttf */
+@font-face {
+  font-family: "TheYoungestScript";
+  src: url("{{ site.baseurl }}assets/fonts/the-youngest-script.ttf") format("truetype");
+  font-display: swap;
+}
+
+/* 2) Başlık gövde fontu = Arial; yalnızca masthead başlığını hedefle */
+.masthead .hero-title {
+  font-family: Arial, "Helvetica Neue", Helvetica, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: #ffffff;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin: 0;
+  font-weight: 800;                 /* script olmayan kelimeler için ağırlık */
+  font-size: clamp(28px, 6vw, 64px);
+  text-wrap: balance;
+  text-shadow: 0 1px 2px rgba(0,0,0,.35); /* okunabilirlik */
+  text-align: center;               /* mobil için güvenli varsayılan */
+}
+
+/* 3) Script ile vurgulanan tek kelime */
+.masthead .hero-title .hero-script {
+  font-family: "TheYoungestScript", cursive;
+  font-weight: 400;
+  letter-spacing: 0;
+  display: inline-block;
+  transform: translateY(0.02em);    /* temel hizasını yumuşatır */
+  font-size: 1.05em;                /* çok hafif büyütme */
+  text-shadow: 0 1px 2px rgba(0,0,0,.35);
+}
