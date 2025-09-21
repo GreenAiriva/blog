@@ -2622,36 +2622,60 @@ h1, h2, h3, h4, h5 {
   content: "";
 }
 
-/* ---- Masthead slogan tipografisi (minimal) ---- */
+/* ---- Masthead slogan kurgusu (minimal ve responsive) ---- */
 
-/* 1) The Youngest Script: repo'da mevcut dosya: assets/fonts/the-youngest-script.ttf */
+/* 1) The Youngest Script font tanımı (varsa tekrar etmeyin) */
 @font-face {
   font-family: "TheYoungestScript";
   src: url("{{ site.baseurl }}assets/fonts/the-youngest-script.ttf") format("truetype");
   font-display: swap;
 }
 
-/* 2) Başlık gövde fontu = Arial; yalnızca masthead başlığını hedefle */
+/* 2) Başlığın temel ayarları: Arial, tek akış, geniş ekranda tek satır hedefi */
 .masthead .hero-title {
-  font-family: Arial, "Helvetica Neue", Helvetica, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  /* görünürlük ve okunabilirlik */
   color: #ffffff;
-  line-height: 1.1;
+  text-shadow: 0 1px 2px rgba(0,0,0,.35), 0 0 8px rgba(0,0,0,.18);
+  line-height: 1.08;
   letter-spacing: -0.02em;
+
+  /* tipografik ölçek – mobilde büyür, desktopta 64px tavan */
+  font-size: clamp(28px, 5.6vw, 64px);
+  font-weight: 800;
+  font-family: Arial, "Helvetica Neue", Helvetica, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  /* tek akışta dursun; kırılma gerektiğinde doğal şekilde kırılsın */
+  white-space: normal;
+  word-break: keep-all;
   margin: 0;
-  font-weight: 800;                 /* script olmayan kelimeler için ağırlık */
-  font-size: clamp(28px, 6vw, 64px);
-  text-wrap: balance;
-  text-shadow: 0 1px 2px rgba(0,0,0,.35); /* okunabilirlik */
-  text-align: center;               /* mobil için güvenli varsayılan */
 }
 
-/* 3) Script ile vurgulanan tek kelime */
+/* 3) Script kelimesi – renk ve ağırlık sabit; baseline’ı yumuşat */
 .masthead .hero-title .hero-script {
-  font-family: "TheYoungestScript", cursive;
-  font-weight: 400;
-  letter-spacing: 0;
+  font-family: "TheYoungestScript", cursive !important;
+  font-weight: 400 !important;             /* bazı eklentiler 700’e çekebiliyor */
+  color: #F49A27;
   display: inline-block;
-  transform: translateY(0.02em);    /* temel hizasını yumuşatır */
-  font-size: 1.05em;                /* çok hafif büyütme */
-  text-shadow: 0 1px 2px rgba(0,0,0,.35);
+  transform: translateY(0.04em);
+  /* hafif vurgu */
+  text-shadow: 0 1px 2px rgba(0,0,0,.30), 0 0 6px rgba(0,0,0,.18);
+  /* script kelimeyi çok az büyüt (desktop’ta biraz daha büyük) */
+  font-size: 1.06em;
 }
+
+/* 4) Diğer kelimeler – net beyaz ve Arial */
+.masthead .hero-title .hero-word {
+  color: #ffffff;
+}
+
+/* 5) Desktop’ta tek satırı zorlamaya yardım: boşlukları sıkılaştır */
+@media (min-width: 992px) {
+  .masthead .hero-title { letter-spacing: -0.01em; }
+  .masthead .hero-title .hero-script { font-size: 1.10em; transform: translateY(0.03em); }
+}
+
+/* 6) Küçük ekranda hizalama (isteğe bağlı: ortala) */
+@media (max-width: 768px) {
+  .masthead .hero-title { text-align: left; /* istersen center yapabilirsin */ }
+}
+
