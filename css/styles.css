@@ -1658,7 +1658,10 @@ header.masthead {
   align-items: center;
   text-align: center;
   padding: 140px 0 120px;
-  background: linear-gradient(135deg, #ffffff 0%, #f0f4ff 100%);
+  background-image: url('{{ site.baseurl }}assets/img/header_bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: #101828;
 }
 header.masthead .container {
