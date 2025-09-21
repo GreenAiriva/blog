@@ -917,18 +917,19 @@ function createRelatedCard(post) {
     ? post.dateObj.toLocaleDateString(articleLocale, { year: 'numeric', month: 'short', day: 'numeric' })
     : '';
   const dateISO = post.dateISO || '';
+  const datetimeAttr = dateISO ? ` datetime="${dateISO}"` : '';
   const cover = post.cover || ARTICLE_FALLBACK_COVER;
   const abstract = post.abstract || post.summary || '';
   return `
   <article class="post-card">
-    <a href="${post.url}" class="card-link">
+    <a class="card-cover-link" href="${post.url}">
       <img class="card-cover" src="${cover}" alt="${post.title}" loading="lazy">
-      <div class="card-body">
-        <h3 class="card-title">${post.title}</h3>
-        <p class="card-excerpt">${abstract}</p>
-        <div class="card-meta"><time datetime="${dateISO}">${dateText}</time></div>
-      </div>
     </a>
+    <div class="card-body">
+      <h3 class="card-title"><a href="${post.url}">${post.title}</a></h3>
+      <p class="card-excerpt">${abstract}</p>
+    </div>
+    <div class="card-meta"><time${datetimeAttr}>${dateText}</time></div>
   </article>
   `;
 }
