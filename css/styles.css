@@ -2672,3 +2672,52 @@ h1, h2, h3, h4, h5 {
   .masthead .hero-title { text-align: left; /* istersen center yapabilirsin */ }
 }
 
+/* ===== Masthead: XS (≤575.98px) mobil iyileştirmeleri ===== */
+@media (max-width: 575.98px) {
+  /* 1) Hero yüksekliğini yarım sayfa yap: */
+  header.masthead {
+    min-height: 52vh;             /* yarım sayfa hissi */
+    max-height: 62vh;             /* aşırı büyümeyi sınırla */
+    background-size: cover;       /* zaten var ise dokunmaz */
+    background-position: center 30%; /* üst kadrajı öne çıkar */
+    /* Not: mevcut overlay (::before) kalsın, okunabilirliğe yardım ediyor */
+  }
+
+  /* 2) İçerik yerleşimi: dikey dolgu ve hizalama */
+  .masthead .hero-content {
+    padding-block: clamp(28px, 10vh, 56px); /* daha az ama dengeli boşluk */
+    text-align: left;                       /* mobilde soldan okunur */
+    margin-inline: 16px;                    /* kenar boşluğu */
+    max-width: 92%;
+  }
+
+  /* 3) Başlık — mobilde büyüt */
+  .masthead .hero-title {
+    font-size: clamp(32px, 9.5vw, 42px); /* önceki min değer küçüktü → büyüttük */
+    line-height: 1.08;
+    letter-spacing: -0.015em;
+    text-shadow: 0 1px 2px rgba(0,0,0,.36), 0 0 8px rgba(0,0,0,.18);
+  }
+
+  /* Script kelime — az daha büyük, baz çizgi düzeltilmiş */
+  .masthead .hero-title .hero-script {
+    font-size: 1.18em;             /* mobil vurgusu */
+    transform: translateY(0.02em);
+  }
+
+  /* 4) Alt metin/subtitle — iki satırda okunur kıl */
+  .masthead .hero-subtitle {
+    font-size: clamp(14px, 3.8vw, 18px);
+    line-height: 1.45;
+    max-width: 36ch;               /* paragraf genişliğini sınırla */
+    margin-top: 8px;
+    opacity: 0.95;
+    text-shadow: 0 1px 2px rgba(0,0,0,.30);
+  }
+}
+
+/* Eğer daha sığ bir hero istersen: 
+@media (max-width: 575.98px) {
+  header.masthead { min-height: 45vh; max-height: 55vh; background-position: center 25%; }
+}
+*/
