@@ -49,49 +49,167 @@ Tüm bu var sayımlarımız sonucunda Türkiye genelinde yılda 38,5 Mt CO₂, 1
 
 ## Parametreler
 
-| Yıl Sayısı (N)       | 1    |
-|----------------------|------|
-| İskonto Oranı        | 2,5% | 2,0% | 1,5% |
+<!-- Converted to styled HTML table by Codex automation -->
+<table class="table-modern">
+  <thead>
+    <tr>
+      <th>Yıl Sayısı (N)</th>
+      <th>1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>İskonto Oranı</td>
+      <td>2,5%</td>
+      <td>2,0%</td>
+      <td>1,5%</td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
 ## **CO₂ Emisyon Değişimlerinin Güncel ve Yıllıklaştırılmış Değerleri**
 
-| Sera Gazı | CO₂      | CO₂      | CO₂      |
-|-----------|----------|----------|----------|
-| İskonto Oranı | 2,5%   | 2,0%   | 1,5%   |
-| 2024 Yılı Güncel Değer (2020$) | $4.881,48 | $7.999,59 | $13.651,12 |
-| Yıllıklaştırılmış Değer (1 Yıl, 2020$) | $5.003,51 | $8.159,58 | $13.855,89 |
+<!-- Converted to styled HTML table by Codex automation -->
+<table class="table-modern">
+  <thead>
+    <tr>
+      <th>Sera Gazı</th>
+      <th>CO₂</th>
+      <th>CO₂</th>
+      <th>CO₂</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>İskonto Oranı</td>
+      <td>2,5%</td>
+      <td>2,0%</td>
+      <td>1,5%</td>
+    </tr>
+    <tr>
+      <td>2024 Yılı Güncel Değer (2020$)</td>
+      <td>$4.881,48</td>
+      <td>$7.999,59</td>
+      <td>$13.651,12</td>
+    </tr>
+    <tr>
+      <td>Yıllıklaştırılmış Değer (1 Yıl, 2020$)</td>
+      <td>$5.003,51</td>
+      <td>$8.159,58</td>
+      <td>$13.855,89</td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
 ## **CH₄ Emisyon Değişimlerinin Güncel ve Yıllıklaştırılmış Değerleri**
 
-| Sera Gazı | CH₄      | CH₄      | CH₄      |
-|-----------|----------|----------|----------|
-| İskonto Oranı | 2,5%   | 2,0%   | 1,5%   |
-| 2024 Yılı Güncel Değer (2020$) | $2,51    | $3,21    | $4,36    |
-| Yıllıklaştırılmış Değer (1 Yıl, 2020$) | $2,57    | $3,27    | $4,42    |
+<!-- Converted to styled HTML table by Codex automation -->
+<table class="table-modern">
+  <thead>
+    <tr>
+      <th>Sera Gazı</th>
+      <th>CH₄</th>
+      <th>CH₄</th>
+      <th>CH₄</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>İskonto Oranı</td>
+      <td>2,5%</td>
+      <td>2,0%</td>
+      <td>1,5%</td>
+    </tr>
+    <tr>
+      <td>2024 Yılı Güncel Değer (2020$)</td>
+      <td>$2,51</td>
+      <td>$3,21</td>
+      <td>$4,36</td>
+    </tr>
+    <tr>
+      <td>Yıllıklaştırılmış Değer (1 Yıl, 2020$)</td>
+      <td>$2,57</td>
+      <td>$3,27</td>
+      <td>$4,42</td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
 ## **N₂O Emisyon Değişimlerinin Güncel ve Yıllıklaştırılmış Değerleri**
 
-| Sera Gazı | N₂O      | N₂O      | N₂O      |
-|-----------|----------|----------|----------|
-| İskonto Oranı | 2,5%   | 2,0%   | 1,5%   |
-| 2024 Yılı Güncel Değer (2020$) | $62,73   | $95,05   | $150,90  |
-| Yıllıklaştırılmış Değer (1 Yıl, 2020$) | $64,30   | $96,95   | $153,16  |
+<!-- Converted to styled HTML table by Codex automation -->
+<table class="table-modern">
+  <thead>
+    <tr>
+      <th>Sera Gazı</th>
+      <th>N₂O</th>
+      <th>N₂O</th>
+      <th>N₂O</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>İskonto Oranı</td>
+      <td>2,5%</td>
+      <td>2,0%</td>
+      <td>1,5%</td>
+    </tr>
+    <tr>
+      <td>2024 Yılı Güncel Değer (2020$)</td>
+      <td>$62,73</td>
+      <td>$95,05</td>
+      <td>$150,90</td>
+    </tr>
+    <tr>
+      <td>Yıllıklaştırılmış Değer (1 Yıl, 2020$)</td>
+      <td>$64,30</td>
+      <td>$96,95</td>
+      <td>$153,16</td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
 ## **Tüm Sera Gazı (CO₂, CH₄, N₂O) Emisyon Değişimlerinin Toplam Güncel ve Yıllıklaştırılmış Değerleri**
 
-| Sera Gazı | Toplam    | Toplam    | Toplam    |
-|-----------|-----------|-----------|-----------|
-| İskonto Oranı | 2,5%   | 2,0%   | 1,5%   |
-| 2024 Yılı Güncel Değer (2020$) | $4.946,72 | $8.097,84 | $13.806,38 |
-| Yıllıklaştırılmış Değer (1 Yıl, 2020$) | $5.070,39 | $8.259,80 | $14.013,47 |
+<!-- Converted to styled HTML table by Codex automation -->
+<table class="table-modern">
+  <thead>
+    <tr>
+      <th>Sera Gazı</th>
+      <th>Toplam</th>
+      <th>Toplam</th>
+      <th>Toplam</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>İskonto Oranı</td>
+      <td>2,5%</td>
+      <td>2,0%</td>
+      <td>1,5%</td>
+    </tr>
+    <tr>
+      <td>2024 Yılı Güncel Değer (2020$)</td>
+      <td>$4.946,72</td>
+      <td>$8.097,84</td>
+      <td>$13.806,38</td>
+    </tr>
+    <tr>
+      <td>Yıllıklaştırılmış Değer (1 Yıl, 2020$)</td>
+      <td>$5.070,39</td>
+      <td>$8.259,80</td>
+      <td>$14.013,47</td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 

@@ -131,16 +131,61 @@ The three active air purification approaches outlined above differ significantly
 
 
 
-| Feature            | Climeworks (DAC)                         | Smog Free Tower          | Green City Solutions                 |
-| ------------------ | ---------------------------------------- | ------------------------ | ------------------------------------ |
-| Pollutants Removed | CO₂ only                                 | PM10, PM2.5              | PM, NOx, black carbon                |
-| Technology         | Chemical adsorption + thermal desorption | Electrostatic ionization | Biological Moss filter + IoT        |
-| Energy Demand      | Very high (2,000 kWh/ton CO₂)            | Low (\~1.4 kWh/day)      | Low (\~1.4 kWh/day)                  |
-| Cooling Effect     | None                                     | None                     | Yes (\~4 °C)                         |
-| Airflow Rate       | Low (ton-based CO₂)                      | Medium (\~1,250 m³/h)    | High (\~4,400–5,000 m³/h)            |
-| Application Area   | Rural, industrial                        | Urban, local areas       | Urban: squares, bus stops, buildings |
-| Installation Scale | Large facilities (targeting Mt/year)     |                          |                                      |
-
+<!-- Converted to styled HTML table by Codex automation -->
+<table class="table-modern">
+  <thead>
+    <tr>
+      <th>Feature</th>
+      <th>Climeworks (DAC)</th>
+      <th>Smog Free Tower</th>
+      <th>Green City Solutions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pollutants Removed</td>
+      <td>CO₂ only</td>
+      <td>PM10, PM2.5</td>
+      <td>PM, NOx, black carbon</td>
+    </tr>
+    <tr>
+      <td>Technology</td>
+      <td>Chemical adsorption + thermal desorption</td>
+      <td>Electrostatic ionization</td>
+      <td>Biological Moss filter + IoT</td>
+    </tr>
+    <tr>
+      <td>Energy Demand</td>
+      <td>Very high (2,000 kWh/ton CO₂)</td>
+      <td>Low (~1.4 kWh/day)</td>
+      <td>Low (~1.4 kWh/day)</td>
+    </tr>
+    <tr>
+      <td>Cooling Effect</td>
+      <td>None</td>
+      <td>None</td>
+      <td>Yes (~4 °C)</td>
+    </tr>
+    <tr>
+      <td>Airflow Rate</td>
+      <td>Low (ton-based CO₂)</td>
+      <td>Medium (~1,250 m³/h)</td>
+      <td>High (~4,400–5,000 m³/h)</td>
+    </tr>
+    <tr>
+      <td>Application Area</td>
+      <td>Rural, industrial</td>
+      <td>Urban, local areas</td>
+      <td>Urban: squares, bus stops, buildings</td>
+    </tr>
+    <tr>
+      <td>Installation Scale</td>
+      <td>Large facilities (targeting Mt/year)</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 
 

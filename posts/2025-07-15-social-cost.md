@@ -48,49 +48,167 @@ Now, let’s input these figures into the social cost table prepared by the EPA 
 
 ### Parameters
 
-| Number of Years (N) | 1 |
-|---------------------|---|
-| Discount Rate       | 2,5% | 2,0% | 1,5% |
+<!-- Converted to styled HTML table by Codex automation -->
+<table class="table-modern">
+  <thead>
+    <tr>
+      <th>Number of Years (N)</th>
+      <th>1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Discount Rate</td>
+      <td>2,5%</td>
+      <td>2,0%</td>
+      <td>1,5%</td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
 ### Present and Annualized Values of **CO₂** Emission Changes
 
-| GHG  | CO₂        | CO₂        | CO₂        |
-|------|------------|------------|------------|
-| Discount Rate | 2,5%     | 2,0%     | 1,5%     |
-| Present Value in 2024 (2020$) | $4.881,48 | $7.999,59 | $13.651,12 |
-| Annualized Value (1 Year, 2020$) | $5.003,51 | $8.159,58 | $13.855,89 |
+<!-- Converted to styled HTML table by Codex automation -->
+<table class="table-modern">
+  <thead>
+    <tr>
+      <th>GHG</th>
+      <th>CO₂</th>
+      <th>CO₂</th>
+      <th>CO₂</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Discount Rate</td>
+      <td>2,5%</td>
+      <td>2,0%</td>
+      <td>1,5%</td>
+    </tr>
+    <tr>
+      <td>Present Value in 2024 (2020$)</td>
+      <td>$4.881,48</td>
+      <td>$7.999,59</td>
+      <td>$13.651,12</td>
+    </tr>
+    <tr>
+      <td>Annualized Value (1 Year, 2020$)</td>
+      <td>$5.003,51</td>
+      <td>$8.159,58</td>
+      <td>$13.855,89</td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
 ### Present and Annualized Values of **CH₄** Emission Changes
 
-| GHG  | CH₄        | CH₄        | CH₄        |
-|------|------------|------------|------------|
-| Discount Rate | 2,5%     | 2,0%     | 1,5%     |
-| Present Value in 2024 (2020$) | $2,51    | $3,21    | $4,36    |
-| Annualized Value (1 Year, 2020$) | $2,57    | $3,27    | $4,42    |
+<!-- Converted to styled HTML table by Codex automation -->
+<table class="table-modern">
+  <thead>
+    <tr>
+      <th>GHG</th>
+      <th>CH₄</th>
+      <th>CH₄</th>
+      <th>CH₄</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Discount Rate</td>
+      <td>2,5%</td>
+      <td>2,0%</td>
+      <td>1,5%</td>
+    </tr>
+    <tr>
+      <td>Present Value in 2024 (2020$)</td>
+      <td>$2,51</td>
+      <td>$3,21</td>
+      <td>$4,36</td>
+    </tr>
+    <tr>
+      <td>Annualized Value (1 Year, 2020$)</td>
+      <td>$2,57</td>
+      <td>$3,27</td>
+      <td>$4,42</td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
 ### Present and Annualized Values of **N₂O** Emission Changes
 
-| GHG  | N₂O        | N₂O        | N₂O        |
-|------|------------|------------|------------|
-| Discount Rate | 2,5%     | 2,0%     | 1,5%     |
-| Present Value in 2024 (2020$) | $62,73   | $95,05   | $150,90  |
-| Annualized Value (1 Year, 2020$) | $64,30   | $96,95   | $153,16  |
+<!-- Converted to styled HTML table by Codex automation -->
+<table class="table-modern">
+  <thead>
+    <tr>
+      <th>GHG</th>
+      <th>N₂O</th>
+      <th>N₂O</th>
+      <th>N₂O</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Discount Rate</td>
+      <td>2,5%</td>
+      <td>2,0%</td>
+      <td>1,5%</td>
+    </tr>
+    <tr>
+      <td>Present Value in 2024 (2020$)</td>
+      <td>$62,73</td>
+      <td>$95,05</td>
+      <td>$150,90</td>
+    </tr>
+    <tr>
+      <td>Annualized Value (1 Year, 2020$)</td>
+      <td>$64,30</td>
+      <td>$96,95</td>
+      <td>$153,16</td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
 ### **Total Present and Annualized Values of All GHG Emission Changes (CO₂, CH₄, N₂O)**
 
-| GHG  | Total      | Total      | Total      |
-|------|------------|------------|------------|
-| Discount Rate | 2,5%     | 2,0%     | 1,5%     |
-| Present Value in 2024 (2020$) | $4.946,72 | $8.097,84 | $13.806,38 |
-| Annualized Value (1 Year, 2020$) | $5.070,39 | $8.259,80 | $14.013,47 |
+<!-- Converted to styled HTML table by Codex automation -->
+<table class="table-modern">
+  <thead>
+    <tr>
+      <th>GHG</th>
+      <th>Total</th>
+      <th>Total</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Discount Rate</td>
+      <td>2,5%</td>
+      <td>2,0%</td>
+      <td>1,5%</td>
+    </tr>
+    <tr>
+      <td>Present Value in 2024 (2020$)</td>
+      <td>$4.946,72</td>
+      <td>$8.097,84</td>
+      <td>$13.806,38</td>
+    </tr>
+    <tr>
+      <td>Annualized Value (1 Year, 2020$)</td>
+      <td>$5.070,39</td>
+      <td>$8.259,80</td>
+      <td>$14.013,47</td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
