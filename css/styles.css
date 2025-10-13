@@ -2721,3 +2721,41 @@ h1, h2, h3, h4, h5 {
   header.masthead { min-height: 45vh; max-height: 55vh; background-position: center 25%; }
 }
 */
+
+.table-modern {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.95rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+  background: #ffffff;
+}
+
+.table-modern thead tr {
+  background-color: #1e4c92;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 600;
+}
+
+.table-modern th,
+.table-modern td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.table-modern tbody tr:nth-child(even) {
+  background-color: #f9fafc;
+}
+
+.table-modern tbody tr:hover {
+  background-color: #eef3fb;
+  transition: background-color 0.2s ease;
+}
+
+.table-modern th:first-child,
+.table-modern td:first-child {
+  border-left: 4px solid #f7a600;
+}

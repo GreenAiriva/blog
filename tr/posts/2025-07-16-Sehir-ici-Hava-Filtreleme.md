@@ -127,17 +127,67 @@ Yukarıda özetlenen üç aktif hava temizleme yaklaşımı, birbirinden oldukç
 * **Elektrostatik Kuleler** → PM azaltmada lokal olarak başarılı, enerji tüketimi düşük. Ancak gaz kirleticilerini temizleyemez ve etki alanı çok dar.
 * **Doğrudan Hava Yakalama (DAC)** → Yalnızca CO₂’yi hedefler, küresel iklim için kritik. Ancak şehir havasını doğrudan temizlemez ve enerji/maliyet açısından hâlâ zorluklarla karşı karşıyadır.
 
-| Özellik                  | Climeworks (DAC)                      | Smog Free Tower                    |  Green City Solutions                  |
-|--------------------------|---------------------------------------|------------------------------------|----------------------------------------|
-| Temizlediği kirleticiler | Yalnız CO₂                            | PM10, PM2.5                        |  PM, NOx, siyah karbon                 |
-| Teknoloji                | Kimyasal adsorpsiyon + ısı desorpsiyon| Elektrostatik iyonizasyon          |  Biyolojik yosun filtresi + IoT        |
-| Enerji ihtiyacı          | Çok yüksek (2.000 kWh/ton CO₂)        |Düşük (~1.4 kWh/gün)                |  Düşük (~1.4 kWh/gün)                  |
-| Soğutma etkisi           | Yok                                   | Yok                                |  Evet (~4 °C)                          |
-| Debi                     | Düşük (ton bazlı CO₂)                 | Orta (~1.250 m³/saat)              |  Yüksek (~4.400–5.000 m³/saat)         |
-| Uygulama Alanı           | Kırsal, endüstriyel                   | Kentsel, lokal alanlar             |  Kentsel, meydanlar, duraklar, binalar |
-| Kurulum Ölçeği           | Dev tesisler (Mt/yıl hedefli)         | Küçük kuleler                      |  Modüler paneller, duvarlar            |
-| Maliyet                  | Çok yüksek (~1.000 USD/t CO₂)         | Orta (tek kule ~50–100k €)         |  Orta (kurulum maliyeti yüksek)        |
-
+<!-- Converted to styled HTML table by Codex automation -->
+<table class="table-modern">
+  <thead>
+    <tr>
+      <th>Özellik</th>
+      <th>Climeworks (DAC)</th>
+      <th>Smog Free Tower</th>
+      <th>Green City Solutions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Temizlediği kirleticiler</td>
+      <td>Yalnız CO₂</td>
+      <td>PM10, PM2.5</td>
+      <td>PM, NOx, siyah karbon</td>
+    </tr>
+    <tr>
+      <td>Teknoloji</td>
+      <td>Kimyasal adsorpsiyon + ısı desorpsiyonu</td>
+      <td>Elektrostatik iyonizasyon</td>
+      <td>Biyolojik yosun filtresi + IoT</td>
+    </tr>
+    <tr>
+      <td>Enerji ihtiyacı</td>
+      <td>Çok yüksek (2.000 kWh/ton CO₂)</td>
+      <td>Düşük (~1.4 kWh/gün)</td>
+      <td>Düşük (~1.4 kWh/gün)</td>
+    </tr>
+    <tr>
+      <td>Soğutma etkisi</td>
+      <td>Yok</td>
+      <td>Yok</td>
+      <td>Evet (~4 °C)</td>
+    </tr>
+    <tr>
+      <td>Debi</td>
+      <td>Düşük (ton bazlı CO₂)</td>
+      <td>Orta (~1.250 m³/saat)</td>
+      <td>Yüksek (~4.400–5.000 m³/saat)</td>
+    </tr>
+    <tr>
+      <td>Uygulama alanı</td>
+      <td>Kırsal, endüstriyel</td>
+      <td>Kentsel, lokal alanlar</td>
+      <td>Kentsel: meydanlar, duraklar, binalar</td>
+    </tr>
+    <tr>
+      <td>Kurulum ölçeği</td>
+      <td>Dev tesisler (Mt/yıl hedefli)</td>
+      <td>Küçük kuleler</td>
+      <td>Modüler paneller, duvarlar</td>
+    </tr>
+    <tr>
+      <td>Maliyet</td>
+      <td>Çok yüksek (~1.000 USD/t CO₂)</td>
+      <td>Orta (tek kule ~50–100k €)</td>
+      <td>Orta (kurulum maliyeti yüksek)</td>
+    </tr>
+  </tbody>
+</table>
 
 
 
