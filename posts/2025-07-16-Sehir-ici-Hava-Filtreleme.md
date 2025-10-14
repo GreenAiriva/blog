@@ -131,7 +131,6 @@ The three active air purification approaches outlined above differ significantly
 
 
 
-<!-- Converted to styled HTML table by Codex automation -->
 <table class="table-modern">
   <thead>
     <tr>
