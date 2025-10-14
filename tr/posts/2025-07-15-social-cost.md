@@ -33,7 +33,7 @@ EPA’nın çalışmaları büyük ölçüde ABD ve Kanada odaklı olduğundan, 
 
 Örneğin, Türkiye genelindeki karasal ulaşım emisyonları üzerinden bir sosyal maliyet hesabı yapalım:
 
-Türkiye'de 2024 yılı itibarıyla trafiğe kayıtlı araç sayısı [29,95 milyondur]() (Linkteki sayfadan *Tablo-3 Yıllara göre motorlu kara taşıtları sayısı* tablosunu inceleyebilirsiniz). TÜİK verilerine göre, otomobillerin %29’u benzinli, %33’ü dizel, %33’ü LPG’li ve %0,03’ü elektrikli veya hibrittir. Diğer taşıtlar için de IPCC Emisyon Faktörleri tablosundaki ortala değerleri kullanalım. Her taşıtın günde ortalama 10 km yol yaptığını var sayalım.
+Türkiye'de 2024 yılı itibarıyla trafiğe kayıtlı araç sayısı [29,95 milyondur](https://data.tuik.gov.tr/Bulten/Index?p=Motorlu-Kara-Tasitlari-Aralik-2024-53463) (Linkteki sayfadan *Tablo-3 Yıllara göre motorlu kara taşıtları sayısı* tablosunu inceleyebilirsiniz). TÜİK verilerine göre, otomobillerin %29’u benzinli, %33’ü dizel, %33’ü LPG’li ve %0,03’ü elektrikli veya hibrittir. Diğer taşıtlar için de IPCC Emisyon Faktörleri tablosundaki ortala değerleri kullanalım. Her taşıtın günde ortalama 10 km yol yaptığını var sayalım.
 
 Tüm bu var sayımlarımız sonucunda Türkiye genelinde yılda 38,5 Mt CO₂, 1.615,8 ton CH₄ ve 1.608,7 ton N₂O gazının atmosfere salındığını göreceğiz. 
 
