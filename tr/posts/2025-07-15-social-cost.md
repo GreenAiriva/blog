@@ -46,7 +46,7 @@ Tüm bu var sayımlarımız sonucunda Türkiye genelinde yılda 38,5 Mt CO₂, 1
 
 ## Sera Gazı Emisyon Değişimleri: Güncel ve Yıllıklaştırılmış Değerler Tabloları (2024, milyon $, 2020)
 
-### **CO₂ Emisyon Değişimlerinin Güncel ve Yıllıklaştırılmış Değerleri**
+#### **CO₂ Emisyon Değişimlerinin Güncel ve Yıllıklaştırılmış Değerleri**
 <table class="table-modern">
   <thead>
     <tr>
@@ -79,7 +79,7 @@ Tüm bu var sayımlarımız sonucunda Türkiye genelinde yılda 38,5 Mt CO₂, 1
 </table>
 
 ---
-### **CH₄ Emisyon Değişimlerinin Güncel ve Yıllıklaştırılmış Değerleri**
+#### **CH₄ Emisyon Değişimlerinin Güncel ve Yıllıklaştırılmış Değerleri**
 
 <table class="table-modern">
   <thead>
@@ -114,7 +114,7 @@ Tüm bu var sayımlarımız sonucunda Türkiye genelinde yılda 38,5 Mt CO₂, 1
 
 ---
 
-### **N₂O Emisyon Değişimlerinin Güncel ve Yıllıklaştırılmış Değerleri**
+#### **N₂O Emisyon Değişimlerinin Güncel ve Yıllıklaştırılmış Değerleri**
 
 <table class="table-modern">
   <thead>
@@ -149,7 +149,7 @@ Tüm bu var sayımlarımız sonucunda Türkiye genelinde yılda 38,5 Mt CO₂, 1
 
 ---
 
-### **Tüm Sera Gazı (CO₂, CH₄, N₂O) Emisyon Değişimlerinin Toplam Güncel ve Yıllıklaştırılmış Değerleri**
+#### **Tüm Sera Gazı (CO₂, CH₄, N₂O) Emisyon Değişimlerinin Toplam Güncel ve Yıllıklaştırılmış Değerleri**
 
 <table class="table-modern">
   <thead>
@@ -192,8 +192,8 @@ Tüm bu var sayımlarımız sonucunda Türkiye genelinde yılda 38,5 Mt CO₂, 1
 
 Bu verileri EPA’nın sosyal maliyet hesaplama aracına uyguladığımızda, Türkiye genelinde karasal ulaşımın sosyal maliyeti yaklaşık 14,013 milyar ABD Doları olarak hesaplanmaktadır. Bu rakam, sera gazlarının yarattığı ekonomik zararları net biçimde ortaya koymaktadır. Peki neden 1,5% iskonto oranını kullandık?
 
-## 1.5% Discount Rate (Düşük iskonto oranı – Yüksek gelecek değeri)
-### Ne zaman tercih edilmeli?
+### 1.5% Discount Rate (Düşük iskonto oranı – Yüksek gelecek değeri)
+#### Ne zaman tercih edilmeli?
 
 * İklim değişikliği risklerine karşı daha duyarlı, geleceği daha fazla önemseyen yaklaşımlarda.
 
@@ -201,7 +201,7 @@ Bu verileri EPA’nın sosyal maliyet hesaplama aracına uyguladığımızda, T�
 
 * AB’nin ve bazı EPA belgelerinin önerdiği düzeyde.
 
-### Ne anlama gelir?
+#### Ne anlama gelir?
 
 * Gelecekteki zararları daha fazla ciddiye alırsınız.
 
