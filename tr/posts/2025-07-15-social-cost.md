@@ -41,37 +41,12 @@ Tüm bu var sayımlarımız sonucunda Türkiye genelinde yılda 38,5 Mt CO₂, 1
 <img src="../../assets/img/blog/2025-07-15-social-cost/2025-07-15-social-cost-Car Emission-GraphTur.png" alt= "Türkiye">
 
 
-Şimdi de EPA tarafından hazırlanmış sosyal maliyet tablosuna [(Excel çalışmasına buradan ulaşabilirsiniz)](https://www.epa.gov/environmental-economics/scghg) bu rakamları koyalım.
+Şimdi de EPA tarafından hazırlanmış sosyal maliyet tablosuna [(Excel çalışmasına buradan ulaşabilirsiniz)](https://www.epa.gov/environmental-economics/scghg) bu sayıları koyalım.
 
 
+## Sera Gazı Emisyon Değişimleri: Güncel ve Yıllıklaştırılmış Değerler Tabloları (2024, milyon $, 2020)
 
-# Sera Gazı Emisyon Değişimleri: Güncel ve Yıllıklaştırılmış Değerler Tablosu (2024, milyon $, 2020)
-
-## Parametreler
-
-<!-- Converted to styled HTML table by Codex automation -->
-<table class="table-modern">
-  <thead>
-    <tr>
-      <th>Yıl Sayısı (N)</th>
-      <th>1</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>İskonto Oranı</td>
-      <td>2,5%</td>
-      <td>2,0%</td>
-      <td>1,5%</td>
-    </tr>
-  </tbody>
-</table>
-
----
-
-## **CO₂ Emisyon Değişimlerinin Güncel ve Yıllıklaştırılmış Değerleri**
-
-<!-- Converted to styled HTML table by Codex automation -->
+### **CO₂ Emisyon Değişimlerinin Güncel ve Yıllıklaştırılmış Değerleri**
 <table class="table-modern">
   <thead>
     <tr>
@@ -104,10 +79,8 @@ Tüm bu var sayımlarımız sonucunda Türkiye genelinde yılda 38,5 Mt CO₂, 1
 </table>
 
 ---
+### **CH₄ Emisyon Değişimlerinin Güncel ve Yıllıklaştırılmış Değerleri**
 
-## **CH₄ Emisyon Değişimlerinin Güncel ve Yıllıklaştırılmış Değerleri**
-
-<!-- Converted to styled HTML table by Codex automation -->
 <table class="table-modern">
   <thead>
     <tr>
@@ -141,9 +114,8 @@ Tüm bu var sayımlarımız sonucunda Türkiye genelinde yılda 38,5 Mt CO₂, 1
 
 ---
 
-## **N₂O Emisyon Değişimlerinin Güncel ve Yıllıklaştırılmış Değerleri**
+### **N₂O Emisyon Değişimlerinin Güncel ve Yıllıklaştırılmış Değerleri**
 
-<!-- Converted to styled HTML table by Codex automation -->
 <table class="table-modern">
   <thead>
     <tr>
@@ -177,9 +149,8 @@ Tüm bu var sayımlarımız sonucunda Türkiye genelinde yılda 38,5 Mt CO₂, 1
 
 ---
 
-## **Tüm Sera Gazı (CO₂, CH₄, N₂O) Emisyon Değişimlerinin Toplam Güncel ve Yıllıklaştırılmış Değerleri**
+### **Tüm Sera Gazı (CO₂, CH₄, N₂O) Emisyon Değişimlerinin Toplam Güncel ve Yıllıklaştırılmış Değerleri**
 
-<!-- Converted to styled HTML table by Codex automation -->
 <table class="table-modern">
   <thead>
     <tr>
