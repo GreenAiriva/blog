@@ -127,7 +127,6 @@ Yukarıda özetlenen üç aktif hava temizleme yaklaşımı, birbirinden oldukç
 * **Elektrostatik Kuleler** → PM azaltmada lokal olarak başarılı, enerji tüketimi düşük. Ancak gaz kirleticilerini temizleyemez ve etki alanı çok dar.
 * **Doğrudan Hava Yakalama (DAC)** → Yalnızca CO₂’yi hedefler, küresel iklim için kritik. Ancak şehir havasını doğrudan temizlemez ve enerji/maliyet açısından hâlâ zorluklarla karşı karşıyadır.
 
-<!-- Converted to styled HTML table by Codex automation -->
 <table class="table-modern">
   <thead>
     <tr>
