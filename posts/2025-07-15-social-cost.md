@@ -46,31 +46,8 @@ Now, let’s input these figures into the social cost table prepared by the EPA 
 
 ## GHG Emission Changes: Present & Annualized Value Table (2024, millions, 2020$)
 
-### Parameters
-
-<!-- Converted to styled HTML table by Codex automation -->
-<table class="table-modern">
-  <thead>
-    <tr>
-      <th>Number of Years (N)</th>
-      <th>1</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Discount Rate</td>
-      <td>2,5%</td>
-      <td>2,0%</td>
-      <td>1,5%</td>
-    </tr>
-  </tbody>
-</table>
-
----
-
 ### Present and Annualized Values of **CO₂** Emission Changes
 
-<!-- Converted to styled HTML table by Codex automation -->
 <table class="table-modern">
   <thead>
     <tr>
@@ -106,7 +83,6 @@ Now, let’s input these figures into the social cost table prepared by the EPA 
 
 ### Present and Annualized Values of **CH₄** Emission Changes
 
-<!-- Converted to styled HTML table by Codex automation -->
 <table class="table-modern">
   <thead>
     <tr>
@@ -142,7 +118,6 @@ Now, let’s input these figures into the social cost table prepared by the EPA 
 
 ### Present and Annualized Values of **N₂O** Emission Changes
 
-<!-- Converted to styled HTML table by Codex automation -->
 <table class="table-modern">
   <thead>
     <tr>
@@ -178,7 +153,6 @@ Now, let’s input these figures into the social cost table prepared by the EPA 
 
 ### **Total Present and Annualized Values of All GHG Emission Changes (CO₂, CH₄, N₂O)**
 
-<!-- Converted to styled HTML table by Codex automation -->
 <table class="table-modern">
   <thead>
     <tr>
