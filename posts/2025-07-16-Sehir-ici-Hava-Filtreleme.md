@@ -288,17 +288,16 @@ For example:
 
 ### GreenAiriva’s Solution
 
-GreenAiriva features an **air processing capacity of 600 m³/hour**. Its low-flow fans not only reduce energy consumption but also minimize urban noise pollution, operating at just **37 dB**.
+GreenAiriva features an **air processing capacity of 800 m³/hour**. Its low-flow fans not only reduce energy consumption but also minimize urban noise pollution, operating at just **37 dB**.
 
 This allows a single device to capture at least:
 
-* 5 tons of CO₂e
-* 200 kg of PM10
-* 160 kg of PM2.5
-* 7.4 kg of methane
-* 3.17 kg of N₂O
+* 1.5-2 tons of CO₂e
+* 700 g of PM10
+* 700 g of PM2.5
+* 4.22 kg of N₂O
 
-annually. Since field testing has not yet been conducted, these figures are based on average atmospheric pollutant concentrations. Data sources include the EPA, NOAA, TÜİK (Turkish Statistical Institute), and UHKAİ (National Air Quality Monitoring Network).
+annually. Since field testing has not yet been conducted, these figures are based on average atmospheric pollutant concentrations. Data sources include the EPA, NOAA, TÜİK (Turkish Statistical Institute), and UHKAİ (Turkish National Air Quality Monitoring Network).
 
 Real-world performance is expected to be even higher. GreenAiriva installations will be prioritized in areas with **elevated concentrations of major greenhouse gases**, offering significant benefits in high-traffic zones, industrial areas, and densely populated urban districts.
 
@@ -323,7 +322,7 @@ GreenAiriva:
 
 What sets GreenAiriva apart in this process:
 
-* It **does not perform CO₂ mineralization** like Climeworks; hence, it does not offer geological permanent storage.
+* It **does not perform CO₂ mineralization** like the other DAC technologies; hence, it does not offer geological permanent storage.
 * However, it **reduces emissions at or near the source** within the urban environment.
 
 Bottom line:
