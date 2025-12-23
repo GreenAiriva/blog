@@ -287,17 +287,16 @@ GreenAiriva, **güneş enerjisi destekli çalışır.**
 
 ### GreenAiriva’nın Çözümü
 
-GreenAiriva, **600 m³/saat hava işleme kapasitesine** sahip. Düşük debili fanlar hem enerji tüketimi konusunda hem de şehir içi ses kirliliğine yol açmaması açısından (37 dB) pozitif fayda sağlamaktadır.
+GreenAiriva, **800 m³/saat hava işleme kapasitesine** sahip. Düşük debili fanlar hem enerji tüketimi konusunda hem de şehir içi ses kirliliğine yol açmaması açısından (37 dB) pozitif fayda sağlamaktadır.
 
 Bu, bir cihazın yılda minimum:
 
-* 5 ton CO₂e
-* 200 kg PM10
-* 160 kg PM2.5
-* 7.4 kg metan
-* 3.17 kg N₂O
+* 1.5-2 ton CO₂e
+* 700 g PM10
+* 700 g PM2.5
+* 4.22 kg N₂O
 
-yakalamasını sağlar. Bu veriler saha testleri henüz gerçekleştirilmediği için Atmosferdeki ortala kirletici konsantrasyonları kullanılarak yapılmıştır. Bu veriler EPA, NOAA, TÜİK ve UHKAİ (Ulusal Hava Kalitesi İzleme Ağı) kaynakları kullanılarak yapılmıştır.
+yakalamasını sağlar. Bu veriler saha testleri henüz gerçekleştirilmediği için Atmosferdeki ortalama kirletici konsantrasyonları kullanılarak yapılmıştır. Bu veriler EPA, NOAA, TÜİK ve UHKAİ (Ulusal Hava Kalitesi İzleme Ağı) kaynakları kullanılarak yapılmıştır.
 
 Gerçek sahada performansın daha yüksek olacağı ön görülmektedir. GreenAiriva kurulumu yapılacak bölgeler, özellikle majör sera gazlarının konsantrasyonunun yüksek olduğu bölgelerde yapılacaktır. Özellikle trafik noktaları, sanayi bölgeleri ve yoğun nüfuslu bölgelerde önemli avantaj sağlar.
 
@@ -321,7 +320,7 @@ GreenAiriva:
 
 Bu süreçte GreenAiriva’nın farkı:
 
-* **CO₂ taşlaştırma yapmaz.** Yani Climeworks tarzı kalıcı depolama gerçekleştirmez.
+* **CO₂ taşlaştırma yapmaz.** Yani diğer DAC sistemleri tarzı kalıcı depolama gerçekleştirmez.
 * Ancak şehir ölçeğinde emisyonları **kaynağa en yakın bölgede azaltır.**
 
 Sonuç:
